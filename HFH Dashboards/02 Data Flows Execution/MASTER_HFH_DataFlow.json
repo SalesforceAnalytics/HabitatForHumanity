@@ -1,0 +1,1480 @@
+{
+  "X02_05_split_Drop2009": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_04_enrich_2009",
+      "fields": [
+        {
+          "name": "Median_Sale_Price"
+        },
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Year"
+        }
+      ]
+    }
+  },
+  "X01_Race_White": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X01_splitWhite",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"White\"",
+          "name": "Race",
+          "saqlExpression": "\"White\"",
+          "label": "Race",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "0",
+          "precision": 18,
+          "name": "Homeownership_Rate",
+          "saqlExpression": "'Homeownership_Rate_White'",
+          "scale": 4,
+          "label": "Homeownership Rate",
+          "type": "Numeric"
+        }
+      ]
+    }
+  },
+  "X01_Race_Pacific_Islander": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X01_splitPacific_Islander",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"Pacific Islander\"",
+          "name": "Race",
+          "saqlExpression": "\"Pacific Islander\"",
+          "label": "Race",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "0",
+          "precision": 18,
+          "name": "Homeownership_Rate",
+          "saqlExpression": "'Homeownership_Rate_Pacific_Islander'",
+          "scale": 4,
+          "label": "Homeownership Rate",
+          "type": "Numeric"
+        }
+      ]
+    }
+  },
+  "X01_Race_Total": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X01_splitTotal",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"Total\"",
+          "name": "Race",
+          "saqlExpression": "\"Total\"",
+          "label": "Race",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "0",
+          "precision": 18,
+          "name": "Homeownership_Rate",
+          "saqlExpression": "'Homeownership_Rate_Total'",
+          "scale": 4,
+          "label": "Homeownership Rate",
+          "type": "Numeric"
+        }
+      ]
+    }
+  },
+  "X01_splitDropTotalMetric": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X01_Race_Total",
+      "fields": [
+        {
+          "name": "Urban_Nonurban"
+        },
+        {
+          "name": "Region"
+        },
+        {
+          "name": "Population"
+        },
+        {
+          "name": "County"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Race"
+        },
+        {
+          "name": "Homeownership_Rate"
+        }
+      ]
+    }
+  },
+  "X01_splitTwo_or_More": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X01_enrichCountyState",
+      "fields": [
+        {
+          "name": "Homeownership_Rate_Two_or_More"
+        },
+        {
+          "name": "County"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Population"
+        },
+        {
+          "name": "Region"
+        },
+        {
+          "name": "Urban_Nonurban"
+        }
+      ]
+    }
+  },
+  "X01_registerRaceCountTransposed": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "External Data - Race Counts - Transposed",
+      "alias": "External_Data_Race_Counts_Transposed",
+      "source": "X01_appendRaceSplits"
+    }
+  },
+  "X01_splitDropWhiteMetric": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X01_Race_White",
+      "fields": [
+        {
+          "name": "Urban_Nonurban"
+        },
+        {
+          "name": "Region"
+        },
+        {
+          "name": "Population"
+        },
+        {
+          "name": "County"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Race"
+        },
+        {
+          "name": "Homeownership_Rate"
+        }
+      ]
+    }
+  },
+  "X01_Race_Black": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X01_splitBlack",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"Black\"",
+          "name": "Race",
+          "saqlExpression": "\"Black\"",
+          "label": "Race",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "0",
+          "precision": 18,
+          "name": "Homeownership_Rate",
+          "saqlExpression": "'Homeownership_Rate_Black'",
+          "scale": 4,
+          "label": "Homeownership Rate",
+          "type": "Numeric"
+        }
+      ]
+    }
+  },
+  "X01_enrichCountyState": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X01_getEDRaceCounts",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"--\"",
+          "name": "County",
+          "saqlExpression": "'Geography'",
+          "label": "County",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "\"California\"",
+          "name": "State",
+          "saqlExpression": "\"California\"",
+          "label": "State",
+          "type": "Text"
+        }
+      ]
+    }
+  },
+  "X01_splitDropNative_AmericanMetric": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X01_Race_Native_American",
+      "fields": [
+        {
+          "name": "Urban_Nonurban"
+        },
+        {
+          "name": "Region"
+        },
+        {
+          "name": "Population"
+        },
+        {
+          "name": "County"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Race"
+        },
+        {
+          "name": "Homeownership_Rate"
+        }
+      ]
+    }
+  },
+  "X02_01_get_EDSalePrice": {
+    "action": "edgemart",
+    "parameters": {
+      "alias": "External_Data_Median_Sales_Price_by_County_by_Year"
+    }
+  },
+  "X02_07_register_EDSalePrice": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "External Data - Median Sales Price",
+      "alias": "External_Data_Median_Sales_Price",
+      "source": "X02_06_append_ALL"
+    }
+  },
+  "X01_splitLatino": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X01_enrichCountyState",
+      "fields": [
+        {
+          "name": "Homeownership_Rate_Latino"
+        },
+        {
+          "name": "County"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Population"
+        },
+        {
+          "name": "Region"
+        },
+        {
+          "name": "Urban_Nonurban"
+        }
+      ]
+    }
+  },
+  "X01_splitAsian": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X01_enrichCountyState",
+      "fields": [
+        {
+          "name": "Homeownership_Rate_Asian"
+        },
+        {
+          "name": "County"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Population"
+        },
+        {
+          "name": "Region"
+        },
+        {
+          "name": "Urban_Nonurban"
+        }
+      ]
+    }
+  },
+  "X01_splitDropTwo_or_MoreMetric": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X01_Race_Two_or_More",
+      "fields": [
+        {
+          "name": "Urban_Nonurban"
+        },
+        {
+          "name": "Region"
+        },
+        {
+          "name": "Population"
+        },
+        {
+          "name": "County"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Race"
+        },
+        {
+          "name": "Homeownership_Rate"
+        }
+      ]
+    }
+  },
+  "X01_splitDropOtherMetric": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X01_Race_Other",
+      "fields": [
+        {
+          "name": "Urban_Nonurban"
+        },
+        {
+          "name": "Region"
+        },
+        {
+          "name": "Population"
+        },
+        {
+          "name": "County"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Race"
+        },
+        {
+          "name": "Homeownership_Rate"
+        }
+      ]
+    }
+  },
+  "X02_05_split_Drop2008": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_04_enrich_2008",
+      "fields": [
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Year"
+        },
+        {
+          "name": "Median_Sale_Price"
+        }
+      ]
+    }
+  },
+  "X02_06_append_ALL": {
+    "action": "append",
+    "parameters": {
+      "sources": [
+        "X02_05_split_Drop2008",
+        "X02_05_split_Drop2009",
+        "X02_05_split_Drop2010",
+        "X02_05_split_Drop2011",
+        "X02_05_split_Drop2012",
+        "X02_05_split_Drop2013",
+        "X02_05_split_Drop2014",
+        "X02_05_split_Drop2015",
+        "X02_05_split_Drop2016",
+        "X02_05_split_Drop2017"
+      ]
+    }
+  },
+  "X01_Race_Latino": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X01_splitLatino",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"Latino\"",
+          "name": "Race",
+          "saqlExpression": "\"Latino\"",
+          "label": "Race",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "0",
+          "precision": 18,
+          "name": "Homeownership_Rate",
+          "saqlExpression": "'Homeownership_Rate_Latino'",
+          "scale": 4,
+          "label": "Homeownership Rate",
+          "type": "Numeric"
+        }
+      ]
+    }
+  },
+  "X01_splitPacific_Islander": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X01_enrichCountyState",
+      "fields": [
+        {
+          "name": "Homeownership_Rate_Pacific_Islander"
+        },
+        {
+          "name": "County"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Population"
+        },
+        {
+          "name": "Region"
+        },
+        {
+          "name": "Urban_Nonurban"
+        }
+      ]
+    }
+  },
+  "X01_splitDropBlackMetric": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X01_Race_Black",
+      "fields": [
+        {
+          "name": "County"
+        },
+        {
+          "name": "Homeownership_Rate"
+        },
+        {
+          "name": "Population"
+        },
+        {
+          "name": "Race"
+        },
+        {
+          "name": "Region"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Urban_Nonurban"
+        }
+      ]
+    }
+  },
+  "X01_splitWhite": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X01_enrichCountyState",
+      "fields": [
+        {
+          "name": "Homeownership_Rate_White"
+        },
+        {
+          "name": "County"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Population"
+        },
+        {
+          "name": "Region"
+        },
+        {
+          "name": "Urban_Nonurban"
+        }
+      ]
+    }
+  },
+  "X01_splitBlack": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X01_enrichCountyState",
+      "fields": [
+        {
+          "name": "Homeownership_Rate_Black"
+        },
+        {
+          "name": "County"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Population"
+        },
+        {
+          "name": "Region"
+        },
+        {
+          "name": "Urban_Nonurban"
+        }
+      ]
+    }
+  },
+  "X01_appendRaceSplits": {
+    "action": "append",
+    "parameters": {
+      "sources": [
+        "X01_splitDropAsianMetric",
+        "X01_splitDropBlackMetric",
+        "X01_splitDropLatinoMetric",
+        "X01_splitDropNative_AmericanMetric",
+        "X01_splitDropOtherMetric",
+        "X01_splitDropPacific_IslanderMetric",
+        "X01_splitDropTotalMetric",
+        "X01_splitDropTwo_or_MoreMetric",
+        "X01_splitDropWhiteMetric"
+      ]
+    }
+  },
+  "X01_splitDropPacific_IslanderMetric": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X01_Race_Pacific_Islander",
+      "fields": [
+        {
+          "name": "Urban_Nonurban"
+        },
+        {
+          "name": "Region"
+        },
+        {
+          "name": "Population"
+        },
+        {
+          "name": "County"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Race"
+        },
+        {
+          "name": "Homeownership_Rate"
+        }
+      ]
+    }
+  },
+  "X01_Race_Asian": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X01_splitAsian",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"Asian\"",
+          "name": "Race",
+          "saqlExpression": "\"Asian\"",
+          "label": "Race",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "0",
+          "precision": 18,
+          "name": "Homeownership_Rate",
+          "saqlExpression": "'Homeownership_Rate_Asian'",
+          "scale": 4,
+          "label": "Homeownership Rate",
+          "type": "Numeric"
+        }
+      ]
+    }
+  },
+  "X01_splitDropAsianMetric": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X01_Race_Asian",
+      "fields": [
+        {
+          "name": "Urban_Nonurban"
+        },
+        {
+          "name": "Region"
+        },
+        {
+          "name": "Population"
+        },
+        {
+          "name": "County"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Race"
+        },
+        {
+          "name": "Homeownership_Rate"
+        }
+      ]
+    }
+  },
+  "X02_02_enrich_CountyState": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X02_01_get_EDSalePrice",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"California\"",
+          "name": "State",
+          "saqlExpression": "\"California\"",
+          "label": "State",
+          "type": "Text"
+        }
+      ]
+    }
+  },
+  "X02_04_enrich_2009": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X02_03_split_2009",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"2009\"",
+          "name": "Year",
+          "saqlExpression": "\"2009\"",
+          "label": "Year",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "0",
+          "precision": 18,
+          "name": "Median_Sale_Price",
+          "saqlExpression": "'X2009'",
+          "scale": 2,
+          "label": "Median Sale Price",
+          "type": "Numeric"
+        }
+      ]
+    }
+  },
+  "X02_04_enrich_2008": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X02_03_split_2008",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"2008\"",
+          "name": "Year",
+          "saqlExpression": "\"2008\"",
+          "label": "Year",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "0",
+          "precision": 18,
+          "name": "Median_Sale_Price",
+          "saqlExpression": "'X2008'",
+          "scale": 2,
+          "label": "Median Sale Price",
+          "type": "Numeric"
+        }
+      ]
+    }
+  },
+  "X01_Race_Native_American": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X01_splitNative_American",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"Native American\"",
+          "name": "Race",
+          "saqlExpression": "\"Native American\"",
+          "label": "Race",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "0",
+          "precision": 18,
+          "name": "Homeownership_Rate",
+          "saqlExpression": "'Homeownership_Rate_Native_American'",
+          "scale": 4,
+          "label": "Homeownership Rate",
+          "type": "Numeric"
+        }
+      ]
+    }
+  },
+  "X01_splitOther": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X01_enrichCountyState",
+      "fields": [
+        {
+          "name": "Homeownership_Rate_Other"
+        },
+        {
+          "name": "County"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Population"
+        },
+        {
+          "name": "Region"
+        },
+        {
+          "name": "Urban_Nonurban"
+        }
+      ]
+    }
+  },
+  "X01_splitDropLatinoMetric": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X01_Race_Latino",
+      "fields": [
+        {
+          "name": "Urban_Nonurban"
+        },
+        {
+          "name": "Region"
+        },
+        {
+          "name": "Population"
+        },
+        {
+          "name": "County"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Race"
+        },
+        {
+          "name": "Homeownership_Rate"
+        }
+      ]
+    }
+  },
+  "X01_Race_Two_or_More": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X01_splitTwo_or_More",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"Two or More\"",
+          "name": "Race",
+          "saqlExpression": "\"Two or More\"",
+          "label": "Race",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "0",
+          "precision": 18,
+          "name": "Homeownership_Rate",
+          "saqlExpression": "'Homeownership_Rate_Two_or_More'",
+          "scale": 4,
+          "label": "Homeownership Rate",
+          "type": "Numeric"
+        }
+      ]
+    }
+  },
+  "X01_splitNative_American": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X01_enrichCountyState",
+      "fields": [
+        {
+          "name": "Homeownership_Rate_Native_American"
+        },
+        {
+          "name": "County"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Population"
+        },
+        {
+          "name": "Region"
+        },
+        {
+          "name": "Urban_Nonurban"
+        }
+      ]
+    }
+  },
+  "X01_getEDRaceCounts": {
+    "action": "edgemart",
+    "parameters": {
+      "alias": "External_Data_Race_Counts_Dataset"
+    }
+  },
+  "X02_03_split_2009": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_02_enrich_CountyState",
+      "fields": [
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "X2009"
+        }
+      ]
+    }
+  },
+  "X02_03_split_2008": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_02_enrich_CountyState",
+      "fields": [
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "X2008"
+        }
+      ]
+    }
+  },
+  "X01_Race_Other": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X01_splitOther",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"Other\"",
+          "name": "Race",
+          "saqlExpression": "\"Other\"",
+          "label": "Race",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "0",
+          "precision": 18,
+          "name": "Homeownership_Rate",
+          "saqlExpression": "'Homeownership_Rate_Other'",
+          "scale": 4,
+          "label": "Homeownership Rate",
+          "type": "Numeric"
+        }
+      ]
+    }
+  },
+  "X01_splitTotal": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X01_enrichCountyState",
+      "fields": [
+        {
+          "name": "Homeownership_Rate_Total"
+        },
+        {
+          "name": "County"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Population"
+        },
+        {
+          "name": "Region"
+        },
+        {
+          "name": "Urban_Nonurban"
+        }
+      ]
+    }
+  },
+  "X02_03_split_2010": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_02_enrich_CountyState",
+      "fields": [
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "X2010"
+        }
+      ]
+    }
+  },
+  "X02_04_enrich_2010": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X02_03_split_2010",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"2010\"",
+          "name": "Year",
+          "saqlExpression": "\"2010\"",
+          "label": "Year",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "0",
+          "precision": 18,
+          "name": "Median_Sale_Price",
+          "saqlExpression": "'X2010'",
+          "scale": 2,
+          "label": "Median Sale Price",
+          "type": "Numeric"
+        }
+      ]
+    }
+  },
+  "X02_05_split_Drop2010": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_04_enrich_2010",
+      "fields": [
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Year"
+        },
+        {
+          "name": "Median_Sale_Price"
+        }
+      ]
+    }
+  },
+  "X02_03_split_2011": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_02_enrich_CountyState",
+      "fields": [
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "X2011"
+        }
+      ]
+    }
+  },
+  "X02_04_enrich_2011": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X02_03_split_2011",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"2011\"",
+          "name": "Year",
+          "saqlExpression": "\"2011\"",
+          "label": "Year",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "0",
+          "precision": 18,
+          "name": "Median_Sale_Price",
+          "saqlExpression": "'X2011'",
+          "scale": 2,
+          "label": "Median Sale Price",
+          "type": "Numeric"
+        }
+      ]
+    }
+  },
+  "X02_05_split_Drop2011": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_04_enrich_2011",
+      "fields": [
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Year"
+        },
+        {
+          "name": "Median_Sale_Price"
+        }
+      ]
+    }
+  },
+  "X02_03_split_2012": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_02_enrich_CountyState",
+      "fields": [
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "X2012"
+        }
+      ]
+    }
+  },
+  "X02_04_enrich_2012": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X02_03_split_2012",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"2012\"",
+          "name": "Year",
+          "saqlExpression": "\"2012\"",
+          "label": "Year",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "0",
+          "precision": 18,
+          "name": "Median_Sale_Price",
+          "saqlExpression": "'X2012'",
+          "scale": 2,
+          "label": "Median Sale Price",
+          "type": "Numeric"
+        }
+      ]
+    }
+  },
+  "X02_05_split_Drop2012": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_04_enrich_2012",
+      "fields": [
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Year"
+        },
+        {
+          "name": "Median_Sale_Price"
+        }
+      ]
+    }
+  },
+  "X02_03_split_2013": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_02_enrich_CountyState",
+      "fields": [
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "X2013"
+        }
+      ]
+    }
+  },
+  "X02_04_enrich_2013": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X02_03_split_2013",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"2013\"",
+          "name": "Year",
+          "saqlExpression": "\"2013\"",
+          "label": "Year",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "0",
+          "precision": 18,
+          "name": "Median_Sale_Price",
+          "saqlExpression": "'X2013'",
+          "scale": 2,
+          "label": "Median Sale Price",
+          "type": "Numeric"
+        }
+      ]
+    }
+  },
+  "X02_05_split_Drop2013": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_04_enrich_2013",
+      "fields": [
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Year"
+        },
+        {
+          "name": "Median_Sale_Price"
+        }
+      ]
+    }
+  },
+  "X02_03_split_2014": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_02_enrich_CountyState",
+      "fields": [
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "X2014"
+        }
+      ]
+    }
+  },
+  "X02_04_enrich_2014": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X02_03_split_2014",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"2014\"",
+          "name": "Year",
+          "saqlExpression": "\"2014\"",
+          "label": "Year",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "0",
+          "precision": 18,
+          "name": "Median_Sale_Price",
+          "saqlExpression": "'X2014'",
+          "scale": 2,
+          "label": "Median Sale Price",
+          "type": "Numeric"
+        }
+      ]
+    }
+  },
+  "X02_05_split_Drop2014": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_04_enrich_2014",
+      "fields": [
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Year"
+        },
+        {
+          "name": "Median_Sale_Price"
+        }
+      ]
+    }
+  },
+  "X02_03_split_2015": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_02_enrich_CountyState",
+      "fields": [
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "X2015"
+        }
+      ]
+    }
+  },
+  "X02_04_enrich_2015": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X02_03_split_2015",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"2015\"",
+          "name": "Year",
+          "saqlExpression": "\"2015\"",
+          "label": "Year",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "0",
+          "precision": 18,
+          "name": "Median_Sale_Price",
+          "saqlExpression": "'X2015'",
+          "scale": 2,
+          "label": "Median Sale Price",
+          "type": "Numeric"
+        }
+      ]
+    }
+  },
+  "X02_05_split_Drop2015": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_04_enrich_2015",
+      "fields": [
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Year"
+        },
+        {
+          "name": "Median_Sale_Price"
+        }
+      ]
+    }
+  },
+  "X02_03_split_2016": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_02_enrich_CountyState",
+      "fields": [
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "X2016"
+        }
+      ]
+    }
+  },
+  "X02_04_enrich_2016": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X02_03_split_2016",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"2016\"",
+          "name": "Year",
+          "saqlExpression": "\"2016\"",
+          "label": "Year",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "0",
+          "precision": 18,
+          "name": "Median_Sale_Price",
+          "saqlExpression": "'X2016'",
+          "scale": 2,
+          "label": "Median Sale Price",
+          "type": "Numeric"
+        }
+      ]
+    }
+  },
+  "X02_05_split_Drop2016": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_04_enrich_2016",
+      "fields": [
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Year"
+        },
+        {
+          "name": "Median_Sale_Price"
+        }
+      ]
+    }
+  },
+  "X02_03_split_2017": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_02_enrich_CountyState",
+      "fields": [
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "X2017"
+        }
+      ]
+    }
+  },
+  "X02_04_enrich_2017": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "X02_03_split_2017",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "defaultValue": "\"2017\"",
+          "name": "Year",
+          "saqlExpression": "\"2017\"",
+          "label": "Year",
+          "type": "Text"
+        },
+        {
+          "defaultValue": "0",
+          "precision": 18,
+          "name": "Median_Sale_Price",
+          "saqlExpression": "'X2017'",
+          "scale": 2,
+          "label": "Median Sale Price",
+          "type": "Numeric"
+        }
+      ]
+    }
+  },
+  "X02_05_split_Drop2017": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "source": "X02_04_enrich_2017",
+      "fields": [
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Year"
+        },
+        {
+          "name": "Median_Sale_Price"
+        }
+      ]
+    }
+  }
+}

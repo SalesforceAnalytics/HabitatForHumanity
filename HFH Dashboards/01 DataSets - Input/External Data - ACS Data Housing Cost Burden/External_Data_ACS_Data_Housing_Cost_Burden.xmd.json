@@ -1,0 +1,52 @@
+{
+  "dataset": {},
+  "dates": [],
+  "derivedDimensions": [],
+  "derivedMeasures": [],
+  "dimensions": [
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "County",
+            "label": "County",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Years_Selected",
+            "label": "Years Selected",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        }
+  ],
+  "measures": [
+        {
+            "field": "Pct_of_Cost_Burdened_Owners_30_50_Pct_AMI",
+            "format": {
+                "customFormat": "[\"#,##0.0%\",100]"
+            },
+            "label": "Pct of Cost Burdened Owners - 30-50 Pct AMI",
+            "showInExplorer": true
+        },
+        {
+            "field": "Pct_of_Cost_Burdened_Owners_51_80_Pct_AMI",
+            "format": {
+                "customFormat": "[\"#,##0.0%\",100]"
+            },
+            "label": "Pct of Cost Burdened Owners - 51-80 Pct AMI",
+            "showInExplorer": true
+        }
+  ],
+  "organizations": [],
+  "showDetailsDefaultFields": []
+}

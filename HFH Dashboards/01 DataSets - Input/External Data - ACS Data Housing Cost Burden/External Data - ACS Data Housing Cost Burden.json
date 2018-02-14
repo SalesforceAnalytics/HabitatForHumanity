@@ -1,0 +1,51 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "linesTerminatedBy": "\r\n"
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "External_Data_ACS_Data_Housing_Cost_Burden_csv",
+      "label": "External Data - ACS Data Housing Cost Burden.csv",
+      "name": "External_Data_ACS_Data_Housing_Cost_Burden_csv",
+      "fields": [
+        {
+          "fullyQualifiedName": "County",
+          "name": "County",
+          "type": "Text",
+          "label": "County"
+        },
+        {
+          "fullyQualifiedName": "Pct_of_Cost_Burdened_Owners_30_50_Pct_AMI",
+          "name": "Pct_of_Cost_Burdened_Owners_30_50_Pct_AMI",
+          "type": "Numeric",
+          "label": "Pct of Cost Burdened Owners - 30-50 Pct AMI",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 4,
+          "format": "0.0000",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Pct_of_Cost_Burdened_Owners_51_80_Pct_AMI",
+          "name": "Pct_of_Cost_Burdened_Owners_51_80_Pct_AMI",
+          "type": "Numeric",
+          "label": "Pct of Cost Burdened Owners - 51-80 Pct AMI",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 4,
+          "format": "0.0000",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Years_Selected",
+          "name": "Years_Selected",
+          "type": "Text",
+          "label": "Years Selected"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "dataset": {},
+  "dates": [],
+  "derivedDimensions": [],
+  "derivedMeasures": [],
+  "dimensions": [
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Urban_Nonurban",
+            "label": "Urban / Nonurban",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Region",
+            "label": "Region",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Geography",
+            "label": "County",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        }
+  ],
+  "measures": [
+        {
+            "field": "Population",
+            "format": {
+                "customFormat": "[\"###,###,###\",1]"
+            },
+            "label": "Population",
+            "showInExplorer": true
+        },
+        {
+            "field": "Homeownership_Rate_Latino",
+            "format": {
+                "customFormat": "[\"#,##0.0%\",1]"
+            },
+            "label": "Homeownership Rate - Latino (Pct)",
+            "showInExplorer": true
+        },
+        {
+            "field": "Homeownership_Rate_Black",
+            "format": {
+                "customFormat": "[\"#,##0.0%\",1]"
+            },
+            "label": "Homeownership Rate - Black (Pct)",
+            "showInExplorer": true
+        },
+        {
+            "field": "Homeownership_Rate_Native_American",
+            "format": {
+                "customFormat": "[\"#,##0.0%\",1]"
+            },
+            "label": "Homeownership Rate - Native American (Pct)",
+            "showInExplorer": true
+        },
+        {
+            "field": "Homeownership_Rate_Asian",
+            "format": {
+                "customFormat": "[\"#,##0.0%\",1]"
+            },
+            "label": "Homeownership Rate - Asian (Pct)",
+            "showInExplorer": true
+        },
+        {
+            "field": "Homeownership_Rate_Pacific_Islander",
+            "format": {
+                "customFormat": "[\"#,##0.0%\",1]"
+            },
+            "label": "Homeownership Rate - Pacific Islander (Pct)",
+            "showInExplorer": true
+        },
+        {
+            "field": "Homeownership_Rate_Other",
+            "format": {
+                "customFormat": "[\"#,##0.0%\",1]"
+            },
+            "label": "Homeownership Rate - Other (Pct)",
+            "showInExplorer": true
+        },
+        {
+            "field": "Homeownership_Rate_Two_or_More",
+            "format": {
+                "customFormat": "[\"#,##0.0%\",1]"
+            },
+            "label": "Homeownership Rate - Two or More (Pct)",
+            "showInExplorer": true
+        },
+        {
+            "field": "Homeownership_Rate_White",
+            "format": {
+                "customFormat": "[\"#,##0.0%\",1]"
+            },
+            "label": "Homeownership Rate - White (Pct)",
+            "showInExplorer": true
+        },
+        {
+            "field": "Homeownership_Rate_Total",
+            "format": {
+                "customFormat": "[\"#,##0.0%\",1]"
+            },
+            "label": "Homeownership Rate - Total (Pct)",
+            "showInExplorer": true
+        }
+  ],
+  "organizations": [],
+  "showDetailsDefaultFields": []
+}

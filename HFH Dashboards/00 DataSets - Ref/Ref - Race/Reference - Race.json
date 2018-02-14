@@ -1,0 +1,29 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "linesTerminatedBy": "\r\n"
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "Reference_Race_csv",
+      "label": "Reference - Race.csv",
+      "name": "Reference_Race_csv",
+      "fields": [
+        {
+          "fullyQualifiedName": "State",
+          "name": "State",
+          "type": "Text",
+          "label": "State"
+        },
+        {
+          "fullyQualifiedName": "Race",
+          "name": "Race",
+          "type": "Text",
+          "label": "Race"
+        }
+      ]
+    }
+  ]
+}

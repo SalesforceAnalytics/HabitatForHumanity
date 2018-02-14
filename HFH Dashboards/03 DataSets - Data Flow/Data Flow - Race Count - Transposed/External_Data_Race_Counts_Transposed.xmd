@@ -1,0 +1,88 @@
+{
+  "dataset": {},
+  "dates": [],
+  "derivedDimensions": [],
+  "derivedMeasures": [],
+  "dimensions": [
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Urban_Nonurban",
+            "label": "Urban / Nonurban",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Region",
+            "label": "Region",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "County",
+            "label": "County",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "State",
+            "label": "State",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Race",
+            "label": "Race",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        }
+  ],
+  "measures": [
+        {
+            "field": "Population",
+            "format": {
+                "customFormat": "[\"###,###,###\",1]"
+            },
+            "label": "Population",
+            "showInExplorer": true
+        },
+        {
+            "field": "Homeownership_Rate",
+            "format": {
+                "customFormat": "[\"#,##0.0%\",1]"
+            },
+            "label": "Homeownership Rate (Pct)",
+            "showInExplorer": true
+        }
+  ],
+  "organizations": [],
+  "showDetailsDefaultFields": []
+}

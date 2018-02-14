@@ -1,0 +1,133 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "linesTerminatedBy": "\r\n"
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "External_Data_Median_Sales_Price_by_County_by_Year_csv",
+      "label": "External Data - Median Sales Price by County by Year.csv",
+      "name": "External_Data_Median_Sales_Price_by_County_by_Year_csv",
+      "fields": [
+        {
+          "fullyQualifiedName": "RegionName",
+          "name": "RegionName",
+          "type": "Text",
+          "label": "County"
+        },
+        {
+          "fullyQualifiedName": "X2008",
+          "name": "X2008",
+          "type": "Numeric",
+          "label": "2008",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "X2009",
+          "name": "X2009",
+          "type": "Numeric",
+          "label": "2009",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "X2010",
+          "name": "X2010",
+          "type": "Numeric",
+          "label": "2010",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "X2011",
+          "name": "X2011",
+          "type": "Numeric",
+          "label": "2011",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "X2012",
+          "name": "X2012",
+          "type": "Numeric",
+          "label": "2012",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "X2013",
+          "name": "X2013",
+          "type": "Numeric",
+          "label": "2013",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "X2014",
+          "name": "X2014",
+          "type": "Numeric",
+          "label": "2014",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "X2015",
+          "name": "X2015",
+          "type": "Numeric",
+          "label": "2015",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "X2016",
+          "name": "X2016",
+          "type": "Numeric",
+          "label": "2016",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "X2017",
+          "name": "X2017",
+          "type": "Numeric",
+          "label": "2017",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.00",
+          "decimalSeparator": "."
+        }
+      ]
+    }
+  ]
+}

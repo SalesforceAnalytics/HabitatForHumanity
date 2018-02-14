@@ -1,0 +1,56 @@
+{
+  "dataset": {},
+  "dates": [],
+  "derivedDimensions": [],
+  "derivedMeasures": [],
+  "dimensions": [
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "RegionName",
+            "label": "County",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "State",
+            "label": "State",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Year",
+            "label": "Year",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        }
+  ],
+  "measures": [
+        {
+            "field": "Median_Sale_Price",
+            "format": {
+                "customFormat": "[\"$###,###,##0\",1]"
+            },
+            "label": "Median Sale Price",
+            "showInExplorer": true
+        }
+  ],
+  "organizations": [],
+  "showDetailsDefaultFields": []
+}
