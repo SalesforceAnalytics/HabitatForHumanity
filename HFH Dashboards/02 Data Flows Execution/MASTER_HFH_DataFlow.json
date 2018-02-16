@@ -1,25 +1,4 @@
 {
-  "X02_05_split_Drop2009": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_04_enrich_2009",
-      "fields": [
-        {
-          "name": "Median_Sale_Price"
-        },
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Year"
-        }
-      ]
-    }
-  },
   "X01_04_Race_White": {
     "action": "computeExpression",
     "parameters": {
@@ -274,12 +253,12 @@
       "alias": "External_Data_Median_Sales_Price_by_County_by_Year"
     }
   },
-  "X02_07_register_EDSalePrice": {
+  "X02_06_register_EDSalePrice": {
     "action": "sfdcRegister",
     "parameters": {
       "name": "External Data - Median Sales Price",
       "alias": "External_Data_Median_Sales_Price",
-      "source": "X02_06_append_ALL"
+      "source": "X02_05_split_CoreRows"
     }
   },
   "X01_03_split_Latino": {
@@ -396,41 +375,20 @@
       ]
     }
   },
-  "X02_05_split_Drop2008": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_04_enrich_2008",
-      "fields": [
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Year"
-        },
-        {
-          "name": "Median_Sale_Price"
-        }
-      ]
-    }
-  },
-  "X02_06_append_ALL": {
+  "X02_04_append_ALL": {
     "action": "append",
     "parameters": {
       "sources": [
-        "X02_05_split_Drop2008",
-        "X02_05_split_Drop2009",
-        "X02_05_split_Drop2010",
-        "X02_05_split_Drop2011",
-        "X02_05_split_Drop2012",
-        "X02_05_split_Drop2013",
-        "X02_05_split_Drop2014",
-        "X02_05_split_Drop2015",
-        "X02_05_split_Drop2016",
-        "X02_05_split_Drop2017"
+        "X02_03_enrich_2008",
+        "X02_03_enrich_2009",
+        "X02_03_enrich_2010",
+        "X02_03_enrich_2011",
+        "X02_03_enrich_2012",
+        "X02_03_enrich_2013",
+        "X02_03_enrich_2014",
+        "X02_03_enrich_2015",
+        "X02_03_enrich_2016",
+        "X02_03_enrich_2017"
       ]
     }
   },
@@ -687,54 +645,54 @@
       ]
     }
   },
-  "X02_04_enrich_2009": {
+  "X02_03_enrich_2009": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X02_03_split_2009",
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"2009\"",
           "name": "Year",
-          "saqlExpression": "\"2009\"",
           "label": "Year",
-          "type": "Text"
+          "type": "Text",
+          "saqlExpression": "\"2009\"",
+          "defaultValue": "\"2009\""
         },
         {
-          "defaultValue": "0",
-          "precision": 18,
           "name": "Median_Sale_Price",
-          "saqlExpression": "'X2009'",
-          "scale": 2,
           "label": "Median Sale Price",
-          "type": "Numeric"
+          "type": "Numeric",
+          "saqlExpression": "'X2009'",
+          "precision": 18,
+          "scale": 2,
+          "defaultValue": "0"
         }
-      ]
+      ],
+      "source": "X02_02_enrich_CountyState"
     }
   },
-  "X02_04_enrich_2008": {
+  "X02_03_enrich_2008": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X02_03_split_2008",
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"2008\"",
           "name": "Year",
-          "saqlExpression": "\"2008\"",
           "label": "Year",
-          "type": "Text"
+          "type": "Text",
+          "saqlExpression": "\"2008\"",
+          "defaultValue": "\"2008\""
         },
         {
-          "defaultValue": "0",
-          "precision": 18,
           "name": "Median_Sale_Price",
-          "saqlExpression": "'X2008'",
-          "scale": 2,
           "label": "Median Sale Price",
-          "type": "Numeric"
+          "type": "Numeric",
+          "saqlExpression": "'X2008'",
+          "precision": 18,
+          "scale": 2,
+          "defaultValue": "0"
         }
-      ]
+      ],
+      "source": "X02_02_enrich_CountyState"
     }
   },
   "X01_04_Race_Native_American": {
@@ -877,42 +835,6 @@
       "alias": "External_Data_Race_Counts_Dataset"
     }
   },
-  "X02_03_split_2009": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_02_enrich_CountyState",
-      "fields": [
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "X2009"
-        }
-      ]
-    }
-  },
-  "X02_03_split_2008": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_02_enrich_CountyState",
-      "fields": [
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "X2008"
-        }
-      ]
-    }
-  },
   "X01_04_Race_Other": {
     "action": "computeExpression",
     "parameters": {
@@ -965,516 +887,204 @@
       ]
     }
   },
-  "X02_03_split_2010": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_02_enrich_CountyState",
-      "fields": [
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "X2010"
-        }
-      ]
-    }
-  },
-  "X02_04_enrich_2010": {
+  "X02_03_enrich_2010": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X02_03_split_2010",
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"2010\"",
           "name": "Year",
+          "label": "Year",
+          "type": "Text",
           "saqlExpression": "\"2010\"",
-          "label": "Year",
-          "type": "Text"
+          "defaultValue": "\"2010\""
         },
         {
-          "defaultValue": "0",
-          "precision": 18,
           "name": "Median_Sale_Price",
+          "label": "Median Sale Price",
+          "type": "Numeric",
           "saqlExpression": "'X2010'",
+          "precision": 18,
           "scale": 2,
-          "label": "Median Sale Price",
-          "type": "Numeric"
+          "defaultValue": "0"
         }
-      ]
+      ],
+      "source": "X02_02_enrich_CountyState"
     }
   },
-  "X02_05_split_Drop2010": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_04_enrich_2010",
-      "fields": [
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Year"
-        },
-        {
-          "name": "Median_Sale_Price"
-        }
-      ]
-    }
-  },
-  "X02_03_split_2011": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_02_enrich_CountyState",
-      "fields": [
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "X2011"
-        }
-      ]
-    }
-  },
-  "X02_04_enrich_2011": {
+  "X02_03_enrich_2011": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X02_03_split_2011",
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"2011\"",
           "name": "Year",
+          "label": "Year",
+          "type": "Text",
           "saqlExpression": "\"2011\"",
-          "label": "Year",
-          "type": "Text"
+          "defaultValue": "\"2011\""
         },
         {
-          "defaultValue": "0",
-          "precision": 18,
           "name": "Median_Sale_Price",
+          "label": "Median Sale Price",
+          "type": "Numeric",
           "saqlExpression": "'X2011'",
+          "precision": 18,
           "scale": 2,
-          "label": "Median Sale Price",
-          "type": "Numeric"
+          "defaultValue": "0"
         }
-      ]
+      ],
+      "source": "X02_02_enrich_CountyState"
     }
   },
-  "X02_05_split_Drop2011": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_04_enrich_2011",
-      "fields": [
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Year"
-        },
-        {
-          "name": "Median_Sale_Price"
-        }
-      ]
-    }
-  },
-  "X02_03_split_2012": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_02_enrich_CountyState",
-      "fields": [
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "X2012"
-        }
-      ]
-    }
-  },
-  "X02_04_enrich_2012": {
+  "X02_03_enrich_2012": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X02_03_split_2012",
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"2012\"",
           "name": "Year",
+          "label": "Year",
+          "type": "Text",
           "saqlExpression": "\"2012\"",
-          "label": "Year",
-          "type": "Text"
+          "defaultValue": "\"2012\""
         },
         {
-          "defaultValue": "0",
-          "precision": 18,
           "name": "Median_Sale_Price",
+          "label": "Median Sale Price",
+          "type": "Numeric",
           "saqlExpression": "'X2012'",
+          "precision": 18,
           "scale": 2,
-          "label": "Median Sale Price",
-          "type": "Numeric"
+          "defaultValue": "0"
         }
-      ]
+      ],
+      "source": "X02_02_enrich_CountyState"
     }
   },
-  "X02_05_split_Drop2012": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_04_enrich_2012",
-      "fields": [
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Year"
-        },
-        {
-          "name": "Median_Sale_Price"
-        }
-      ]
-    }
-  },
-  "X02_03_split_2013": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_02_enrich_CountyState",
-      "fields": [
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "X2013"
-        }
-      ]
-    }
-  },
-  "X02_04_enrich_2013": {
+  "X02_03_enrich_2013": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X02_03_split_2013",
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"2013\"",
           "name": "Year",
+          "label": "Year",
+          "type": "Text",
           "saqlExpression": "\"2013\"",
-          "label": "Year",
-          "type": "Text"
+          "defaultValue": "\"2013\""
         },
         {
-          "defaultValue": "0",
-          "precision": 18,
           "name": "Median_Sale_Price",
+          "label": "Median Sale Price",
+          "type": "Numeric",
           "saqlExpression": "'X2013'",
+          "precision": 18,
           "scale": 2,
-          "label": "Median Sale Price",
-          "type": "Numeric"
+          "defaultValue": "0"
         }
-      ]
+      ],
+      "source": "X02_02_enrich_CountyState"
     }
   },
-  "X02_05_split_Drop2013": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_04_enrich_2013",
-      "fields": [
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Year"
-        },
-        {
-          "name": "Median_Sale_Price"
-        }
-      ]
-    }
-  },
-  "X02_03_split_2014": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_02_enrich_CountyState",
-      "fields": [
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "X2014"
-        }
-      ]
-    }
-  },
-  "X02_04_enrich_2014": {
+  "X02_03_enrich_2014": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X02_03_split_2014",
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"2014\"",
           "name": "Year",
+          "label": "Year",
+          "type": "Text",
           "saqlExpression": "\"2014\"",
-          "label": "Year",
-          "type": "Text"
+          "defaultValue": "\"2014\""
         },
         {
-          "defaultValue": "0",
-          "precision": 18,
           "name": "Median_Sale_Price",
+          "label": "Median Sale Price",
+          "type": "Numeric",
           "saqlExpression": "'X2014'",
+          "precision": 18,
           "scale": 2,
-          "label": "Median Sale Price",
-          "type": "Numeric"
+          "defaultValue": "0"
         }
-      ]
+      ],
+      "source": "X02_02_enrich_CountyState"
     }
   },
-  "X02_05_split_Drop2014": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_04_enrich_2014",
-      "fields": [
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Year"
-        },
-        {
-          "name": "Median_Sale_Price"
-        }
-      ]
-    }
-  },
-  "X02_03_split_2015": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_02_enrich_CountyState",
-      "fields": [
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "X2015"
-        }
-      ]
-    }
-  },
-  "X02_04_enrich_2015": {
+  "X02_03_enrich_2015": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X02_03_split_2015",
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"2015\"",
           "name": "Year",
+          "label": "Year",
+          "type": "Text",
           "saqlExpression": "\"2015\"",
-          "label": "Year",
-          "type": "Text"
+          "defaultValue": "\"2015\""
         },
         {
-          "defaultValue": "0",
-          "precision": 18,
           "name": "Median_Sale_Price",
+          "label": "Median Sale Price",
+          "type": "Numeric",
           "saqlExpression": "'X2015'",
+          "precision": 18,
           "scale": 2,
-          "label": "Median Sale Price",
-          "type": "Numeric"
+          "defaultValue": "0"
         }
-      ]
+      ],
+      "source": "X02_02_enrich_CountyState"
     }
   },
-  "X02_05_split_Drop2015": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_04_enrich_2015",
-      "fields": [
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Year"
-        },
-        {
-          "name": "Median_Sale_Price"
-        }
-      ]
-    }
-  },
-  "X02_03_split_2016": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_02_enrich_CountyState",
-      "fields": [
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "X2016"
-        }
-      ]
-    }
-  },
-  "X02_04_enrich_2016": {
+  "X02_03_enrich_2016": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X02_03_split_2016",
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"2016\"",
           "name": "Year",
+          "label": "Year",
+          "type": "Text",
           "saqlExpression": "\"2016\"",
-          "label": "Year",
-          "type": "Text"
+          "defaultValue": "\"2016\""
         },
         {
-          "defaultValue": "0",
-          "precision": 18,
           "name": "Median_Sale_Price",
-          "saqlExpression": "'X2016'",
-          "scale": 2,
           "label": "Median Sale Price",
-          "type": "Numeric"
+          "type": "Numeric",
+          "saqlExpression": "'X2016'",
+          "precision": 18,
+          "scale": 2,
+          "defaultValue": "0"
         }
-      ]
+      ],
+      "source": "X02_02_enrich_CountyState"
     }
   },
-  "X02_05_split_Drop2016": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_04_enrich_2016",
-      "fields": [
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Year"
-        },
-        {
-          "name": "Median_Sale_Price"
-        }
-      ]
-    }
-  },
-  "X02_03_split_2017": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_02_enrich_CountyState",
-      "fields": [
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "X2017"
-        }
-      ]
-    }
-  },
-  "X02_04_enrich_2017": {
+  "X02_03_enrich_2017": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X02_03_split_2017",
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"2017\"",
           "name": "Year",
-          "saqlExpression": "\"2017\"",
           "label": "Year",
-          "type": "Text"
+          "type": "Text",
+          "saqlExpression": "\"2017\"",
+          "defaultValue": "\"2017\""
         },
         {
-          "defaultValue": "0",
-          "precision": 18,
           "name": "Median_Sale_Price",
-          "saqlExpression": "'X2017'",
-          "scale": 2,
           "label": "Median Sale Price",
-          "type": "Numeric"
+          "type": "Numeric",
+          "saqlExpression": "'X2017'",
+          "precision": 18,
+          "scale": 2,
+          "defaultValue": "0"
         }
-      ]
-    }
-  },
-  "X02_05_split_Drop2017": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X02_04_enrich_2017",
-      "fields": [
-        {
-          "name": "RegionName"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Year"
-        },
-        {
-          "name": "Median_Sale_Price"
-        }
-      ]
+      ],
+      "source": "X02_02_enrich_CountyState"
     }
   },
   "X03_01_get_EDMakingEndsMeet": {
@@ -1582,7 +1192,7 @@
       "computedFields": [
         {
           "name": "Family_Type",
-          "label": "Family_Type",
+          "label": "Family Type",
           "type": "Text",
           "saqlExpression": "\"Two Working Parent Family\"",
           "defaultValue": "\"Two Working Parent Family\""
@@ -1637,6 +1247,27 @@
       "source": "X03_05_split_CoreRows",
       "alias": "External_Data_Making_Ends_Meet_Transposed",
       "name": "External Data - Making Ends Meet - Transposed"
+    }
+  },
+  "X02_05_split_CoreRows": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "fields": [
+        {
+          "name": "Median_Sale_Price"
+        },
+        {
+          "name": "RegionName"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Year"
+        }
+      ],
+      "source": "X02_04_append_ALL"
     }
   }
 }
