@@ -114,18 +114,18 @@
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"--\"",
           "name": "County",
-          "saqlExpression": "'Geography'",
           "label": "County",
-          "type": "Text"
+          "type": "Text",
+          "saqlExpression": "trim(replace('Geography', \"County\", \"\"))",
+          "defaultValue": "\"--\""
         },
         {
-          "defaultValue": "\"California\"",
           "name": "State",
-          "saqlExpression": "\"California\"",
           "label": "State",
-          "type": "Text"
+          "type": "Text",
+          "saqlExpression": "\"California\"",
+          "defaultValue": "\"California\""
         }
       ]
     }
