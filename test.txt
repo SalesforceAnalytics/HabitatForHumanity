@@ -4,4 +4,8 @@ Tomasz has changed this file on 2/5/2018 at 1:00PM PST.
 
 Tom Bohn is great at shoveling snow.  Changed this file on 2/14/2018 at 12:00PM CST.
 
+<<<<<<< HEAD
 Tom Bohn is great at shoveling snow still.  Changed this file on 2/16/2018 at 12:08PM CST.
+=======
+Tomasz is really bad at shoveling snow. Changed this file on 2/16/2018 at 10:06AM PST.
+>>>>>>> b87b55afd99a3a13e4286fe0384a5477f8a54fde
