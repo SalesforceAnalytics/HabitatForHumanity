@@ -1476,5 +1476,167 @@
         }
       ]
     }
+  },
+  "X03_01_get_EDMakingEndsMeet": {
+    "action": "edgemart",
+    "parameters": {
+      "alias": "External_Data_Making_Ends_Meet"
+    }
+  },
+  "X03_02_enrich_CountyState": {
+    "action": "computeExpression",
+    "parameters": {
+      "mergeWithSource": true,
+      "source": "X03_01_get_EDMakingEndsMeet",
+      "computedFields": [
+        {
+          "name": "State",
+          "label": "State",
+          "type": "Text",
+          "saqlExpression": "\"California\"",
+          "defaultValue": "\"California\""
+        }
+      ]
+    }
+  },
+  "X03_03_SingleAdult": {
+    "action": "computeExpression",
+    "parameters": {
+      "mergeWithSource": true,
+      "source": "X03_02_enrich_CountyState",
+      "computedFields": [
+        {
+          "name": "Family_Type",
+          "label": "Family Type",
+          "type": "Text",
+          "saqlExpression": "\"Single Adult\"",
+          "defaultValue": "\"Single Adult\""
+        },
+        {
+          "name": "Income",
+          "label": "Income",
+          "type": "Numeric",
+          "saqlExpression": "'Single_Adult'",
+          "precision": 18,
+          "scale": 2,
+          "defaultValue": "0"
+        }
+      ]
+    }
+  },
+  "X03_03_SingleParentFamily": {
+    "action": "computeExpression",
+    "parameters": {
+      "mergeWithSource": true,
+      "source": "X03_02_enrich_CountyState",
+      "computedFields": [
+        {
+          "name": "Family_Type",
+          "label": "Family Type",
+          "type": "Text",
+          "saqlExpression": "\"Single Parent Family\"",
+          "defaultValue": "\"Single Parent Family\""
+        },
+        {
+          "name": "Income",
+          "label": "Income",
+          "type": "Numeric",
+          "saqlExpression": "'Single_Parent_Family'",
+          "precision": 18,
+          "scale": 2,
+          "defaultValue": "0"
+        }
+      ]
+    }
+  },
+  "X03_03_TwoParentOneWorking": {
+    "action": "computeExpression",
+    "parameters": {
+      "mergeWithSource": true,
+      "source": "X03_02_enrich_CountyState",
+      "computedFields": [
+        {
+          "name": "Family_Type",
+          "label": "Family Type",
+          "type": "Text",
+          "saqlExpression": "\"Two-Parent Family (One Working)\"",
+          "defaultValue": "\"Two-Parent Family (One Working)\""
+        },
+        {
+          "name": "Income",
+          "label": "Income",
+          "type": "Numeric",
+          "saqlExpression": "'Two_Parent_Family_One_Working'",
+          "precision": 18,
+          "scale": 2,
+          "defaultValue": "0"
+        }
+      ]
+    }
+  },
+  "X03_03_TwoWorkingParents": {
+    "action": "computeExpression",
+    "parameters": {
+      "mergeWithSource": true,
+      "source": "X03_02_enrich_CountyState",
+      "computedFields": [
+        {
+          "name": "Family_Type",
+          "label": "Family_Type",
+          "type": "Text",
+          "saqlExpression": "\"Two Working Parent Family\"",
+          "defaultValue": "\"Two Working Parent Family\""
+        },
+        {
+          "name": "Income",
+          "label": "Income",
+          "type": "Numeric",
+          "saqlExpression": "'Two_Working_Parent_Family'",
+          "precision": 18,
+          "scale": 2,
+          "defaultValue": "0"
+        }
+      ]
+    }
+  },
+  "X03_04_append_FamilyTypeSplits": {
+    "action": "append",
+    "parameters": {
+      "sources": [
+        "X03_03_TwoWorkingParents",
+        "X03_03_TwoParentOneWorking",
+        "X03_03_SingleParentFamily",
+        "X03_03_SingleAdult"
+      ]
+    }
+  },
+  "X03_05_split_CoreRows": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "fields": [
+        {
+          "name": "County"
+        },
+        {
+          "name": "Family_Type"
+        },
+        {
+          "name": "Income"
+        },
+        {
+          "name": "State"
+        }
+      ],
+      "source": "X03_04_append_FamilyTypeSplits"
+    }
+  },
+  "X03_06_register_EDMakingEndsMeetTransposed": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "source": "X03_05_split_CoreRows",
+      "alias": "External_Data_Making_Ends_Meet_Transposed",
+      "name": "External Data - Making Ends Meet - Transposed"
+    }
   }
 }
