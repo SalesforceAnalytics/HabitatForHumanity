@@ -20,10 +20,10 @@
       ]
     }
   },
-  "X01_Race_White": {
+  "X01_04_Race_White": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X01_splitWhite",
+      "source": "X01_03_split_White",
       "mergeWithSource": true,
       "computedFields": [
         {
@@ -45,10 +45,10 @@
       ]
     }
   },
-  "X01_Race_Pacific_Islander": {
+  "X01_04_Race_Pacific_Islander": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X01_splitPacific_Islander",
+      "source": "X01_03_split_Pacific_Islander",
       "mergeWithSource": true,
       "computedFields": [
         {
@@ -70,10 +70,10 @@
       ]
     }
   },
-  "X01_Race_Total": {
+  "X01_04_Race_Total": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X01_splitTotal",
+      "source": "X01_03_split_Total",
       "mergeWithSource": true,
       "computedFields": [
         {
@@ -95,11 +95,11 @@
       ]
     }
   },
-  "X01_splitDropTotalMetric": {
+  "X01_05_split_Drop_TotalMetric": {
     "action": "sliceDataset",
     "parameters": {
       "mode": "select",
-      "source": "X01_Race_Total",
+      "source": "X01_04_Race_Total",
       "fields": [
         {
           "name": "Urban_Nonurban"
@@ -125,11 +125,11 @@
       ]
     }
   },
-  "X01_splitTwo_or_More": {
+  "X01_03_split_Two_or_More": {
     "action": "sliceDataset",
     "parameters": {
       "mode": "select",
-      "source": "X01_enrichCountyState",
+      "source": "X01_02_enrich_CountyState",
       "fields": [
         {
           "name": "Homeownership_Rate_Two_or_More"
@@ -152,19 +152,19 @@
       ]
     }
   },
-  "X01_registerRaceCountTransposed": {
+  "X01_07_register_EDRaceCountTransposed": {
     "action": "sfdcRegister",
     "parameters": {
       "name": "External Data - Race Counts - Transposed",
       "alias": "External_Data_Race_Counts_Transposed",
-      "source": "X01_appendRaceSplits"
+      "source": "X01_06_append_RaceSplits"
     }
   },
-  "X01_splitDropWhiteMetric": {
+  "X01_05_split_Drop_WhiteMetric": {
     "action": "sliceDataset",
     "parameters": {
       "mode": "select",
-      "source": "X01_Race_White",
+      "source": "X01_04_Race_White",
       "fields": [
         {
           "name": "Urban_Nonurban"
@@ -190,10 +190,10 @@
       ]
     }
   },
-  "X01_Race_Black": {
+  "X01_04_Race_Black": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X01_splitBlack",
+      "source": "X01_03_split_Black",
       "mergeWithSource": true,
       "computedFields": [
         {
@@ -215,10 +215,10 @@
       ]
     }
   },
-  "X01_enrichCountyState": {
+  "X01_02_enrich_CountyState": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X01_getEDRaceCounts",
+      "source": "X01_01_get_EDRaceCounts",
       "mergeWithSource": true,
       "computedFields": [
         {
@@ -238,11 +238,11 @@
       ]
     }
   },
-  "X01_splitDropNative_AmericanMetric": {
+  "X01_05_split_Drop_Native_AmericanMetric": {
     "action": "sliceDataset",
     "parameters": {
       "mode": "select",
-      "source": "X01_Race_Native_American",
+      "source": "X01_04_Race_Native_American",
       "fields": [
         {
           "name": "Urban_Nonurban"
@@ -282,11 +282,11 @@
       "source": "X02_06_append_ALL"
     }
   },
-  "X01_splitLatino": {
+  "X01_03_split_Latino": {
     "action": "sliceDataset",
     "parameters": {
       "mode": "select",
-      "source": "X01_enrichCountyState",
+      "source": "X01_02_enrich_CountyState",
       "fields": [
         {
           "name": "Homeownership_Rate_Latino"
@@ -309,11 +309,11 @@
       ]
     }
   },
-  "X01_splitAsian": {
+  "X01_03_split_Asian": {
     "action": "sliceDataset",
     "parameters": {
       "mode": "select",
-      "source": "X01_enrichCountyState",
+      "source": "X01_02_enrich_CountyState",
       "fields": [
         {
           "name": "Homeownership_Rate_Asian"
@@ -336,11 +336,11 @@
       ]
     }
   },
-  "X01_splitDropTwo_or_MoreMetric": {
+  "X01_05_split_Drop_Two_or_MoreMetric": {
     "action": "sliceDataset",
     "parameters": {
       "mode": "select",
-      "source": "X01_Race_Two_or_More",
+      "source": "X01_04_Race_Two_or_More",
       "fields": [
         {
           "name": "Urban_Nonurban"
@@ -366,11 +366,11 @@
       ]
     }
   },
-  "X01_splitDropOtherMetric": {
+  "X01_05_split_Drop_OtherMetric": {
     "action": "sliceDataset",
     "parameters": {
       "mode": "select",
-      "source": "X01_Race_Other",
+      "source": "X01_04_Race_Other",
       "fields": [
         {
           "name": "Urban_Nonurban"
@@ -434,10 +434,10 @@
       ]
     }
   },
-  "X01_Race_Latino": {
+  "X01_04_Race_Latino": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X01_splitLatino",
+      "source": "X01_03_split_Latino",
       "mergeWithSource": true,
       "computedFields": [
         {
@@ -459,11 +459,11 @@
       ]
     }
   },
-  "X01_splitPacific_Islander": {
+  "X01_03_split_Pacific_Islander": {
     "action": "sliceDataset",
     "parameters": {
       "mode": "select",
-      "source": "X01_enrichCountyState",
+      "source": "X01_02_enrich_CountyState",
       "fields": [
         {
           "name": "Homeownership_Rate_Pacific_Islander"
@@ -486,11 +486,11 @@
       ]
     }
   },
-  "X01_splitDropBlackMetric": {
+  "X01_05_split_Drop_BlackMetric": {
     "action": "sliceDataset",
     "parameters": {
       "mode": "select",
-      "source": "X01_Race_Black",
+      "source": "X01_04_Race_Black",
       "fields": [
         {
           "name": "County"
@@ -516,11 +516,11 @@
       ]
     }
   },
-  "X01_splitWhite": {
+  "X01_03_split_White": {
     "action": "sliceDataset",
     "parameters": {
       "mode": "select",
-      "source": "X01_enrichCountyState",
+      "source": "X01_02_enrich_CountyState",
       "fields": [
         {
           "name": "Homeownership_Rate_White"
@@ -543,11 +543,11 @@
       ]
     }
   },
-  "X01_splitBlack": {
+  "X01_03_split_Black": {
     "action": "sliceDataset",
     "parameters": {
       "mode": "select",
-      "source": "X01_enrichCountyState",
+      "source": "X01_02_enrich_CountyState",
       "fields": [
         {
           "name": "Homeownership_Rate_Black"
@@ -570,27 +570,27 @@
       ]
     }
   },
-  "X01_appendRaceSplits": {
+  "X01_06_append_RaceSplits": {
     "action": "append",
     "parameters": {
       "sources": [
-        "X01_splitDropAsianMetric",
-        "X01_splitDropBlackMetric",
-        "X01_splitDropLatinoMetric",
-        "X01_splitDropNative_AmericanMetric",
-        "X01_splitDropOtherMetric",
-        "X01_splitDropPacific_IslanderMetric",
-        "X01_splitDropTotalMetric",
-        "X01_splitDropTwo_or_MoreMetric",
-        "X01_splitDropWhiteMetric"
+        "X01_05_split_Drop_AsianMetric",
+        "X01_05_split_Drop_BlackMetric",
+        "X01_05_split_Drop_LatinoMetric",
+        "X01_05_split_Drop_Native_AmericanMetric",
+        "X01_05_split_Drop_OtherMetric",
+        "X01_05_split_Drop_Pacific_IslanderMetric",
+        "X01_05_split_Drop_TotalMetric",
+        "X01_05_split_Drop_Two_or_MoreMetric",
+        "X01_05_split_Drop_WhiteMetric"
       ]
     }
   },
-  "X01_splitDropPacific_IslanderMetric": {
+  "X01_05_split_Drop_Pacific_IslanderMetric": {
     "action": "sliceDataset",
     "parameters": {
       "mode": "select",
-      "source": "X01_Race_Pacific_Islander",
+      "source": "X01_04_Race_Pacific_Islander",
       "fields": [
         {
           "name": "Urban_Nonurban"
@@ -616,10 +616,10 @@
       ]
     }
   },
-  "X01_Race_Asian": {
+  "X01_04_Race_Asian": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X01_splitAsian",
+      "source": "X01_03_split_Asian",
       "mergeWithSource": true,
       "computedFields": [
         {
@@ -641,11 +641,11 @@
       ]
     }
   },
-  "X01_splitDropAsianMetric": {
+  "X01_05_split_Drop_AsianMetric": {
     "action": "sliceDataset",
     "parameters": {
       "mode": "select",
-      "source": "X01_Race_Asian",
+      "source": "X01_04_Race_Asian",
       "fields": [
         {
           "name": "Urban_Nonurban"
@@ -737,10 +737,10 @@
       ]
     }
   },
-  "X01_Race_Native_American": {
+  "X01_04_Race_Native_American": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X01_splitNative_American",
+      "source": "X01_03_split_Native_American",
       "mergeWithSource": true,
       "computedFields": [
         {
@@ -762,11 +762,11 @@
       ]
     }
   },
-  "X01_splitOther": {
+  "X01_03_split_Other": {
     "action": "sliceDataset",
     "parameters": {
       "mode": "select",
-      "source": "X01_enrichCountyState",
+      "source": "X01_02_enrich_CountyState",
       "fields": [
         {
           "name": "Homeownership_Rate_Other"
@@ -789,11 +789,11 @@
       ]
     }
   },
-  "X01_splitDropLatinoMetric": {
+  "X01_05_split_Drop_LatinoMetric": {
     "action": "sliceDataset",
     "parameters": {
       "mode": "select",
-      "source": "X01_Race_Latino",
+      "source": "X01_04_Race_Latino",
       "fields": [
         {
           "name": "Urban_Nonurban"
@@ -819,10 +819,10 @@
       ]
     }
   },
-  "X01_Race_Two_or_More": {
+  "X01_04_Race_Two_or_More": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X01_splitTwo_or_More",
+      "source": "X01_03_split_Two_or_More",
       "mergeWithSource": true,
       "computedFields": [
         {
@@ -844,11 +844,11 @@
       ]
     }
   },
-  "X01_splitNative_American": {
+  "X01_03_split_Native_American": {
     "action": "sliceDataset",
     "parameters": {
       "mode": "select",
-      "source": "X01_enrichCountyState",
+      "source": "X01_02_enrich_CountyState",
       "fields": [
         {
           "name": "Homeownership_Rate_Native_American"
@@ -871,7 +871,7 @@
       ]
     }
   },
-  "X01_getEDRaceCounts": {
+  "X01_01_get_EDRaceCounts": {
     "action": "edgemart",
     "parameters": {
       "alias": "External_Data_Race_Counts_Dataset"
@@ -913,10 +913,10 @@
       ]
     }
   },
-  "X01_Race_Other": {
+  "X01_04_Race_Other": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X01_splitOther",
+      "source": "X01_03_split_Other",
       "mergeWithSource": true,
       "computedFields": [
         {
@@ -938,11 +938,11 @@
       ]
     }
   },
-  "X01_splitTotal": {
+  "X01_03_split_Total": {
     "action": "sliceDataset",
     "parameters": {
       "mode": "select",
-      "source": "X01_enrichCountyState",
+      "source": "X01_02_enrich_CountyState",
       "fields": [
         {
           "name": "Homeownership_Rate_Total"
