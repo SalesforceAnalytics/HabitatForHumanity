@@ -1,197 +1,110 @@
 {
-  "X01_04_Race_White": {
+  "X01_03_Race_White": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X01_03_split_White",
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"White\"",
           "name": "Race",
+          "label": "Race",
+          "type": "Text",
           "saqlExpression": "\"White\"",
-          "label": "Race",
-          "type": "Text"
+          "defaultValue": "\"White\""
         },
         {
-          "defaultValue": "0",
-          "precision": 18,
           "name": "Homeownership_Rate",
+          "label": "Homeownership Rate",
+          "type": "Numeric",
           "saqlExpression": "'Homeownership_Rate_White'",
+          "precision": 18,
           "scale": 4,
-          "label": "Homeownership Rate",
-          "type": "Numeric"
+          "defaultValue": "0"
         }
-      ]
+      ],
+      "source": "X01_02_enrich_CountyState"
     }
   },
-  "X01_04_Race_Pacific_Islander": {
+  "X01_03_Race_Pacific_Islander": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X01_03_split_Pacific_Islander",
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"Pacific Islander\"",
           "name": "Race",
+          "label": "Race",
+          "type": "Text",
           "saqlExpression": "\"Pacific Islander\"",
-          "label": "Race",
-          "type": "Text"
+          "defaultValue": "\"Pacific Islander\""
         },
         {
-          "defaultValue": "0",
-          "precision": 18,
           "name": "Homeownership_Rate",
-          "saqlExpression": "'Homeownership_Rate_Pacific_Islander'",
-          "scale": 4,
           "label": "Homeownership Rate",
-          "type": "Numeric"
+          "type": "Numeric",
+          "saqlExpression": "'Homeownership_Rate_Pacific_Islander'",
+          "precision": 18,
+          "scale": 4,
+          "defaultValue": "0"
         }
-      ]
+      ],
+      "source": "X01_02_enrich_CountyState"
     }
   },
-  "X01_04_Race_Total": {
+  "X01_03_Race_Total": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X01_03_split_Total",
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"Total\"",
           "name": "Race",
-          "saqlExpression": "\"Total\"",
           "label": "Race",
-          "type": "Text"
+          "type": "Text",
+          "saqlExpression": "\"Total\"",
+          "defaultValue": "\"Total\""
         },
         {
-          "defaultValue": "0",
-          "precision": 18,
           "name": "Homeownership_Rate",
-          "saqlExpression": "'Homeownership_Rate_Total'",
-          "scale": 4,
           "label": "Homeownership Rate",
-          "type": "Numeric"
+          "type": "Numeric",
+          "saqlExpression": "'Homeownership_Rate_Total'",
+          "precision": 18,
+          "scale": 4,
+          "defaultValue": "0"
         }
-      ]
+      ],
+      "source": "X01_02_enrich_CountyState"
     }
   },
-  "X01_05_split_Drop_TotalMetric": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X01_04_Race_Total",
-      "fields": [
-        {
-          "name": "Urban_Nonurban"
-        },
-        {
-          "name": "Region"
-        },
-        {
-          "name": "Population"
-        },
-        {
-          "name": "County"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Race"
-        },
-        {
-          "name": "Homeownership_Rate"
-        }
-      ]
-    }
-  },
-  "X01_03_split_Two_or_More": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X01_02_enrich_CountyState",
-      "fields": [
-        {
-          "name": "Homeownership_Rate_Two_or_More"
-        },
-        {
-          "name": "County"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Population"
-        },
-        {
-          "name": "Region"
-        },
-        {
-          "name": "Urban_Nonurban"
-        }
-      ]
-    }
-  },
-  "X01_07_register_EDRaceCountTransposed": {
+  "X01_06_register_EDRaceCountTransposed": {
     "action": "sfdcRegister",
     "parameters": {
       "name": "External Data - Race Counts - Transposed",
       "alias": "External_Data_Race_Counts_Transposed",
-      "source": "X01_06_append_RaceSplits"
+      "source": "X01_05_split_CoreRows"
     }
   },
-  "X01_05_split_Drop_WhiteMetric": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X01_04_Race_White",
-      "fields": [
-        {
-          "name": "Urban_Nonurban"
-        },
-        {
-          "name": "Region"
-        },
-        {
-          "name": "Population"
-        },
-        {
-          "name": "County"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Race"
-        },
-        {
-          "name": "Homeownership_Rate"
-        }
-      ]
-    }
-  },
-  "X01_04_Race_Black": {
+  "X01_03_Race_Black": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X01_03_split_Black",
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"Black\"",
           "name": "Race",
-          "saqlExpression": "\"Black\"",
           "label": "Race",
-          "type": "Text"
+          "type": "Text",
+          "saqlExpression": "\"Black\"",
+          "defaultValue": "\"Black\""
         },
         {
-          "defaultValue": "0",
-          "precision": 18,
           "name": "Homeownership_Rate",
-          "saqlExpression": "'Homeownership_Rate_Black'",
-          "scale": 4,
           "label": "Homeownership Rate",
-          "type": "Numeric"
+          "type": "Numeric",
+          "saqlExpression": "'Homeownership_Rate_Black'",
+          "precision": 18,
+          "scale": 4,
+          "defaultValue": "0"
         }
-      ]
+      ],
+      "source": "X01_02_enrich_CountyState"
     }
   },
   "X01_02_enrich_CountyState": {
@@ -217,36 +130,6 @@
       ]
     }
   },
-  "X01_05_split_Drop_Native_AmericanMetric": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X01_04_Race_Native_American",
-      "fields": [
-        {
-          "name": "Urban_Nonurban"
-        },
-        {
-          "name": "Region"
-        },
-        {
-          "name": "Population"
-        },
-        {
-          "name": "County"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Race"
-        },
-        {
-          "name": "Homeownership_Rate"
-        }
-      ]
-    }
-  },
   "X02_01_get_EDSalePrice": {
     "action": "edgemart",
     "parameters": {
@@ -259,120 +142,6 @@
       "name": "External Data - Median Sales Price",
       "alias": "External_Data_Median_Sales_Price",
       "source": "X02_05_split_CoreRows"
-    }
-  },
-  "X01_03_split_Latino": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X01_02_enrich_CountyState",
-      "fields": [
-        {
-          "name": "Homeownership_Rate_Latino"
-        },
-        {
-          "name": "County"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Population"
-        },
-        {
-          "name": "Region"
-        },
-        {
-          "name": "Urban_Nonurban"
-        }
-      ]
-    }
-  },
-  "X01_03_split_Asian": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X01_02_enrich_CountyState",
-      "fields": [
-        {
-          "name": "Homeownership_Rate_Asian"
-        },
-        {
-          "name": "County"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Population"
-        },
-        {
-          "name": "Region"
-        },
-        {
-          "name": "Urban_Nonurban"
-        }
-      ]
-    }
-  },
-  "X01_05_split_Drop_Two_or_MoreMetric": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X01_04_Race_Two_or_More",
-      "fields": [
-        {
-          "name": "Urban_Nonurban"
-        },
-        {
-          "name": "Region"
-        },
-        {
-          "name": "Population"
-        },
-        {
-          "name": "County"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Race"
-        },
-        {
-          "name": "Homeownership_Rate"
-        }
-      ]
-    }
-  },
-  "X01_05_split_Drop_OtherMetric": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X01_04_Race_Other",
-      "fields": [
-        {
-          "name": "Urban_Nonurban"
-        },
-        {
-          "name": "Region"
-        },
-        {
-          "name": "Population"
-        },
-        {
-          "name": "County"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Race"
-        },
-        {
-          "name": "Homeownership_Rate"
-        }
-      ]
     }
   },
   "X02_04_append_ALL": {
@@ -392,241 +161,70 @@
       ]
     }
   },
-  "X01_04_Race_Latino": {
+  "X01_03_Race_Latino": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X01_03_split_Latino",
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"Latino\"",
           "name": "Race",
-          "saqlExpression": "\"Latino\"",
           "label": "Race",
-          "type": "Text"
+          "type": "Text",
+          "saqlExpression": "\"Latino\"",
+          "defaultValue": "\"Latino\""
         },
         {
-          "defaultValue": "0",
-          "precision": 18,
           "name": "Homeownership_Rate",
-          "saqlExpression": "'Homeownership_Rate_Latino'",
-          "scale": 4,
           "label": "Homeownership Rate",
-          "type": "Numeric"
+          "type": "Numeric",
+          "saqlExpression": "'Homeownership_Rate_Latino'",
+          "precision": 18,
+          "scale": 4,
+          "defaultValue": "0"
         }
-      ]
+      ],
+      "source": "X01_02_enrich_CountyState"
     }
   },
-  "X01_03_split_Pacific_Islander": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X01_02_enrich_CountyState",
-      "fields": [
-        {
-          "name": "Homeownership_Rate_Pacific_Islander"
-        },
-        {
-          "name": "County"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Population"
-        },
-        {
-          "name": "Region"
-        },
-        {
-          "name": "Urban_Nonurban"
-        }
-      ]
-    }
-  },
-  "X01_05_split_Drop_BlackMetric": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X01_04_Race_Black",
-      "fields": [
-        {
-          "name": "County"
-        },
-        {
-          "name": "Homeownership_Rate"
-        },
-        {
-          "name": "Population"
-        },
-        {
-          "name": "Race"
-        },
-        {
-          "name": "Region"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Urban_Nonurban"
-        }
-      ]
-    }
-  },
-  "X01_03_split_White": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X01_02_enrich_CountyState",
-      "fields": [
-        {
-          "name": "Homeownership_Rate_White"
-        },
-        {
-          "name": "County"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Population"
-        },
-        {
-          "name": "Region"
-        },
-        {
-          "name": "Urban_Nonurban"
-        }
-      ]
-    }
-  },
-  "X01_03_split_Black": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X01_02_enrich_CountyState",
-      "fields": [
-        {
-          "name": "Homeownership_Rate_Black"
-        },
-        {
-          "name": "County"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Population"
-        },
-        {
-          "name": "Region"
-        },
-        {
-          "name": "Urban_Nonurban"
-        }
-      ]
-    }
-  },
-  "X01_06_append_RaceSplits": {
+  "X01_04_append_RaceSplits": {
     "action": "append",
     "parameters": {
       "sources": [
-        "X01_05_split_Drop_AsianMetric",
-        "X01_05_split_Drop_BlackMetric",
-        "X01_05_split_Drop_LatinoMetric",
-        "X01_05_split_Drop_Native_AmericanMetric",
-        "X01_05_split_Drop_OtherMetric",
-        "X01_05_split_Drop_Pacific_IslanderMetric",
-        "X01_05_split_Drop_TotalMetric",
-        "X01_05_split_Drop_Two_or_MoreMetric",
-        "X01_05_split_Drop_WhiteMetric"
+        "X01_03_Race_Asian",
+        "X01_03_Race_Black",
+        "X01_03_Race_Latino",
+        "X01_03_Race_Native_American",
+        "X01_03_Race_Other",
+        "X01_03_Race_Pacific_Islander",
+        "X01_03_Race_Total",
+        "X01_03_Race_Two_or_More",
+        "X01_03_Race_White"
       ]
     }
   },
-  "X01_05_split_Drop_Pacific_IslanderMetric": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X01_04_Race_Pacific_Islander",
-      "fields": [
-        {
-          "name": "Urban_Nonurban"
-        },
-        {
-          "name": "Region"
-        },
-        {
-          "name": "Population"
-        },
-        {
-          "name": "County"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Race"
-        },
-        {
-          "name": "Homeownership_Rate"
-        }
-      ]
-    }
-  },
-  "X01_04_Race_Asian": {
+  "X01_03_Race_Asian": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X01_03_split_Asian",
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"Asian\"",
           "name": "Race",
-          "saqlExpression": "\"Asian\"",
           "label": "Race",
-          "type": "Text"
+          "type": "Text",
+          "saqlExpression": "\"Asian\"",
+          "defaultValue": "\"Asian\""
         },
         {
-          "defaultValue": "0",
-          "precision": 18,
           "name": "Homeownership_Rate",
-          "saqlExpression": "'Homeownership_Rate_Asian'",
-          "scale": 4,
           "label": "Homeownership Rate",
-          "type": "Numeric"
+          "type": "Numeric",
+          "saqlExpression": "'Homeownership_Rate_Asian'",
+          "precision": 18,
+          "scale": 4,
+          "defaultValue": "0"
         }
-      ]
-    }
-  },
-  "X01_05_split_Drop_AsianMetric": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X01_04_Race_Asian",
-      "fields": [
-        {
-          "name": "Urban_Nonurban"
-        },
-        {
-          "name": "Region"
-        },
-        {
-          "name": "Population"
-        },
-        {
-          "name": "County"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Race"
-        },
-        {
-          "name": "Homeownership_Rate"
-        }
-      ]
+      ],
+      "source": "X01_02_enrich_CountyState"
     }
   },
   "X02_02_enrich_CountyState": {
@@ -695,138 +293,54 @@
       "source": "X02_02_enrich_CountyState"
     }
   },
-  "X01_04_Race_Native_American": {
+  "X01_03_Race_Native_American": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X01_03_split_Native_American",
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"Native American\"",
           "name": "Race",
+          "label": "Race",
+          "type": "Text",
           "saqlExpression": "\"Native American\"",
-          "label": "Race",
-          "type": "Text"
+          "defaultValue": "\"Native American\""
         },
         {
-          "defaultValue": "0",
-          "precision": 18,
           "name": "Homeownership_Rate",
-          "saqlExpression": "'Homeownership_Rate_Native_American'",
-          "scale": 4,
           "label": "Homeownership Rate",
-          "type": "Numeric"
+          "type": "Numeric",
+          "saqlExpression": "'Homeownership_Rate_Native_American'",
+          "precision": 18,
+          "scale": 4,
+          "defaultValue": "0"
         }
-      ]
+      ],
+      "source": "X01_02_enrich_CountyState"
     }
   },
-  "X01_03_split_Other": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X01_02_enrich_CountyState",
-      "fields": [
-        {
-          "name": "Homeownership_Rate_Other"
-        },
-        {
-          "name": "County"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Population"
-        },
-        {
-          "name": "Region"
-        },
-        {
-          "name": "Urban_Nonurban"
-        }
-      ]
-    }
-  },
-  "X01_05_split_Drop_LatinoMetric": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X01_04_Race_Latino",
-      "fields": [
-        {
-          "name": "Urban_Nonurban"
-        },
-        {
-          "name": "Region"
-        },
-        {
-          "name": "Population"
-        },
-        {
-          "name": "County"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Race"
-        },
-        {
-          "name": "Homeownership_Rate"
-        }
-      ]
-    }
-  },
-  "X01_04_Race_Two_or_More": {
+  "X01_03_Race_Two_or_More": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X01_03_split_Two_or_More",
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"Two or More\"",
           "name": "Race",
-          "saqlExpression": "\"Two or More\"",
           "label": "Race",
-          "type": "Text"
+          "type": "Text",
+          "saqlExpression": "\"Two or More\"",
+          "defaultValue": "\"Two or More\""
         },
         {
-          "defaultValue": "0",
-          "precision": 18,
           "name": "Homeownership_Rate",
-          "saqlExpression": "'Homeownership_Rate_Two_or_More'",
-          "scale": 4,
           "label": "Homeownership Rate",
-          "type": "Numeric"
+          "type": "Numeric",
+          "saqlExpression": "'Homeownership_Rate_Two_or_More'",
+          "precision": 18,
+          "scale": 4,
+          "defaultValue": "0"
         }
-      ]
-    }
-  },
-  "X01_03_split_Native_American": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X01_02_enrich_CountyState",
-      "fields": [
-        {
-          "name": "Homeownership_Rate_Native_American"
-        },
-        {
-          "name": "County"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Population"
-        },
-        {
-          "name": "Region"
-        },
-        {
-          "name": "Urban_Nonurban"
-        }
-      ]
+      ],
+      "source": "X01_02_enrich_CountyState"
     }
   },
   "X01_01_get_EDRaceCounts": {
@@ -835,56 +349,29 @@
       "alias": "External_Data_Race_Counts_Dataset"
     }
   },
-  "X01_04_Race_Other": {
+  "X01_03_Race_Other": {
     "action": "computeExpression",
     "parameters": {
-      "source": "X01_03_split_Other",
       "mergeWithSource": true,
       "computedFields": [
         {
-          "defaultValue": "\"Other\"",
           "name": "Race",
-          "saqlExpression": "\"Other\"",
           "label": "Race",
-          "type": "Text"
+          "type": "Text",
+          "saqlExpression": "\"Other\"",
+          "defaultValue": "\"Other\""
         },
         {
-          "defaultValue": "0",
-          "precision": 18,
           "name": "Homeownership_Rate",
-          "saqlExpression": "'Homeownership_Rate_Other'",
-          "scale": 4,
           "label": "Homeownership Rate",
-          "type": "Numeric"
+          "type": "Numeric",
+          "saqlExpression": "'Homeownership_Rate_Other'",
+          "precision": 18,
+          "scale": 4,
+          "defaultValue": "0"
         }
-      ]
-    }
-  },
-  "X01_03_split_Total": {
-    "action": "sliceDataset",
-    "parameters": {
-      "mode": "select",
-      "source": "X01_02_enrich_CountyState",
-      "fields": [
-        {
-          "name": "Homeownership_Rate_Total"
-        },
-        {
-          "name": "County"
-        },
-        {
-          "name": "State"
-        },
-        {
-          "name": "Population"
-        },
-        {
-          "name": "Region"
-        },
-        {
-          "name": "Urban_Nonurban"
-        }
-      ]
+      ],
+      "source": "X01_02_enrich_CountyState"
     }
   },
   "X02_03_enrich_2010": {
@@ -1268,6 +755,36 @@
         }
       ],
       "source": "X02_04_append_ALL"
+    }
+  },
+  "X01_05_split_CoreRows": {
+    "action": "sliceDataset",
+    "parameters": {
+      "mode": "select",
+      "fields": [
+        {
+          "name": "County"
+        },
+        {
+          "name": "Homeownership_Rate"
+        },
+        {
+          "name": "Population"
+        },
+        {
+          "name": "Race"
+        },
+        {
+          "name": "Region"
+        },
+        {
+          "name": "State"
+        },
+        {
+          "name": "Urban_Nonurban"
+        }
+      ],
+      "source": "X01_04_append_RaceSplits"
     }
   }
 }
