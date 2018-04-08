@@ -1,23 +1,97 @@
-County,Pct of Cost Burdened Owners - 30-50 Pct AMI,Pct of Cost Burdened Owners - 51-80 Pct AMI,Years Selected
-Alameda,0.5909,0.5366,2010-2014
-Butte,0.6469,0.3904,2010-2014
-Contra Costa,0.6327,0.5439,2010-2014
-Fresno,0.6803,0.5664,2010-2014
-Kings,0.6355,0.5217,2010-2014
-Marin,0.6524,0.5270,2010-2014
-Los Angeles,0.6732,0.5923,2010-2014
-Nevada,0.6135,0.5583,2010-2014
-Orange,0.6203,0.5498,2010-2014
-Riverside,0.6913,0.5857,2010-2014
-Sacramento,0.6560,0.5440,2010-2014
-San Diego,0.6250,0.5755,2010-2014
-San Francisco,0.5456,0.4874,2010-2014
-San Luis Obispo,0.6015,0.5243,2010-2014
-San Mateo,0.5388,0.5117,2010-2014
-Santa Barbara,0.6054,0.4970,2010-2014
-Santa Clara,0.5675,0.5102,2010-2014
-Solano,0.6873,0.5468,2010-2014
-Stanislaus,0.7073,0.5760,2010-2014
-Tulare,0.6437,0.5536,2010-2014
-Ventura,0.6451,0.5376,2010-2014
-Yolo,0.6072,0.4939,2010-2014
+﻿State,County,Cost Burdened Category by AMI Level,% of Households
+California,Alameda,% of Cost Burdened Owners 30-50%,59%
+California,Alameda,% of Cost Burdened Owners 51-80%,54%
+California,Alameda,% of Cost Burdened Renters 30-50%,82%
+California,Alameda,% of Cost Burdened Renters 51-80%,56%
+California,Butte,% of Cost Burdened Owners 30-50%,65%
+California,Butte,% of Cost Burdened Owners 51-80%,39%
+California,Butte,% of Cost Burdened Renters 30-50%,89%
+California,Butte,% of Cost Burdened Renters 51-80%,71%
+California,Contra Costa,% of Cost Burdened Owners 30-50%,63%
+California,Contra Costa,% of Cost Burdened Owners 51-80%,54%
+California,Contra Costa,% of Cost Burdened Renters 30-50%,84%
+California,Contra Costa,% of Cost Burdened Renters 51-80%,59%
+California,Fresno,% of Cost Burdened Owners 30-50%,68%
+California,Fresno,% of Cost Burdened Owners 51-80%,57%
+California,Fresno,% of Cost Burdened Renters 30-50%,83%
+California,Fresno,% of Cost Burdened Renters 51-80%,61%
+California,Kings,% of Cost Burdened Owners 30-50%,64%
+California,Kings,% of Cost Burdened Owners 51-80%,52%
+California,Kings,% of Cost Burdened Renters 30-50%,81%
+California,Kings,% of Cost Burdened Renters 51-80%,55%
+California,Marin,% of Cost Burdened Owners 30-50%,65%
+California,Marin,% of Cost Burdened Owners 51-80%,53%
+California,Marin,% of Cost Burdened Renters 30-50%,83%
+California,Marin,% of Cost Burdened Renters 51-80%,59%
+California,Los Angeles,% of Cost Burdened Owners 30-50%,67%
+California,Los Angeles,% of Cost Burdened Owners 51-80%,59%
+California,Los Angeles,% of Cost Burdened Renters 30-50%,85%
+California,Los Angeles,% of Cost Burdened Renters 51-80%,55%
+California,Nevada,% of Cost Burdened Owners 30-50%,61%
+California,Nevada,% of Cost Burdened Owners 51-80%,56%
+California,Nevada,% of Cost Burdened Renters 30-50%,79%
+California,Nevada,% of Cost Burdened Renters 51-80%,59%
+California,Orange,% of Cost Burdened Owners 30-50%,62%
+California,Orange,% of Cost Burdened Owners 51-80%,55%
+California,Orange,% of Cost Burdened Renters 30-50%,88%
+California,Orange,% of Cost Burdened Renters 51-80%,60%
+California,Riverside,% of Cost Burdened Owners 30-50%,69%
+California,Riverside,% of Cost Burdened Owners 51-80%,59%
+California,Riverside,% of Cost Burdened Renters 30-50%,87%
+California,Riverside,% of Cost Burdened Renters 51-80%,73%
+California,Sacramento,% of Cost Burdened Owners 30-50%,66%
+California,Sacramento,% of Cost Burdened Owners 51-80%,54%
+California,Sacramento,% of Cost Burdened Renters 30-50%,87%
+California,Sacramento,% of Cost Burdened Renters 51-80%,59%
+California,San Diego,% of Cost Burdened Owners 30-50%,63%
+California,San Diego,% of Cost Burdened Owners 51-80%,58%
+California,San Diego,% of Cost Burdened Renters 30-50%,87%
+California,San Diego,% of Cost Burdened Renters 51-80%,64%
+California,San Francisco,% of Cost Burdened Owners 30-50%,55%
+California,San Francisco,% of Cost Burdened Owners 51-80%,49%
+California,San Francisco,% of Cost Burdened Renters 30-50%,72%
+California,San Francisco,% of Cost Burdened Renters 51-80%,48%
+California,San Luis Obispo,% of Cost Burdened Owners 30-50%,60%
+California,San Luis Obispo,% of Cost Burdened Owners 51-80%,52%
+California,San Luis Obispo,% of Cost Burdened Renters 30-50%,87%
+California,San Luis Obispo,% of Cost Burdened Renters 51-80%,68%
+California,San Mateo,% of Cost Burdened Owners 30-50%,54%
+California,San Mateo,% of Cost Burdened Owners 51-80%,51%
+California,San Mateo,% of Cost Burdened Renters 30-50%,84%
+California,San Mateo,% of Cost Burdened Renters 51-80%,50%
+California,Santa Barbara,% of Cost Burdened Owners 30-50%,61%
+California,Santa Barbara,% of Cost Burdened Owners 51-80%,50%
+California,Santa Barbara,% of Cost Burdened Renters 30-50%,84%
+California,Santa Barbara,% of Cost Burdened Renters 51-80%,62%
+California,Santa Clara,% of Cost Burdened Owners 30-50%,57%
+California,Santa Clara,% of Cost Burdened Owners 51-80%,51%
+California,Santa Clara,% of Cost Burdened Renters 30-50%,81%
+California,Santa Clara,% of Cost Burdened Renters 51-80%,53%
+California,Solano,% of Cost Burdened Owners 30-50%,69%
+California,Solano,% of Cost Burdened Owners 51-80%,55%
+California,Solano,% of Cost Burdened Renters 30-50%,87%
+California,Solano,% of Cost Burdened Renters 51-80%,69%
+California,Stanislaus,% of Cost Burdened Owners 30-50%,71%
+California,Stanislaus,% of Cost Burdened Owners 51-80%,58%
+California,Stanislaus,% of Cost Burdened Renters 30-50%,87%
+California,Stanislaus,% of Cost Burdened Renters 51-80%,67%
+California,Sonoma,% of Cost Burdened Owners 30-50%,67%
+California,Sonoma,% of Cost Burdened Owners 51-80%,55%
+California,Sonoma,% of Cost Burdened Renters 30-50%,83%
+California,Sonoma,% of Cost Burdened Renters 51-80%,73%
+California,Tulare,% of Cost Burdened Owners 30-50%,64%
+California,Tulare,% of Cost Burdened Owners 51-80%,55%
+California,Tulare,% of Cost Burdened Renters 30-50%,78%
+California,Tulare,% of Cost Burdened Renters 51-80%,48%
+California,Ventura,% of Cost Burdened Owners 30-50%,65%
+California,Ventura,% of Cost Burdened Owners 51-80%,54%
+California,Ventura,% of Cost Burdened Renters 30-50%,85%
+California,Ventura,% of Cost Burdened Renters 51-80%,67%
+California,Yolo,% of Cost Burdened Owners 30-50%,61%
+California,Yolo,% of Cost Burdened Owners 51-80%,49%
+California,Yolo,% of Cost Burdened Renters 30-50%,85%
+California,Yolo,% of Cost Burdened Renters 51-80%,58%
+California,,% of Cost Burdened Owners 30-50%,64%
+California,,% of Cost Burdened Owners 51-80%,55%
+California,,% of Cost Burdened Renters 30-50%,85%
+California,,% of Cost Burdened Renters 51-80%,59%
