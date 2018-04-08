@@ -4,100 +4,56 @@
   "derivedDimensions": [],
   "derivedMeasures": [],
   "dimensions": [
-        {
-            "customActions": [],
-            "customActionsEnabled": true,
-            "field": "RegionName",
-            "label": "County",
-            "linkTemplateEnabled": true,
-            "members": [],
-            "recordDisplayFields": [],
-            "salesforceActions": [],
-            "salesforceActionsEnabled": true,
-            "showInExplorer": true
-        }
+    {
+      "conditionalFormatting": {},
+      "customActions": [],
+      "customActionsEnabled": true,
+      "field": "State",
+      "label": "State",
+      "linkTemplateEnabled": true,
+      "members": [],
+      "recordDisplayFields": [],
+      "salesforceActions": [],
+      "salesforceActionsEnabled": true,
+      "showInExplorer": true
+    },
+    {
+      "conditionalFormatting": {},
+      "customActions": [],
+      "customActionsEnabled": true,
+      "field": "County",
+      "label": "County",
+      "linkTemplateEnabled": true,
+      "members": [],
+      "recordDisplayFields": [],
+      "salesforceActions": [],
+      "salesforceActionsEnabled": true,
+      "showInExplorer": true
+    },
+    {
+      "conditionalFormatting": {},
+      "customActions": [],
+      "customActionsEnabled": true,
+      "field": "Year",
+      "label": "Year",
+      "linkTemplateEnabled": true,
+      "members": [],
+      "recordDisplayFields": [],
+      "salesforceActions": [],
+      "salesforceActionsEnabled": true,
+      "showInExplorer": true
+    }
   ],
   "measures": [
-        {
-            "field": "X2008",
-            "format": {
-                "customFormat": "[\"$###,###,##0\",1]"
-            },
-            "label": "2008",
-            "showInExplorer": true
-        },
-        {
-            "field": "X2009",
-            "format": {
-                "customFormat": "[\"$###,###,##0\",1]"
-            },
-            "label": "2009",
-            "showInExplorer": true
-        },
-        {
-            "field": "X2010",
-            "format": {
-                "customFormat": "[\"$###,###,##0\",1]"
-            },
-            "label": "2010",
-            "showInExplorer": true
-        },
-        {
-            "field": "X2011",
-            "format": {
-                "customFormat": "[\"$###,###,##0\",1]"
-            },
-            "label": "2011",
-            "showInExplorer": true
-        },
-        {
-            "field": "X2012",
-            "format": {
-                "customFormat": "[\"$###,###,##0\",1]"
-            },
-            "label": "2012",
-            "showInExplorer": true
-        },
-        {
-            "field": "X2013",
-            "format": {
-                "customFormat": "[\"$###,###,##0\",1]"
-            },
-            "label": "2013",
-            "showInExplorer": true
-        },
-        {
-            "field": "X2014",
-            "format": {
-                "customFormat": "[\"$###,###,##0\",1]"
-            },
-            "label": "2014",
-            "showInExplorer": true
-        },
-        {
-            "field": "X2015",
-            "format": {
-                "customFormat": "[\"$###,###,##0\",1]"
-            },
-            "label": "2015",
-            "showInExplorer": true
-        },
-        {
-            "field": "X2016",
-            "format": {
-                "customFormat": "[\"$###,###,##0\",1]"
-            },
-            "label": "2016",
-            "showInExplorer": true
-        },
-        {
-            "field": "X2017",
-            "format": {
-                "customFormat": "[\"$###,###,##0\",1]"
-            },
-            "label": "2017",
-            "showInExplorer": true
-        }
+    {
+      "conditionalFormatting": {},
+      "field": "Price",
+      "format": {
+        "customFormat": "[\"$###,###,##0\",1]"
+      },
+      "label": "Price",
+      "showInExplorer": true
+    }
   ],
   "organizations": [],
   "showDetailsDefaultFields": []
