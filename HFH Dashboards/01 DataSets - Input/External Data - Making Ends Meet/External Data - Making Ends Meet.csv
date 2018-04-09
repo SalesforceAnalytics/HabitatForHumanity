@@ -1,60 +1,101 @@
-County,Single Adult,Single-Parent Family,Two-Parent Family (One Working),Two-Working Parent Family
-State Average,29824,65865,59338,75952
-Alameda,36680,82195,72092,92267
-Alpine,22148,49661,47359,59233
-Amador,23901,53433,49277,63136
-Butte,22289,52419,47337,61683
-Calaveras,22362,50098,47595,59685
-Colusa,21173,50402,46452,30001
-Contra Costa,37245,80932,72633,91407
-Del Norte,23493,50930,46889,60142
-El Dorado,25123,57619,51873,67873
-Fresno,22776,50835,46725,60214
-Glenn,21402,49722,45738,59297
-Humboldt,22792,53046,48729,62331
-Imperial,19966,48713,44919,57814
-Inyo,23636,52189,47244,61798
-Kern,21585,48171,44545,57411
-Kings,22230,49844,45929,59290
-Lake,22021,51268,47535,60694
-Lassen,21969,50469,46720,59665
-Los Angeles,29217,64036,58438,74679
-Madera,24119,51622,48259,61636
-Marin,43901,103151,86397,110544
-Mariposa,22426,50576,47943,60196
-Mendocino,23514,54415,49460,63950
-Merced,20805,49777,45787,59167
-Modoc,19533,46053,44072,55032
-Mono,24843,64567,53692,74628
-Monterey,27843,60961,56275,70942
-Napa,28739,65453,59274,75567
-Nevada,25887,59247,54277,69153
-Orange,33061,70304,63176,80765
-Placer,24654,57545,51512,67594
-Plumas,21055,49546,46055,58710
-Riverside,26255,57167,52333,67513
-Sacramento,24654,56624,51173,66641
-San Benito,28913,62877,57875,72946
-San Bernardino,25784,56788,51729,66919
-San Diego,31893,66968,60738,77223
-San Francisco,44481,103423,87594,110984
-San Joaquin,23179,55204,50224,65187
-San Luis Obispo,26582,59820,54633,69665
-San Mateo,43745,100440,85020,108109
-Santa Barbara,29611,63181,57420,72838
-Santa Clara,37516,83715,72914,93451
-Santa Cruz,32040,71071,64915,81612
-Shasta,22305,50774,46842,59981
-Sierra,25375,54230,51784,63961
-Siskiyou,20175,49392,45816,58550
-Solano,27299,61865,56494,72482
-Sonoma,29251,65799,59030,75913
-Stanislaus,23249,53273,48726,62987
-Sutter,24248,53354,49207,63460
-Tehama,21905,50438,46377,60037
-Trinity,22484,49166,46929,58722
-Tulare,23417,51698,47802,61357
-Tuolumne,22590,53109,49119,62802
-Ventura,30822,68889,62587,79209
-Yolo,26538,59648,53072,69568
-Yuba,24248,53041,48741,63136
+﻿State,County,Household Status,Minimum Income
+California,Alameda,Single Adult,36680
+California,Alameda,Single-Parent Family,82195
+California,Alameda,Two-Parent Family (One Working),72092
+California,Alameda,Two-Working Parent Family,92267
+California,Butte,Single Adult,22289
+California,Butte,Single-Parent Family,52419
+California,Butte,Two-Parent Family (One Working),47337
+California,Butte,Two-Working Parent Family,61683
+California,Contra Costa,Single Adult,37245
+California,Contra Costa,Single-Parent Family,80932
+California,Contra Costa,Two-Parent Family (One Working),72633
+California,Contra Costa,Two-Working Parent Family,91407
+California,Fresno,Single Adult,22776
+California,Fresno,Single-Parent Family,50835
+California,Fresno,Two-Parent Family (One Working),46725
+California,Fresno,Two-Working Parent Family,60214
+California,Kings,Single Adult,22230
+California,Kings,Single-Parent Family,49844
+California,Kings,Two-Parent Family (One Working),45929
+California,Kings,Two-Working Parent Family,59290
+California,Los Angeles,Single Adult,29217
+California,Los Angeles,Single-Parent Family,64036
+California,Los Angeles,Two-Parent Family (One Working),58438
+California,Los Angeles,Two-Working Parent Family,74679
+California,Marin,Single Adult,43901
+California,Marin,Single-Parent Family,103151
+California,Marin,Two-Parent Family (One Working),86397
+California,Marin,Two-Working Parent Family,110544
+California,Nevada,Single Adult,25887
+California,Nevada,Single-Parent Family,59247
+California,Nevada,Two-Parent Family (One Working),54277
+California,Nevada,Two-Working Parent Family,69153
+California,Orange,Single Adult,33061
+California,Orange,Single-Parent Family,70304
+California,Orange,Two-Parent Family (One Working),63176
+California,Orange,Two-Working Parent Family,80765
+California,Riverside,Single Adult,26255
+California,Riverside,Single-Parent Family,57167
+California,Riverside,Two-Parent Family (One Working),52333
+California,Riverside,Two-Working Parent Family,67513
+California,Sacramento,Single Adult,24654
+California,Sacramento,Single-Parent Family,56624
+California,Sacramento,Two-Parent Family (One Working),51173
+California,Sacramento,Two-Working Parent Family,66641
+California,San Bernardino,Single Adult,25784
+California,San Bernardino,Single-Parent Family,56788
+California,San Bernardino,Two-Parent Family (One Working),51729
+California,San Bernardino,Two-Working Parent Family,66919
+California,San Diego,Single Adult,31893
+California,San Diego,Single-Parent Family,66968
+California,San Diego,Two-Parent Family (One Working),60738
+California,San Diego,Two-Working Parent Family,77223
+California,San Francisco,Single Adult,44481
+California,San Francisco,Single-Parent Family,103423
+California,San Francisco,Two-Parent Family (One Working),87594
+California,San Francisco,Two-Working Parent Family,110984
+California,San Luis Obispo,Single Adult,26582
+California,San Luis Obispo,Single-Parent Family,59820
+California,San Luis Obispo,Two-Parent Family (One Working),54633
+California,San Luis Obispo,Two-Working Parent Family,69665
+California,San Mateo,Single Adult,43745
+California,San Mateo,Single-Parent Family,100440
+California,San Mateo,Two-Parent Family (One Working),85020
+California,San Mateo,Two-Working Parent Family,108109
+California,Santa Barbara,Single Adult,29611
+California,Santa Barbara,Single-Parent Family,63181
+California,Santa Barbara,Two-Parent Family (One Working),57420
+California,Santa Barbara,Two-Working Parent Family,72838
+California,Santa Clara,Single Adult,37516
+California,Santa Clara,Single-Parent Family,83715
+California,Santa Clara,Two-Parent Family (One Working),72914
+California,Santa Clara,Two-Working Parent Family,93451
+California,Solano,Single Adult,27299
+California,Solano,Single-Parent Family,61865
+California,Solano,Two-Parent Family (One Working),56494
+California,Solano,Two-Working Parent Family,72482
+California,Sonoma,Single Adult,29251
+California,Sonoma,Single-Parent Family,65799
+California,Sonoma,Two-Parent Family (One Working),59030
+California,Sonoma,Two-Working Parent Family,75913
+California,Stanislaus,Single Adult,23249
+California,Stanislaus,Single-Parent Family,53273
+California,Stanislaus,Two-Parent Family (One Working),48726
+California,Stanislaus,Two-Working Parent Family,62987
+California,Tulare,Single Adult,23417
+California,Tulare,Single-Parent Family,51698
+California,Tulare,Two-Parent Family (One Working),47802
+California,Tulare,Two-Working Parent Family,61357
+California,Ventura,Single Adult,30822
+California,Ventura,Single-Parent Family,68889
+California,Ventura,Two-Parent Family (One Working),62587
+California,Ventura,Two-Working Parent Family,79209
+California,Yolo,Single Adult,26538
+California,Yolo,Single-Parent Family,59648
+California,Yolo,Two-Parent Family (One Working),53072
+California,Yolo,Two-Working Parent Family,69568
+California,,Single Adult,29824
+California,,Single-Parent Family,65865
+California,,Two-Parent Family (One Working),59338
+California,,Two-Working Parent Family,75952

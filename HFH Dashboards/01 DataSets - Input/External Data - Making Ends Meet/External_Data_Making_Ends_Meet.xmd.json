@@ -4,52 +4,56 @@
   "derivedDimensions": [],
   "derivedMeasures": [],
   "dimensions": [
-        {
-            "customActions": [],
-            "customActionsEnabled": true,
-            "field": "County",
-            "label": "County",
-            "linkTemplateEnabled": true,
-            "members": [],
-            "recordDisplayFields": [],
-            "salesforceActions": [],
-            "salesforceActionsEnabled": true,
-            "showInExplorer": true
-        }
+    {
+      "conditionalFormatting": {},
+      "customActions": [],
+      "customActionsEnabled": true,
+      "field": "State",
+      "label": "State",
+      "linkTemplateEnabled": true,
+      "members": [],
+      "recordDisplayFields": [],
+      "salesforceActions": [],
+      "salesforceActionsEnabled": true,
+      "showInExplorer": true
+    },
+    {
+      "conditionalFormatting": {},
+      "customActions": [],
+      "customActionsEnabled": true,
+      "field": "County",
+      "label": "County",
+      "linkTemplateEnabled": true,
+      "members": [],
+      "recordDisplayFields": [],
+      "salesforceActions": [],
+      "salesforceActionsEnabled": true,
+      "showInExplorer": true
+    },
+    {
+      "conditionalFormatting": {},
+      "customActions": [],
+      "customActionsEnabled": true,
+      "field": "Household_Status",
+      "label": "Household Status",
+      "linkTemplateEnabled": true,
+      "members": [],
+      "recordDisplayFields": [],
+      "salesforceActions": [],
+      "salesforceActionsEnabled": true,
+      "showInExplorer": true
+    }
   ],
   "measures": [
-        {
-            "field": "Single_Adult",
-            "format": {
-                "customFormat": "[\"$###,###,##0\",1]"
-            },
-            "label": "Single Adult",
-            "showInExplorer": true
-        },
-        {
-            "field": "Single_Parent_Family",
-            "format": {
-                "customFormat": "[\"$###,###,##0\",1]"
-            },
-            "label": "Single-Parent Family",
-            "showInExplorer": true
-        },
-        {
-            "field": "Two_Parent_Family_One_Working",
-            "format": {
-                "customFormat": "[\"$###,###,##0\",1]"
-            },
-            "label": "Two-Parent Family (One Working)",
-            "showInExplorer": true
-        },
-        {
-            "field": "Two_Working_Parent_Family",
-            "format": {
-                "customFormat": "[\"$###,###,##0\",1]"
-            },
-            "label": "Two-Working Parent Family",
-            "showInExplorer": true
-        }
+    {
+      "conditionalFormatting": {},
+      "field": "Minimum_Income",
+      "format": {
+        "customFormat": "[\"$###,###,##0\",1]"
+      },
+      "label": "Minimum Income",
+      "showInExplorer": true
+    }
   ],
   "organizations": [],
   "showDetailsDefaultFields": []

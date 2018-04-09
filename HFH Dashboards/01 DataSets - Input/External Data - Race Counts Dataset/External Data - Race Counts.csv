@@ -1,60 +1,523 @@
-Urban/ Nonurban,Region,Geography,Population,Homeownership Rate - Latino,Homeownership Rate - Black,Homeownership Rate - Native American,Homeownership Rate - Asian,Homeownership Rate - Pacific Islander,Homeownership Rate - Other,Homeownership Rate - Two or More,Homeownership Rate - White,Homeownership Rate - Total
-Urban,Bay Area,Alameda County,1584983,40.6,31.3,39,59.9,45.4,37,41.2,61.8,52.9
-Non-Urban,Northern/Sierra,Alpine County,1202,60,0,68.6,100,100,0,87.5,82.9,81.7
-Non-Urban,Northern/Sierra,Amador County,37159,72.7,43.8,73,84.7,0,82.2,65.4,76.3,75.7
-Semi-Urban,Northern/Sierra,Butte County,221578,44.5,19.5,46.8,46.4,11.4,44.9,42.6,63.1,59.4
-Non-Urban,Northern/Sierra,Calaveras County,44921,68.8,100,66.4,82.5,26.4,83,61,80.3,79
-Non-Urban,Northern/Sierra,Colusa County,21424,48.7,42.5,50.5,58.3,15.8,44.9,76.9,76,63.6
-Urban,Bay Area,Contra Costa County,1081232,48.8,41.4,49.9,71.7,47.4,47.2,52.7,73.2,65
-Non-Urban,Northern/Sierra,Del Norte County,28066,38.2,59.1,51.1,36,53.8,87.1,27.9,64.2,59.6
-Non-Urban,Sacramento,El Dorado County,181465,44.6,74.9,54.9,78.1,43.2,25.4,67.1,77.3,74.1
-Semi-Urban,Central Valley,Fresno County,948844,42.6,27.1,33.5,53.3,41.9,38.2,52.1,67,53.1
-Non-Urban,Northern/Sierra,Glenn County,28019,54.4,30,32.5,52.8,64.3,37.6,35.4,66.7,61.6
-Non-Urban,Northern/Sierra,Humboldt County,134876,29.4,34.9,45.9,38.1,23.5,22.6,48.6,57.8,54.8
-Semi-Urban,Southern California,Imperial County,177026,51.7,51.4,41.6,59.9,0,51.4,45.9,71.9,55.7
-Non-Urban,Northern/Sierra,Inyo County,18439,47.1,40.6,57.7,35.9,90.9,69.2,61.5,67.6,63.5
-Semi-Urban,Central Valley,Kern County,857730,49.2,30,55.5,64.9,35.1,51,52.8,66.4,57.2
-Semi-Urban,Central Valley,Kings County,151390,44.2,33.3,32.5,52.1,34.1,46.5,42.4,62.1,52
-Non-Urban,Northern/Sierra,Lake County,64209,49.7,36.6,51.6,45.4,51.1,45.2,44.5,66.3,62.7
-Non-Urban,Northern/Sierra,Lassen County,33356,54.2,24.8,69,17.1,40.4,37.8,70.1,65.4,63.6
-Urban,Southern California,Los Angeles County,9974203,38.4,34.8,41.1,51.7,31.7,32.6,39.9,55.8,46.4
-Semi-Urban,Central Valley,Madera County,152452,48.1,39.1,56.4,68.8,0,62.5,50.8,72.3,60.7
-Semi-Urban,Bay Area,Marin County,256802,26.4,27.7,8.5,59.8,35.2,13.5,50.3,68.3,62.6
-Non-Urban,Northern/Sierra,Mariposa County,17946,52.5,57.7,52.2,65.5,0,34.4,67.5,75.2,72.8
-Non-Urban,Northern/Sierra,Mendocino County,87612,38.5,21,45.4,48.4,23.9,43.4,38.3,61.4,56.8
-Semi-Urban,Central Valley,Merced County,261609,44.1,35.1,45.6,56.3,29.3,41.9,52.2,63.9,52.7
-Non-Urban,Northern/Sierra,Modoc County,9335,44.2,100,47.7,100,15,100,78.6,75.2,72.4
-Non-Urban,Northern/Sierra,Mono County,14193,17.2,0,34.6,94.2,0,7.7,100,62.5,55.3
-Semi-Urban,Central Coast,Monterey County,424927,38,38.2,46.9,55.5,63.9,42.9,44.9,60.3,49.6
-Semi-Urban,Bay Area,Napa County,139253,39.9,37.9,41.8,70.4,69,43.5,55.8,67.2,60.4
-Non-Urban,Northern/Sierra,Nevada County,98606,50.2,39.6,68.1,69.3,52.7,25.2,62.3,74.2,72.5
-Urban,Southern California,Orange County,3086331,39.7,34.6,47.7,59.7,41.2,33,50.7,66.7,58.2
-Semi-Urban,Sacramento,Placer County,361518,53,56,72.6,74.8,75.3,44.5,54.4,72.8,70.5
-Non-Urban,Northern/Sierra,Plumas County,19286,61.3,17.4,71.8,45.9,40.4,81,63.6,73,71.5
-Urban,Southern California,Riverside County,2266899,57.2,49.6,53.1,71.7,45.3,54.4,58.3,73.2,65.7
-Urban,Sacramento,Sacramento County,1450277,43.8,32.8,47.3,60.7,47.5,41.5,43.9,63.2,55.9
-Non-Urban,Central Coast,San Benito County,56888,52.5,33.3,51.4,57.5,0,61,62.4,71.9,62
-Urban,Southern California,San Bernardino County,2078586,55.5,40.1,53.7,69.2,46.5,50.8,57.6,69.5,60.9
-Urban,Southern California,San Diego County,3183143,39.1,29.7,51.4,56.4,37.1,37.6,42.5,61.1,53.4
-Urban,Bay Area,San Francisco County,829072,27.2,24.7,20.8,46.1,26.8,22.3,25.8,35.5,36.6
-Semi-Urban,Central Valley,San Joaquin County,701050,44.9,38.3,31.7,59.8,74.1,45.4,45,67.8,56.9
-Semi-Urban,Central Coast,San Luis Obispo County,274184,34.8,34.8,34.7,49.5,0,32.2,40.6,63.7,58
-Semi-Urban,Bay Area,San Mateo County,739837,37,37.1,36.8,63.5,37.3,31,47.2,67.4,59.3
-Semi-Urban,Central Coast,Santa Barbara County,431555,36.6,35.1,34.7,48.9,50.6,30.9,46.7,61.7,52.3
-Urban,Bay Area,Santa Clara County,1841569,39.4,33.1,41.4,58.6,37.8,33,49.1,65.6,57
-Semi-Urban,Central Coast,Santa Cruz County,267203,36.4,31,29.3,57.3,27.2,40.3,48.4,65.6,58.1
-Semi-Urban,Northern/Sierra,Shasta County,178520,47.3,38.7,46.2,54.9,73.6,41,54.1,65.4,63.4
-Non-Urban,Northern/Sierra,Sierra County,3019,43.6,0,63.6,100,15,14.8,60,78.1,75.8
-Non-Urban,Northern/Sierra,Siskiyou County,44261,50.3,46.2,33.2,43.8,72.4,41.2,52.3,65.9,63.1
-Semi-Urban,Bay Area,Solano County,421624,50.6,46.4,43.2,65.1,56,43.5,51.8,67.4,60.2
-Semi-Urban,Bay Area,Sonoma County,491790,38,37.1,34.8,60.1,35,33.6,48.2,64.7,59.6
-Semi-Urban,Central Valley,Stanislaus County,522794,48.6,30.2,33.2,60.5,43.1,49.2,53.7,63.7,57.2
-Semi-Urban,Northern/Sierra,Sutter County,95067,38.5,48,34.6,68.5,47.8,39,42.8,66,59.1
-Non-Urban,Northern/Sierra,Tehama County,63284,54,0,68.1,62.5,100,72.9,65.4,71.2,68.4
-Non-Urban,Northern/Sierra,Trinity County,13515,61.1,0,35.4,69.8,0,5.9,43.4,73.8,70.5
-Semi-Urban,Central Valley,Tulare County,451108,47.6,30.7,44.5,64.5,26.5,56.4,55.1,69.2,57.2
-Non-Urban,Northern/Sierra,Tuolumne County,54347,56.3,17,51.6,81.6,44,57.5,37.3,71.6,69.3
-Semi-Urban,Central Coast,Ventura County,835790,49.9,42.2,49.7,73,52.4,50.2,56.5,71.2,64.5
-Semi-Urban,Sacramento,Yolo County,204162,42.3,30.9,35.1,40.4,45.9,37.7,43,60.3,52.4
-Semi-Urban,Northern/Sierra,Yuba County,73059,50.7,58.8,62.1,57.7,18.8,51.3,45.2,60.8,58.1
-,,California,38066920,42.9,35.4,45.3,57.3,41.2,38.3,46,63.6,54.8
+﻿State,Urban/ Nonurban,Region,County,Population,Group,% of Group
+California,Urban,Bay Area,Alameda,1584983,Latino,40.6
+California,Urban,Bay Area,Alameda,1584983,Black,31.3
+California,Urban,Bay Area,Alameda,1584983,Native American,39
+California,Urban,Bay Area,Alameda,1584983,Asian,59.9
+California,Urban,Bay Area,Alameda,1584983,Pacific Islander,45.4
+California,Urban,Bay Area,Alameda,1584983,Other,37
+California,Urban,Bay Area,Alameda,1584983,Two or More,41.2
+California,Urban,Bay Area,Alameda,1584983,White,61.8
+California,Urban,Bay Area,Alameda,1584983,Total,52.9
+California,Non-Urban,Northern/Sierra,Alpine,1202,Latino,60
+California,Non-Urban,Northern/Sierra,Alpine,1202,Black,0
+California,Non-Urban,Northern/Sierra,Alpine,1202,Native American,68.6
+California,Non-Urban,Northern/Sierra,Alpine,1202,Asian,100
+California,Non-Urban,Northern/Sierra,Alpine,1202,Pacific Islander,100
+California,Non-Urban,Northern/Sierra,Alpine,1202,Other,0
+California,Non-Urban,Northern/Sierra,Alpine,1202,Two or More,87.5
+California,Non-Urban,Northern/Sierra,Alpine,1202,White,82.9
+California,Non-Urban,Northern/Sierra,Alpine,1202,Total,81.7
+California,Non-Urban,Northern/Sierra,Amador,37159,Latino,72.7
+California,Non-Urban,Northern/Sierra,Amador,37159,Black,43.8
+California,Non-Urban,Northern/Sierra,Amador,37159,Native American,73
+California,Non-Urban,Northern/Sierra,Amador,37159,Asian,84.7
+California,Non-Urban,Northern/Sierra,Amador,37159,Pacific Islander,0
+California,Non-Urban,Northern/Sierra,Amador,37159,Other,82.2
+California,Non-Urban,Northern/Sierra,Amador,37159,Two or More,65.4
+California,Non-Urban,Northern/Sierra,Amador,37159,White,76.3
+California,Non-Urban,Northern/Sierra,Amador,37159,Total,75.7
+California,Semi-Urban,Northern/Sierra,Butte,221578,Latino,44.5
+California,Semi-Urban,Northern/Sierra,Butte,221579,Black,19.5
+California,Semi-Urban,Northern/Sierra,Butte,221580,Native American,46.8
+California,Semi-Urban,Northern/Sierra,Butte,221581,Asian,46.4
+California,Semi-Urban,Northern/Sierra,Butte,221582,Pacific Islander,11.4
+California,Semi-Urban,Northern/Sierra,Butte,221583,Other,44.9
+California,Semi-Urban,Northern/Sierra,Butte,221584,Two or More,42.6
+California,Semi-Urban,Northern/Sierra,Butte,221585,White,63.1
+California,Semi-Urban,Northern/Sierra,Butte,221586,Total,59.4
+California,Non-Urban,Northern/Sierra,Calaveras,44921,Latino,68.8
+California,Non-Urban,Northern/Sierra,Calaveras,44921,Black,100
+California,Non-Urban,Northern/Sierra,Calaveras,44921,Native American,66.4
+California,Non-Urban,Northern/Sierra,Calaveras,44921,Asian,82.5
+California,Non-Urban,Northern/Sierra,Calaveras,44921,Pacific Islander,26.4
+California,Non-Urban,Northern/Sierra,Calaveras,44921,Other,83
+California,Non-Urban,Northern/Sierra,Calaveras,44921,Two or More,61
+California,Non-Urban,Northern/Sierra,Calaveras,44921,White,80.3
+California,Non-Urban,Northern/Sierra,Calaveras,44921,Total,79
+California,Non-Urban,Northern/Sierra,Colusa,21424,Latino,48.7
+California,Non-Urban,Northern/Sierra,Colusa,21424,Black,42.5
+California,Non-Urban,Northern/Sierra,Colusa,21424,Native American,50.5
+California,Non-Urban,Northern/Sierra,Colusa,21424,Asian,58.3
+California,Non-Urban,Northern/Sierra,Colusa,21424,Pacific Islander,15.8
+California,Non-Urban,Northern/Sierra,Colusa,21424,Other,44.9
+California,Non-Urban,Northern/Sierra,Colusa,21424,Two or More,76.9
+California,Non-Urban,Northern/Sierra,Colusa,21424,White,76
+California,Non-Urban,Northern/Sierra,Colusa,21424,Total,63.6
+California,Urban,Bay Area,Contra Costa,1081232,Latino,48.8
+California,Urban,Bay Area,Contra Costa,1081233,Black,41.4
+California,Urban,Bay Area,Contra Costa,1081234,Native American,49.9
+California,Urban,Bay Area,Contra Costa,1081235,Asian,71.7
+California,Urban,Bay Area,Contra Costa,1081236,Pacific Islander,47.4
+California,Urban,Bay Area,Contra Costa,1081237,Other,47.2
+California,Urban,Bay Area,Contra Costa,1081238,Two or More,52.7
+California,Urban,Bay Area,Contra Costa,1081239,White,73.2
+California,Urban,Bay Area,Contra Costa,1081240,Total,65
+California,Non-Urban,Northern/Sierra,Del Norte,28066,Latino,38.2
+California,Non-Urban,Northern/Sierra,Del Norte,28066,Black,59.1
+California,Non-Urban,Northern/Sierra,Del Norte,28066,Native American,51.1
+California,Non-Urban,Northern/Sierra,Del Norte,28066,Asian,36
+California,Non-Urban,Northern/Sierra,Del Norte,28066,Pacific Islander,53.8
+California,Non-Urban,Northern/Sierra,Del Norte,28066,Other,87.1
+California,Non-Urban,Northern/Sierra,Del Norte,28066,Two or More,27.9
+California,Non-Urban,Northern/Sierra,Del Norte,28066,White,64.2
+California,Non-Urban,Northern/Sierra,Del Norte,28066,Total,59.6
+California,Non-Urban,Sacramento,El Dorado,181465,Latino,44.6
+California,Non-Urban,Sacramento,El Dorado,181465,Black,74.9
+California,Non-Urban,Sacramento,El Dorado,181465,Native American,54.9
+California,Non-Urban,Sacramento,El Dorado,181465,Asian,78.1
+California,Non-Urban,Sacramento,El Dorado,181465,Pacific Islander,43.2
+California,Non-Urban,Sacramento,El Dorado,181465,Other,25.4
+California,Non-Urban,Sacramento,El Dorado,181465,Two or More,67.1
+California,Non-Urban,Sacramento,El Dorado,181465,White,77.3
+California,Non-Urban,Sacramento,El Dorado,181465,Total,74.1
+California,Semi-Urban,Central Valley,Fresno,948844,Latino,42.6
+California,Semi-Urban,Central Valley,Fresno,948845,Black,27.1
+California,Semi-Urban,Central Valley,Fresno,948846,Native American,33.5
+California,Semi-Urban,Central Valley,Fresno,948847,Asian,53.3
+California,Semi-Urban,Central Valley,Fresno,948848,Pacific Islander,41.9
+California,Semi-Urban,Central Valley,Fresno,948849,Other,38.2
+California,Semi-Urban,Central Valley,Fresno,948850,Two or More,52.1
+California,Semi-Urban,Central Valley,Fresno,948851,White,67
+California,Semi-Urban,Central Valley,Fresno,948852,Total,53.1
+California,Non-Urban,Northern/Sierra,Glenn,28019,Latino,54.4
+California,Non-Urban,Northern/Sierra,Glenn,28019,Black,30
+California,Non-Urban,Northern/Sierra,Glenn,28019,Native American,32.5
+California,Non-Urban,Northern/Sierra,Glenn,28019,Asian,52.8
+California,Non-Urban,Northern/Sierra,Glenn,28019,Pacific Islander,64.3
+California,Non-Urban,Northern/Sierra,Glenn,28019,Other,37.6
+California,Non-Urban,Northern/Sierra,Glenn,28019,Two or More,35.4
+California,Non-Urban,Northern/Sierra,Glenn,28019,White,66.7
+California,Non-Urban,Northern/Sierra,Glenn,28019,Total,61.6
+California,Non-Urban,Northern/Sierra,Humboldt,134876,Latino,29.4
+California,Non-Urban,Northern/Sierra,Humboldt,134876,Black,34.9
+California,Non-Urban,Northern/Sierra,Humboldt,134876,Native American,45.9
+California,Non-Urban,Northern/Sierra,Humboldt,134876,Asian,38.1
+California,Non-Urban,Northern/Sierra,Humboldt,134876,Pacific Islander,23.5
+California,Non-Urban,Northern/Sierra,Humboldt,134876,Other,22.6
+California,Non-Urban,Northern/Sierra,Humboldt,134876,Two or More,48.6
+California,Non-Urban,Northern/Sierra,Humboldt,134876,White,57.8
+California,Non-Urban,Northern/Sierra,Humboldt,134876,Total,54.8
+California,Semi-Urban,Southern California,Imperial,177026,Latino,51.7
+California,Semi-Urban,Southern California,Imperial,177026,Black,51.4
+California,Semi-Urban,Southern California,Imperial,177026,Native American,41.6
+California,Semi-Urban,Southern California,Imperial,177026,Asian,59.9
+California,Semi-Urban,Southern California,Imperial,177026,Pacific Islander,0
+California,Semi-Urban,Southern California,Imperial,177026,Other,51.4
+California,Semi-Urban,Southern California,Imperial,177026,Two or More,45.9
+California,Semi-Urban,Southern California,Imperial,177026,White,71.9
+California,Semi-Urban,Southern California,Imperial,177026,Total,55.7
+California,Non-Urban,Northern/Sierra,Inyo,18439,Latino,47.1
+California,Non-Urban,Northern/Sierra,Inyo,18439,Black,40.6
+California,Non-Urban,Northern/Sierra,Inyo,18439,Native American,57.7
+California,Non-Urban,Northern/Sierra,Inyo,18439,Asian,35.9
+California,Non-Urban,Northern/Sierra,Inyo,18439,Pacific Islander,90.9
+California,Non-Urban,Northern/Sierra,Inyo,18439,Other,69.2
+California,Non-Urban,Northern/Sierra,Inyo,18439,Two or More,61.5
+California,Non-Urban,Northern/Sierra,Inyo,18439,White,67.6
+California,Non-Urban,Northern/Sierra,Inyo,18439,Total,63.5
+California,Semi-Urban,Central Valley,Kern,857730,Latino,49.2
+California,Semi-Urban,Central Valley,Kern,857730,Black,30
+California,Semi-Urban,Central Valley,Kern,857730,Native American,55.5
+California,Semi-Urban,Central Valley,Kern,857730,Asian,64.9
+California,Semi-Urban,Central Valley,Kern,857730,Pacific Islander,35.1
+California,Semi-Urban,Central Valley,Kern,857730,Other,51
+California,Semi-Urban,Central Valley,Kern,857730,Two or More,52.8
+California,Semi-Urban,Central Valley,Kern,857730,White,66.4
+California,Semi-Urban,Central Valley,Kern,857730,Total,57.2
+California,Semi-Urban,Central Valley,Kings,151390,Latino,44.2
+California,Semi-Urban,Central Valley,Kings,151391,Black,33.3
+California,Semi-Urban,Central Valley,Kings,151392,Native American,32.5
+California,Semi-Urban,Central Valley,Kings,151393,Asian,52.1
+California,Semi-Urban,Central Valley,Kings,151394,Pacific Islander,34.1
+California,Semi-Urban,Central Valley,Kings,151395,Other,46.5
+California,Semi-Urban,Central Valley,Kings,151396,Two or More,42.4
+California,Semi-Urban,Central Valley,Kings,151397,White,62.1
+California,Semi-Urban,Central Valley,Kings,151398,Total,52
+California,Non-Urban,Northern/Sierra,Lake,64209,Latino,49.7
+California,Non-Urban,Northern/Sierra,Lake,64209,Black,36.6
+California,Non-Urban,Northern/Sierra,Lake,64209,Native American,51.6
+California,Non-Urban,Northern/Sierra,Lake,64209,Asian,45.4
+California,Non-Urban,Northern/Sierra,Lake,64209,Pacific Islander,51.1
+California,Non-Urban,Northern/Sierra,Lake,64209,Other,45.2
+California,Non-Urban,Northern/Sierra,Lake,64209,Two or More,44.5
+California,Non-Urban,Northern/Sierra,Lake,64209,White,66.3
+California,Non-Urban,Northern/Sierra,Lake,64209,Total,62.7
+California,Non-Urban,Northern/Sierra,Lassen,33356,Latino,54.2
+California,Non-Urban,Northern/Sierra,Lassen,33356,Black,24.8
+California,Non-Urban,Northern/Sierra,Lassen,33356,Native American,69
+California,Non-Urban,Northern/Sierra,Lassen,33356,Asian,17.1
+California,Non-Urban,Northern/Sierra,Lassen,33356,Pacific Islander,40.4
+California,Non-Urban,Northern/Sierra,Lassen,33356,Other,37.8
+California,Non-Urban,Northern/Sierra,Lassen,33356,Two or More,70.1
+California,Non-Urban,Northern/Sierra,Lassen,33356,White,65.4
+California,Non-Urban,Northern/Sierra,Lassen,33356,Total,63.6
+California,Urban,Southern California,Los Angeles,9974203,Latino,38.4
+California,Urban,Southern California,Los Angeles,9974204,Black,34.8
+California,Urban,Southern California,Los Angeles,9974205,Native American,41.1
+California,Urban,Southern California,Los Angeles,9974206,Asian,51.7
+California,Urban,Southern California,Los Angeles,9974207,Pacific Islander,31.7
+California,Urban,Southern California,Los Angeles,9974208,Other,32.6
+California,Urban,Southern California,Los Angeles,9974209,Two or More,39.9
+California,Urban,Southern California,Los Angeles,9974210,White,55.8
+California,Urban,Southern California,Los Angeles,9974211,Total,46.4
+California,Semi-Urban,Central Valley,Madera,152452,Latino,48.1
+California,Semi-Urban,Central Valley,Madera,152452,Black,39.1
+California,Semi-Urban,Central Valley,Madera,152452,Native American,56.4
+California,Semi-Urban,Central Valley,Madera,152452,Asian,68.8
+California,Semi-Urban,Central Valley,Madera,152452,Pacific Islander,0
+California,Semi-Urban,Central Valley,Madera,152452,Other,62.5
+California,Semi-Urban,Central Valley,Madera,152452,Two or More,50.8
+California,Semi-Urban,Central Valley,Madera,152452,White,72.3
+California,Semi-Urban,Central Valley,Madera,152452,Total,60.7
+California,Semi-Urban,Bay Area,Marin,256802,Latino,26.4
+California,Semi-Urban,Bay Area,Marin,256803,Black,27.7
+California,Semi-Urban,Bay Area,Marin,256804,Native American,8.5
+California,Semi-Urban,Bay Area,Marin,256805,Asian,59.8
+California,Semi-Urban,Bay Area,Marin,256806,Pacific Islander,35.2
+California,Semi-Urban,Bay Area,Marin,256807,Other,13.5
+California,Semi-Urban,Bay Area,Marin,256808,Two or More,50.3
+California,Semi-Urban,Bay Area,Marin,256809,White,68.3
+California,Semi-Urban,Bay Area,Marin,256810,Total,62.6
+California,Non-Urban,Northern/Sierra,Mariposa,17946,Latino,52.5
+California,Non-Urban,Northern/Sierra,Mariposa,17946,Black,57.7
+California,Non-Urban,Northern/Sierra,Mariposa,17946,Native American,52.2
+California,Non-Urban,Northern/Sierra,Mariposa,17946,Asian,65.5
+California,Non-Urban,Northern/Sierra,Mariposa,17946,Pacific Islander,0
+California,Non-Urban,Northern/Sierra,Mariposa,17946,Other,34.4
+California,Non-Urban,Northern/Sierra,Mariposa,17946,Two or More,67.5
+California,Non-Urban,Northern/Sierra,Mariposa,17946,White,75.2
+California,Non-Urban,Northern/Sierra,Mariposa,17946,Total,72.8
+California,Non-Urban,Northern/Sierra,Mendocino,87612,Latino,38.5
+California,Non-Urban,Northern/Sierra,Mendocino,87612,Black,21
+California,Non-Urban,Northern/Sierra,Mendocino,87612,Native American,45.4
+California,Non-Urban,Northern/Sierra,Mendocino,87612,Asian,48.4
+California,Non-Urban,Northern/Sierra,Mendocino,87612,Pacific Islander,23.9
+California,Non-Urban,Northern/Sierra,Mendocino,87612,Other,43.4
+California,Non-Urban,Northern/Sierra,Mendocino,87612,Two or More,38.3
+California,Non-Urban,Northern/Sierra,Mendocino,87612,White,61.4
+California,Non-Urban,Northern/Sierra,Mendocino,87612,Total,56.8
+California,Semi-Urban,Central Valley,Merced,261609,Latino,44.1
+California,Semi-Urban,Central Valley,Merced,261610,Black,35.1
+California,Semi-Urban,Central Valley,Merced,261611,Native American,45.6
+California,Semi-Urban,Central Valley,Merced,261612,Asian,56.3
+California,Semi-Urban,Central Valley,Merced,261613,Pacific Islander,29.3
+California,Semi-Urban,Central Valley,Merced,261614,Other,41.9
+California,Semi-Urban,Central Valley,Merced,261615,Two or More,52.2
+California,Semi-Urban,Central Valley,Merced,261616,White,63.9
+California,Semi-Urban,Central Valley,Merced,261617,Total,52.7
+California,Non-Urban,Northern/Sierra,Modoc,9335,Latino,44.2
+California,Non-Urban,Northern/Sierra,Modoc,9336,Black,100
+California,Non-Urban,Northern/Sierra,Modoc,9337,Native American,47.7
+California,Non-Urban,Northern/Sierra,Modoc,9338,Asian,100
+California,Non-Urban,Northern/Sierra,Modoc,9339,Pacific Islander,15
+California,Non-Urban,Northern/Sierra,Modoc,9340,Other,100
+California,Non-Urban,Northern/Sierra,Modoc,9341,Two or More,78.6
+California,Non-Urban,Northern/Sierra,Modoc,9342,White,75.2
+California,Non-Urban,Northern/Sierra,Modoc,9343,Total,72.4
+California,Non-Urban,Northern/Sierra,Mono,14193,Latino,17.2
+California,Non-Urban,Northern/Sierra,Mono,14194,Black,0
+California,Non-Urban,Northern/Sierra,Mono,14195,Native American,34.6
+California,Non-Urban,Northern/Sierra,Mono,14196,Asian,94.2
+California,Non-Urban,Northern/Sierra,Mono,14197,Pacific Islander,0
+California,Non-Urban,Northern/Sierra,Mono,14198,Other,7.7
+California,Non-Urban,Northern/Sierra,Mono,14199,Two or More,100
+California,Non-Urban,Northern/Sierra,Mono,14200,White,62.5
+California,Non-Urban,Northern/Sierra,Mono,14201,Total,55.3
+California,Semi-Urban,Central Coast,Monterey,424927,Latino,38
+California,Semi-Urban,Central Coast,Monterey,424928,Black,38.2
+California,Semi-Urban,Central Coast,Monterey,424929,Native American,46.9
+California,Semi-Urban,Central Coast,Monterey,424930,Asian,55.5
+California,Semi-Urban,Central Coast,Monterey,424931,Pacific Islander,63.9
+California,Semi-Urban,Central Coast,Monterey,424932,Other,42.9
+California,Semi-Urban,Central Coast,Monterey,424933,Two or More,44.9
+California,Semi-Urban,Central Coast,Monterey,424934,White,60.3
+California,Semi-Urban,Central Coast,Monterey,424935,Total,49.6
+California,Non-Urban,Northern/Sierra,Nevada,98606,Latino,50.2
+California,Non-Urban,Northern/Sierra,Nevada,98607,Black,39.6
+California,Non-Urban,Northern/Sierra,Nevada,98608,Native American,68.1
+California,Non-Urban,Northern/Sierra,Nevada,98609,Asian,69.3
+California,Non-Urban,Northern/Sierra,Nevada,98610,Pacific Islander,52.7
+California,Non-Urban,Northern/Sierra,Nevada,98611,Other,25.2
+California,Non-Urban,Northern/Sierra,Nevada,98612,Two or More,62.3
+California,Non-Urban,Northern/Sierra,Nevada,98613,White,74.2
+California,Non-Urban,Northern/Sierra,Nevada,98614,Total,72.5
+California,Urban,Southern California,Orange,3086331,Latino,39.7
+California,Urban,Southern California,Orange,3086332,Black,34.6
+California,Urban,Southern California,Orange,3086333,Native American,47.7
+California,Urban,Southern California,Orange,3086334,Asian,59.7
+California,Urban,Southern California,Orange,3086335,Pacific Islander,41.2
+California,Urban,Southern California,Orange,3086336,Other,33
+California,Urban,Southern California,Orange,3086337,Two or More,50.7
+California,Urban,Southern California,Orange,3086338,White,66.7
+California,Urban,Southern California,Orange,3086339,Total,58.2
+California,Semi-Urban,Sacramento,Placer,361518,Latino,53
+California,Semi-Urban,Sacramento,Placer,361519,Black,56
+California,Semi-Urban,Sacramento,Placer,361520,Native American,72.6
+California,Semi-Urban,Sacramento,Placer,361521,Asian,74.8
+California,Semi-Urban,Sacramento,Placer,361522,Pacific Islander,75.3
+California,Semi-Urban,Sacramento,Placer,361523,Other,44.5
+California,Semi-Urban,Sacramento,Placer,361524,Two or More,54.4
+California,Semi-Urban,Sacramento,Placer,361525,White,72.8
+California,Semi-Urban,Sacramento,Placer,361526,Total,70.5
+California,Non-Urban,Northern/Sierra,Plumas,19286,Latino,61.3
+California,Non-Urban,Northern/Sierra,Plumas,19287,Black,17.4
+California,Non-Urban,Northern/Sierra,Plumas,19288,Native American,71.8
+California,Non-Urban,Northern/Sierra,Plumas,19289,Asian,45.9
+California,Non-Urban,Northern/Sierra,Plumas,19290,Pacific Islander,40.4
+California,Non-Urban,Northern/Sierra,Plumas,19291,Other,81
+California,Non-Urban,Northern/Sierra,Plumas,19292,Two or More,63.6
+California,Non-Urban,Northern/Sierra,Plumas,19293,White,73
+California,Non-Urban,Northern/Sierra,Plumas,19294,Total,71.5
+California,Urban,Southern California,Riverside,2266899,Latino,57.2
+California,Urban,Southern California,Riverside,2266900,Black,49.6
+California,Urban,Southern California,Riverside,2266901,Native American,53.1
+California,Urban,Southern California,Riverside,2266902,Asian,71.7
+California,Urban,Southern California,Riverside,2266903,Pacific Islander,45.3
+California,Urban,Southern California,Riverside,2266904,Other,54.4
+California,Urban,Southern California,Riverside,2266905,Two or More,58.3
+California,Urban,Southern California,Riverside,2266906,White,73.2
+California,Urban,Southern California,Riverside,2266907,Total,65.7
+California,Urban,Sacramento,Sacramento,1450277,Latino,43.8
+California,Urban,Sacramento,Sacramento,1450278,Black,32.8
+California,Urban,Sacramento,Sacramento,1450279,Native American,47.3
+California,Urban,Sacramento,Sacramento,1450280,Asian,60.7
+California,Urban,Sacramento,Sacramento,1450281,Pacific Islander,47.5
+California,Urban,Sacramento,Sacramento,1450282,Other,41.5
+California,Urban,Sacramento,Sacramento,1450283,Two or More,43.9
+California,Urban,Sacramento,Sacramento,1450284,White,63.2
+California,Urban,Sacramento,Sacramento,1450285,Total,55.9
+California,Non-Urban,Central Coast,San Benito,56888,Latino,52.5
+California,Non-Urban,Central Coast,San Benito,56889,Black,33.3
+California,Non-Urban,Central Coast,San Benito,56890,Native American,51.4
+California,Non-Urban,Central Coast,San Benito,56891,Asian,57.5
+California,Non-Urban,Central Coast,San Benito,56892,Pacific Islander,0
+California,Non-Urban,Central Coast,San Benito,56893,Other,61
+California,Non-Urban,Central Coast,San Benito,56894,Two or More,62.4
+California,Non-Urban,Central Coast,San Benito,56895,White,71.9
+California,Non-Urban,Central Coast,San Benito,56896,Total,62
+California,Urban,Southern California,San Bernardino,2078586,Latino,55.5
+California,Urban,Southern California,San Bernardino,2078587,Black,40.1
+California,Urban,Southern California,San Bernardino,2078588,Native American,53.7
+California,Urban,Southern California,San Bernardino,2078589,Asian,69.2
+California,Urban,Southern California,San Bernardino,2078590,Pacific Islander,46.5
+California,Urban,Southern California,San Bernardino,2078591,Other,50.8
+California,Urban,Southern California,San Bernardino,2078592,Two or More,57.6
+California,Urban,Southern California,San Bernardino,2078593,White,69.5
+California,Urban,Southern California,San Bernardino,2078594,Total,60.9
+California,Urban,Southern California,San Diego,3183143,Latino,39.1
+California,Urban,Southern California,San Diego,3183144,Black,29.7
+California,Urban,Southern California,San Diego,3183145,Native American,51.4
+California,Urban,Southern California,San Diego,3183146,Asian,56.4
+California,Urban,Southern California,San Diego,3183147,Pacific Islander,37.1
+California,Urban,Southern California,San Diego,3183148,Other,37.6
+California,Urban,Southern California,San Diego,3183149,Two or More,42.5
+California,Urban,Southern California,San Diego,3183150,White,61.1
+California,Urban,Southern California,San Diego,3183151,Total,53.4
+California,Urban,Bay Area,San Francisco,829072,Latino,27.2
+California,Urban,Bay Area,San Francisco,829073,Black,24.7
+California,Urban,Bay Area,San Francisco,829074,Native American,20.8
+California,Urban,Bay Area,San Francisco,829075,Asian,46.1
+California,Urban,Bay Area,San Francisco,829076,Pacific Islander,26.8
+California,Urban,Bay Area,San Francisco,829077,Other,22.3
+California,Urban,Bay Area,San Francisco,829078,Two or More,25.8
+California,Urban,Bay Area,San Francisco,829079,White,35.5
+California,Urban,Bay Area,San Francisco,829080,Total,36.6
+California,Semi-Urban,Central Valley,San Joaquin,701050,Latino,44.9
+California,Semi-Urban,Central Valley,San Joaquin,701051,Black,38.3
+California,Semi-Urban,Central Valley,San Joaquin,701052,Native American,31.7
+California,Semi-Urban,Central Valley,San Joaquin,701053,Asian,59.8
+California,Semi-Urban,Central Valley,San Joaquin,701054,Pacific Islander,74.1
+California,Semi-Urban,Central Valley,San Joaquin,701055,Other,45.4
+California,Semi-Urban,Central Valley,San Joaquin,701056,Two or More,45
+California,Semi-Urban,Central Valley,San Joaquin,701057,White,67.8
+California,Semi-Urban,Central Valley,San Joaquin,701058,Total,56.9
+California,Semi-Urban,Central Coast,San Luis Obispo,274184,Latino,34.8
+California,Semi-Urban,Central Coast,San Luis Obispo,274185,Black,34.8
+California,Semi-Urban,Central Coast,San Luis Obispo,274186,Native American,34.7
+California,Semi-Urban,Central Coast,San Luis Obispo,274187,Asian,49.5
+California,Semi-Urban,Central Coast,San Luis Obispo,274188,Pacific Islander,0
+California,Semi-Urban,Central Coast,San Luis Obispo,274189,Other,32.2
+California,Semi-Urban,Central Coast,San Luis Obispo,274190,Two or More,40.6
+California,Semi-Urban,Central Coast,San Luis Obispo,274191,White,63.7
+California,Semi-Urban,Central Coast,San Luis Obispo,274192,Total,58
+California,Semi-Urban,Bay Area,San Mateo,739837,Latino,37
+California,Semi-Urban,Bay Area,San Mateo,739838,Black,37.1
+California,Semi-Urban,Bay Area,San Mateo,739839,Native American,36.8
+California,Semi-Urban,Bay Area,San Mateo,739840,Asian,63.5
+California,Semi-Urban,Bay Area,San Mateo,739841,Pacific Islander,37.3
+California,Semi-Urban,Bay Area,San Mateo,739842,Other,31
+California,Semi-Urban,Bay Area,San Mateo,739843,Two or More,47.2
+California,Semi-Urban,Bay Area,San Mateo,739844,White,67.4
+California,Semi-Urban,Bay Area,San Mateo,739845,Total,59.3
+California,Semi-Urban,Central Coast,Santa Barbara,431555,Latino,36.6
+California,Semi-Urban,Central Coast,Santa Barbara,431556,Black,35.1
+California,Semi-Urban,Central Coast,Santa Barbara,431557,Native American,34.7
+California,Semi-Urban,Central Coast,Santa Barbara,431558,Asian,48.9
+California,Semi-Urban,Central Coast,Santa Barbara,431559,Pacific Islander,50.6
+California,Semi-Urban,Central Coast,Santa Barbara,431560,Other,30.9
+California,Semi-Urban,Central Coast,Santa Barbara,431561,Two or More,46.7
+California,Semi-Urban,Central Coast,Santa Barbara,431562,White,61.7
+California,Semi-Urban,Central Coast,Santa Barbara,431563,Total,52.3
+California,Urban,Bay Area,Santa Clara,1841569,Latino,39.4
+California,Urban,Bay Area,Santa Clara,1841570,Black,33.1
+California,Urban,Bay Area,Santa Clara,1841571,Native American,41.4
+California,Urban,Bay Area,Santa Clara,1841572,Asian,58.6
+California,Urban,Bay Area,Santa Clara,1841573,Pacific Islander,37.8
+California,Urban,Bay Area,Santa Clara,1841574,Other,33
+California,Urban,Bay Area,Santa Clara,1841575,Two or More,49.1
+California,Urban,Bay Area,Santa Clara,1841576,White,65.6
+California,Urban,Bay Area,Santa Clara,1841577,Total,57
+California,Semi-Urban,Central Coast,Santa Cruz,267203,Latino,36.4
+California,Semi-Urban,Central Coast,Santa Cruz,267204,Black,31
+California,Semi-Urban,Central Coast,Santa Cruz,267205,Native American,29.3
+California,Semi-Urban,Central Coast,Santa Cruz,267206,Asian,57.3
+California,Semi-Urban,Central Coast,Santa Cruz,267207,Pacific Islander,27.2
+California,Semi-Urban,Central Coast,Santa Cruz,267208,Other,40.3
+California,Semi-Urban,Central Coast,Santa Cruz,267209,Two or More,48.4
+California,Semi-Urban,Central Coast,Santa Cruz,267210,White,65.6
+California,Semi-Urban,Central Coast,Santa Cruz,267211,Total,58.1
+California,Semi-Urban,Northern/Sierra,Shasta,178520,Latino,47.3
+California,Semi-Urban,Northern/Sierra,Shasta,178521,Black,38.7
+California,Semi-Urban,Northern/Sierra,Shasta,178522,Native American,46.2
+California,Semi-Urban,Northern/Sierra,Shasta,178523,Asian,54.9
+California,Semi-Urban,Northern/Sierra,Shasta,178524,Pacific Islander,73.6
+California,Semi-Urban,Northern/Sierra,Shasta,178525,Other,41
+California,Semi-Urban,Northern/Sierra,Shasta,178526,Two or More,54.1
+California,Semi-Urban,Northern/Sierra,Shasta,178527,White,65.4
+California,Semi-Urban,Northern/Sierra,Shasta,178528,Total,63.4
+California,Non-Urban,Northern/Sierra,Sierra,3019,Latino,43.6
+California,Non-Urban,Northern/Sierra,Sierra,3020,Black,0
+California,Non-Urban,Northern/Sierra,Sierra,3021,Native American,63.6
+California,Non-Urban,Northern/Sierra,Sierra,3022,Asian,100
+California,Non-Urban,Northern/Sierra,Sierra,3023,Pacific Islander,15
+California,Non-Urban,Northern/Sierra,Sierra,3024,Other,14.8
+California,Non-Urban,Northern/Sierra,Sierra,3025,Two or More,60
+California,Non-Urban,Northern/Sierra,Sierra,3026,White,78.1
+California,Non-Urban,Northern/Sierra,Sierra,3027,Total,75.8
+California,Non-Urban,Northern/Sierra,Siskiyou,44261,Latino,50.3
+California,Non-Urban,Northern/Sierra,Siskiyou,44262,Black,46.2
+California,Non-Urban,Northern/Sierra,Siskiyou,44263,Native American,33.2
+California,Non-Urban,Northern/Sierra,Siskiyou,44264,Asian,43.8
+California,Non-Urban,Northern/Sierra,Siskiyou,44265,Pacific Islander,72.4
+California,Non-Urban,Northern/Sierra,Siskiyou,44266,Other,41.2
+California,Non-Urban,Northern/Sierra,Siskiyou,44267,Two or More,52.3
+California,Non-Urban,Northern/Sierra,Siskiyou,44268,White,65.9
+California,Non-Urban,Northern/Sierra,Siskiyou,44269,Total,63.1
+California,Semi-Urban,Bay Area,Solano,421624,Latino,50.6
+California,Semi-Urban,Bay Area,Solano,421625,Black,46.4
+California,Semi-Urban,Bay Area,Solano,421626,Native American,43.2
+California,Semi-Urban,Bay Area,Solano,421627,Asian,65.1
+California,Semi-Urban,Bay Area,Solano,421628,Pacific Islander,56
+California,Semi-Urban,Bay Area,Solano,421629,Other,43.5
+California,Semi-Urban,Bay Area,Solano,421630,Two or More,51.8
+California,Semi-Urban,Bay Area,Solano,421631,White,67.4
+California,Semi-Urban,Bay Area,Solano,421632,Total,60.2
+California,Semi-Urban,Bay Area,Sonoma,491790,Latino,38
+California,Semi-Urban,Bay Area,Sonoma,491791,Black,37.1
+California,Semi-Urban,Bay Area,Sonoma,491792,Native American,34.8
+California,Semi-Urban,Bay Area,Sonoma,491793,Asian,60.1
+California,Semi-Urban,Bay Area,Sonoma,491794,Pacific Islander,35
+California,Semi-Urban,Bay Area,Sonoma,491795,Other,33.6
+California,Semi-Urban,Bay Area,Sonoma,491796,Two or More,48.2
+California,Semi-Urban,Bay Area,Sonoma,491797,White,64.7
+California,Semi-Urban,Bay Area,Sonoma,491798,Total,59.6
+California,Semi-Urban,Central Valley,Stanislaus,522794,Latino,48.6
+California,Semi-Urban,Central Valley,Stanislaus,522795,Black,30.2
+California,Semi-Urban,Central Valley,Stanislaus,522796,Native American,33.2
+California,Semi-Urban,Central Valley,Stanislaus,522797,Asian,60.5
+California,Semi-Urban,Central Valley,Stanislaus,522798,Pacific Islander,43.1
+California,Semi-Urban,Central Valley,Stanislaus,522799,Other,49.2
+California,Semi-Urban,Central Valley,Stanislaus,522800,Two or More,53.7
+California,Semi-Urban,Central Valley,Stanislaus,522801,White,63.7
+California,Semi-Urban,Central Valley,Stanislaus,522802,Total,57.2
+California,Semi-Urban,Northern/Sierra,Sutter,95067,Latino,38.5
+California,Semi-Urban,Northern/Sierra,Sutter,95068,Black,48
+California,Semi-Urban,Northern/Sierra,Sutter,95069,Native American,34.6
+California,Semi-Urban,Northern/Sierra,Sutter,95070,Asian,68.5
+California,Semi-Urban,Northern/Sierra,Sutter,95071,Pacific Islander,47.8
+California,Semi-Urban,Northern/Sierra,Sutter,95072,Other,39
+California,Semi-Urban,Northern/Sierra,Sutter,95073,Two or More,42.8
+California,Semi-Urban,Northern/Sierra,Sutter,95074,White,66
+California,Semi-Urban,Northern/Sierra,Sutter,95075,Total,59.1
+California,Non-Urban,Northern/Sierra,Tehama,63284,Latino,54
+California,Non-Urban,Northern/Sierra,Tehama,63285,Black,0
+California,Non-Urban,Northern/Sierra,Tehama,63286,Native American,68.1
+California,Non-Urban,Northern/Sierra,Tehama,63287,Asian,62.5
+California,Non-Urban,Northern/Sierra,Tehama,63288,Pacific Islander,100
+California,Non-Urban,Northern/Sierra,Tehama,63289,Other,72.9
+California,Non-Urban,Northern/Sierra,Tehama,63290,Two or More,65.4
+California,Non-Urban,Northern/Sierra,Tehama,63291,White,71.2
+California,Non-Urban,Northern/Sierra,Tehama,63292,Total,68.4
+California,Non-Urban,Northern/Sierra,Trinity,13515,Latino,61.1
+California,Non-Urban,Northern/Sierra,Trinity,13516,Black,0
+California,Non-Urban,Northern/Sierra,Trinity,13517,Native American,35.4
+California,Non-Urban,Northern/Sierra,Trinity,13518,Asian,69.8
+California,Non-Urban,Northern/Sierra,Trinity,13519,Pacific Islander,0
+California,Non-Urban,Northern/Sierra,Trinity,13520,Other,5.9
+California,Non-Urban,Northern/Sierra,Trinity,13521,Two or More,43.4
+California,Non-Urban,Northern/Sierra,Trinity,13522,White,73.8
+California,Non-Urban,Northern/Sierra,Trinity,13523,Total,70.5
+California,Semi-Urban,Central Valley,Tulare,451108,Latino,47.6
+California,Semi-Urban,Central Valley,Tulare,451109,Black,30.7
+California,Semi-Urban,Central Valley,Tulare,451110,Native American,44.5
+California,Semi-Urban,Central Valley,Tulare,451111,Asian,64.5
+California,Semi-Urban,Central Valley,Tulare,451112,Pacific Islander,26.5
+California,Semi-Urban,Central Valley,Tulare,451113,Other,56.4
+California,Semi-Urban,Central Valley,Tulare,451114,Two or More,55.1
+California,Semi-Urban,Central Valley,Tulare,451115,White,69.2
+California,Semi-Urban,Central Valley,Tulare,451116,Total,57.2
+California,Non-Urban,Northern/Sierra,Tuolumne,54347,Latino,56.3
+California,Non-Urban,Northern/Sierra,Tuolumne,54348,Black,17
+California,Non-Urban,Northern/Sierra,Tuolumne,54349,Native American,51.6
+California,Non-Urban,Northern/Sierra,Tuolumne,54350,Asian,81.6
+California,Non-Urban,Northern/Sierra,Tuolumne,54351,Pacific Islander,44
+California,Non-Urban,Northern/Sierra,Tuolumne,54352,Other,57.5
+California,Non-Urban,Northern/Sierra,Tuolumne,54353,Two or More,37.3
+California,Non-Urban,Northern/Sierra,Tuolumne,54354,White,71.6
+California,Non-Urban,Northern/Sierra,Tuolumne,54355,Total,69.3
+California,Semi-Urban,Central Coast,Ventura,835790,Latino,49.9
+California,Semi-Urban,Central Coast,Ventura,835791,Black,42.2
+California,Semi-Urban,Central Coast,Ventura,835792,Native American,49.7
+California,Semi-Urban,Central Coast,Ventura,835793,Asian,73
+California,Semi-Urban,Central Coast,Ventura,835794,Pacific Islander,52.4
+California,Semi-Urban,Central Coast,Ventura,835795,Other,50.2
+California,Semi-Urban,Central Coast,Ventura,835796,Two or More,56.5
+California,Semi-Urban,Central Coast,Ventura,835797,White,71.2
+California,Semi-Urban,Central Coast,Ventura,835798,Total,64.5
+California,Semi-Urban,Sacramento,Yolo,204162,Latino,42.3
+California,Semi-Urban,Sacramento,Yolo,204163,Black,30.9
+California,Semi-Urban,Sacramento,Yolo,204164,Native American,35.1
+California,Semi-Urban,Sacramento,Yolo,204165,Asian,40.4
+California,Semi-Urban,Sacramento,Yolo,204166,Pacific Islander,45.9
+California,Semi-Urban,Sacramento,Yolo,204167,Other,37.7
+California,Semi-Urban,Sacramento,Yolo,204168,Two or More,43
+California,Semi-Urban,Sacramento,Yolo,204169,White,60.3
+California,Semi-Urban,Sacramento,Yolo,204170,Total,52.4
+California,Semi-Urban,Northern/Sierra,Yuba,73059,Latino,50.7
+California,Semi-Urban,Northern/Sierra,Yuba,73059,Black,58.8
+California,Semi-Urban,Northern/Sierra,Yuba,73059,Native American,62.1
+California,Semi-Urban,Northern/Sierra,Yuba,73059,Asian,57.7
+California,Semi-Urban,Northern/Sierra,Yuba,73059,Pacific Islander,18.8
+California,Semi-Urban,Northern/Sierra,Yuba,73059,Other,51.3
+California,Semi-Urban,Northern/Sierra,Yuba,73059,Two or More,45.2
+California,Semi-Urban,Northern/Sierra,Yuba,73059,White,60.8
+California,Semi-Urban,Northern/Sierra,Yuba,73059,Total,58.1
+California,,,,38066920,Latino,42.9
+California,,,,38066921,Black,35.4
+California,,,,38066922,Native American,45.3
+California,,,,38066923,Asian,57.3
+California,,,,38066924,Pacific Islander,41.2
+California,,,,38066925,Other,38.3
+California,,,,38066926,Two or More,46
+California,,,,38066927,White,63.6
+California,,,,38066928,Total,54.8

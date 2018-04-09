@@ -12,50 +12,36 @@
       "name": "External_Data_Making_Ends_Meet_csv",
       "fields": [
         {
+          "fullyQualifiedName": "State",
+          "name": "State",
+          "type": "Text",
+          "label": "State"
+        },
+        {
           "fullyQualifiedName": "County",
           "name": "County",
           "type": "Text",
-          "label": "County"
+          "label": "County",
+          "defaultValue": "NULL"
         },
         {
-          "fullyQualifiedName": "Single_Adult",
-          "name": "Single_Adult",
+          "fullyQualifiedName": "Household_Status",
+          "name": "Household_Status",
+          "type": "Text",
+          "label": "Household Status"
+        },
+        {
+          "fullyQualifiedName": "Minimum_Income",
+          "name": "Minimum_Income",
           "type": "Numeric",
-          "label": "Single Adult",
+          "label": "Minimum Income",
           "precision": 18,
           "defaultValue": "0",
           "scale": 0,
-          "format": "0"
-        },
-        {
-          "fullyQualifiedName": "Single_Parent_Family",
-          "name": "Single_Parent_Family",
-          "type": "Numeric",
-          "label": "Single-Parent Family",
-          "precision": 18,
-          "defaultValue": "0",
-          "scale": 0,
-          "format": "0"
-        },
-        {
-          "fullyQualifiedName": "Two_Parent_Family_One_Working",
-          "name": "Two_Parent_Family_One_Working",
-          "type": "Numeric",
-          "label": "Two-Parent Family (One Working)",
-          "precision": 18,
-          "defaultValue": "0",
-          "scale": 0,
-          "format": "0"
-        },
-        {
-          "fullyQualifiedName": "Two_Working_Parent_Family",
-          "name": "Two_Working_Parent_Family",
-          "type": "Numeric",
-          "label": "Two-Working Parent Family",
-          "precision": 18,
-          "defaultValue": "0",
-          "scale": 0,
-          "format": "0"
+          "format": "$#,##0.00",
+          "decimalSeparator": ".",
+          "groupsSeparator": ",",
+          "currencySymbol": "$"
         }
       ]
     }

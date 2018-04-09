@@ -3,7 +3,7 @@
     "charsetName": "UTF-8",
     "fieldsDelimitedBy": ",",
     "linesTerminatedBy": "\r\n",
-    "numberOfLinesToIgnore": 1 
+    "numberOfLinesToIgnore": 1
   },
   "objects": [
     {
@@ -13,10 +13,16 @@
       "name": "External_Data_Race_Counts_csv",
       "fields": [
         {
+          "fullyQualifiedName": "State",
+          "name": "State",
+          "type": "Text",
+          "label": "State"
+        },
+        {
           "fullyQualifiedName": "Urban_Nonurban",
           "name": "Urban_Nonurban",
           "type": "Text",
-          "label": "Urban/ Nonurban"
+          "label": "Urban / Nonurban"
         },
         {
           "fullyQualifiedName": "Region",
@@ -25,10 +31,11 @@
           "label": "Region"
         },
         {
-          "fullyQualifiedName": "Geography",
-          "name": "Geography",
+          "fullyQualifiedName": "County",
+          "name": "County",
           "type": "Text",
-          "label": "County"
+          "label": "County",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Population",
@@ -41,98 +48,16 @@
           "format": "0"
         },
         {
-          "fullyQualifiedName": "Homeownership_Rate_Latino",
-          "name": "Homeownership_Rate_Latino",
-          "type": "Numeric",
-          "label": "Homeownership Rate - Latino",
-          "precision": 18,
-          "defaultValue": "0",
-          "scale": 1,
-          "format": "0.#",
-          "decimalSeparator": "."
+          "fullyQualifiedName": "Group",
+          "name": "Group",
+          "type": "Text",
+          "label": "Group"
         },
         {
-          "fullyQualifiedName": "Homeownership_Rate_Black",
-          "name": "Homeownership_Rate_Black",
+          "fullyQualifiedName": "Percent_of_Group",
+          "name": "Percent_of_Group",
           "type": "Numeric",
-          "label": "Homeownership Rate - Black",
-          "precision": 18,
-          "defaultValue": "0",
-          "scale": 1,
-          "format": "0.#",
-          "decimalSeparator": "."
-        },
-        {
-          "fullyQualifiedName": "Homeownership_Rate_Native_American",
-          "name": "Homeownership_Rate_Native_American",
-          "type": "Numeric",
-          "label": "Homeownership Rate - Native American",
-          "precision": 18,
-          "defaultValue": "0",
-          "scale": 1,
-          "format": "0.#",
-          "decimalSeparator": "."
-        },
-        {
-          "fullyQualifiedName": "Homeownership_Rate_Asian",
-          "name": "Homeownership_Rate_Asian",
-          "type": "Numeric",
-          "label": "Homeownership Rate - Asian",
-          "precision": 18,
-          "defaultValue": "0",
-          "scale": 1,
-          "format": "0.#",
-          "decimalSeparator": "."
-        },
-        {
-          "fullyQualifiedName": "Homeownership_Rate_Pacific_Islander",
-          "name": "Homeownership_Rate_Pacific_Islander",
-          "type": "Numeric",
-          "label": "Homeownership Rate - Pacific Islander",
-          "precision": 18,
-          "defaultValue": "0",
-          "scale": 1,
-          "format": "0.#",
-          "decimalSeparator": "."
-        },
-        {
-          "fullyQualifiedName": "Homeownership_Rate_Other",
-          "name": "Homeownership_Rate_Other",
-          "type": "Numeric",
-          "label": "Homeownership Rate - Other",
-          "precision": 18,
-          "defaultValue": "0",
-          "scale": 1,
-          "format": "0.#",
-          "decimalSeparator": "."
-        },
-        {
-          "fullyQualifiedName": "Homeownership_Rate_Two_or_More",
-          "name": "Homeownership_Rate_Two_or_More",
-          "type": "Numeric",
-          "label": "Homeownership Rate - Two or More",
-          "precision": 18,
-          "defaultValue": "0",
-          "scale": 1,
-          "format": "0.#",
-          "decimalSeparator": "."
-        },
-        {
-          "fullyQualifiedName": "Homeownership_Rate_White",
-          "name": "Homeownership_Rate_White",
-          "type": "Numeric",
-          "label": "Homeownership Rate - White",
-          "precision": 18,
-          "defaultValue": "0",
-          "scale": 1,
-          "format": "0.#",
-          "decimalSeparator": "."
-        },
-        {
-          "fullyQualifiedName": "Homeownership_Rate_Total",
-          "name": "Homeownership_Rate_Total",
-          "type": "Numeric",
-          "label": "Homeownership Rate - Total",
+          "label": "% of Group",
           "precision": 18,
           "defaultValue": "0",
           "scale": 1,
