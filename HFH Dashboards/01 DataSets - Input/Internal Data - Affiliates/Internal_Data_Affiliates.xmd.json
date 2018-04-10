@@ -1,0 +1,50 @@
+{
+  "dataset": {},
+  "dates": [],
+  "derivedDimensions": [],
+  "derivedMeasures": [],
+  "dimensions": [
+    {
+      "conditionalFormatting": {},
+      "customActions": [],
+      "customActionsEnabled": true,
+      "field": "State",
+      "label": "State",
+      "linkTemplateEnabled": true,
+      "members": [],
+      "recordDisplayFields": [],
+      "salesforceActions": [],
+      "salesforceActionsEnabled": true,
+      "showInExplorer": true
+    },
+    {
+      "conditionalFormatting": {},
+      "customActions": [],
+      "customActionsEnabled": true,
+      "field": "County",
+      "label": "County",
+      "linkTemplateEnabled": true,
+      "members": [],
+      "recordDisplayFields": [],
+      "salesforceActions": [],
+      "salesforceActionsEnabled": true,
+      "showInExplorer": true
+    },
+    {
+      "conditionalFormatting": {},
+      "customActions": [],
+      "customActionsEnabled": true,
+      "field": "Affiliate_Name",
+      "label": "Affiliate Name",
+      "linkTemplateEnabled": true,
+      "members": [],
+      "recordDisplayFields": [],
+      "salesforceActions": [],
+      "salesforceActionsEnabled": true,
+      "showInExplorer": true
+    }
+  ],
+  "measures": [],
+  "organizations": [],
+  "showDetailsDefaultFields": []
+}

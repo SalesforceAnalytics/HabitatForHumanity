@@ -1,0 +1,755 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "fieldsEnclosedBy": "\"",
+    "linesTerminatedBy": "\r\n"
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "Internal_Data_Activities_csv",
+      "label": "Internal Data - Activities.csv",
+      "name": "Internal_Data_Activities_csv",
+      "fields": [
+        {
+          "fullyQualifiedName": "Fiscal_Year",
+          "name": "Fiscal_Year",
+          "type": "Text",
+          "label": "Fiscal Year"
+        },
+        {
+          "fullyQualifiedName": "Activity_Type",
+          "name": "Activity_Type",
+          "type": "Text",
+          "label": "Activity Type"
+        },
+        {
+          "fullyQualifiedName": "Activity_ID",
+          "name": "Activity_ID",
+          "type": "Text",
+          "label": "Activity ID"
+        },
+        {
+          "fullyQualifiedName": "Part_of_NR",
+          "name": "Part_of_NR",
+          "type": "Text",
+          "label": "Part of NR"
+        },
+        {
+          "fullyQualifiedName": "Affiliate",
+          "name": "Affiliate",
+          "type": "Text",
+          "label": "Affiliate"
+        },
+        {
+          "fullyQualifiedName": "City",
+          "name": "City",
+          "type": "Text",
+          "label": "City"
+        },
+        {
+          "fullyQualifiedName": "County",
+          "name": "County",
+          "type": "Text",
+          "label": "County"
+        },
+        {
+          "fullyQualifiedName": "Urban_Nonurban",
+          "name": "Urban_Nonurban",
+          "type": "Text",
+          "label": "Urban / Nonurban"
+        },
+        {
+          "fullyQualifiedName": "Region",
+          "name": "Region",
+          "type": "Text",
+          "label": "Region"
+        },
+        {
+          "fullyQualifiedName": "House_Number",
+          "name": "House_Number",
+          "type": "Text",
+          "label": "House Number"
+        },
+        {
+          "fullyQualifiedName": "Street_Name",
+          "name": "Street_Name",
+          "type": "Text",
+          "label": "Street Name"
+        },
+        {
+          "fullyQualifiedName": "Unit_Number",
+          "name": "Unit_Number",
+          "type": "Text",
+          "label": "Unit Number"
+        },
+        {
+          "fullyQualifiedName": "HH_Size",
+          "name": "HH_Size",
+          "type": "Numeric",
+          "label": "HH Size",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Single_Head_of_Household",
+          "name": "Single_Head_of_Household",
+          "type": "Text",
+          "label": "Single Head of Household"
+        },
+        {
+          "fullyQualifiedName": "Single_Head_of_Household1",
+          "name": "Single_Head_of_Household1",
+          "type": "Text",
+          "label": "Single Head of Household"
+        },
+        {
+          "fullyQualifiedName": "Borrower_Birthdate",
+          "name": "Borrower_Birthdate",
+          "type": "Date",
+          "label": "Borrower Birthdate",
+          "format": "MM/dd/yy"
+        },
+        {
+          "fullyQualifiedName": "Borrower_Age",
+          "name": "Borrower_Age",
+          "type": "Numeric",
+          "label": "Borrower Age",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Borrower_Age_Range",
+          "name": "Borrower_Age_Range",
+          "type": "Text",
+          "label": "Borrower Age Range"
+        },
+        {
+          "fullyQualifiedName": "Borrower_Gender",
+          "name": "Borrower_Gender",
+          "type": "Text",
+          "label": "Borrower Gender"
+        },
+        {
+          "fullyQualifiedName": "Borrower_Race",
+          "name": "Borrower_Race",
+          "type": "Text",
+          "label": "Borrower Race"
+        },
+        {
+          "fullyQualifiedName": "Borrower_Ethnicity",
+          "name": "Borrower_Ethnicity",
+          "type": "Text",
+          "label": "Borrower Ethnicity"
+        },
+        {
+          "fullyQualifiedName": "Borrower_Race_Ethnicity_Census_Aligned",
+          "name": "Borrower_Race_Ethnicity_Census_Aligned",
+          "type": "Text",
+          "label": "Borrower Race / Ethnicity (Census Aligned)"
+        },
+        {
+          "fullyQualifiedName": "Borrower_Marital_Status",
+          "name": "Borrower_Marital_Status",
+          "type": "Text",
+          "label": "Borrower Marital Status"
+        },
+        {
+          "fullyQualifiedName": "Borrower_Educational_Attainment",
+          "name": "Borrower_Educational_Attainment",
+          "type": "Text",
+          "label": "Borrower Educational Attainment"
+        },
+        {
+          "fullyQualifiedName": "Co_Borrower_Birthdate",
+          "name": "Co_Borrower_Birthdate",
+          "type": "Date",
+          "label": "Co-Borrower Birthdate",
+          "format": "MM/dd/yy"
+        },
+        {
+          "fullyQualifiedName": "Co_Borrower_Age",
+          "name": "Co_Borrower_Age",
+          "type": "Numeric",
+          "label": "Co-Borrower Age",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Co_Borrower_Age_Range",
+          "name": "Co_Borrower_Age_Range",
+          "type": "Text",
+          "label": "Co-Borrower Age Range"
+        },
+        {
+          "fullyQualifiedName": "Co_Borrower_Gender",
+          "name": "Co_Borrower_Gender",
+          "type": "Text",
+          "label": "Co-Borrower Gender"
+        },
+        {
+          "fullyQualifiedName": "Co_Borrower_Race",
+          "name": "Co_Borrower_Race",
+          "type": "Text",
+          "label": "Co-Borrower Race"
+        },
+        {
+          "fullyQualifiedName": "Co_Borrower_Ethnicity",
+          "name": "Co_Borrower_Ethnicity",
+          "type": "Text",
+          "label": "Co-Borrower Ethnicity"
+        },
+        {
+          "fullyQualifiedName": "Co_Borrower_Race_Ethnicity_Census_Aligned",
+          "name": "Co_Borrower_Race_Ethnicity_Census_Aligned",
+          "type": "Text",
+          "label": "Co-Borrower Race / Ethnicity (Census Aligned)"
+        },
+        {
+          "fullyQualifiedName": "Co_Borrower_Marital_Status",
+          "name": "Co_Borrower_Marital_Status",
+          "type": "Text",
+          "label": "Co-Borrower Marital Status"
+        },
+        {
+          "fullyQualifiedName": "Co_Borrower_Educational_Attainment",
+          "name": "Co_Borrower_Educational_Attainment",
+          "type": "Text",
+          "label": "Co-Borrower Educational Attainment"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_1_Birthdate",
+          "name": "HH_Member_1_Birthdate",
+          "type": "Date",
+          "label": "HH Member 1 - Birthdate",
+          "format": "MM/dd/yy"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_1_Age",
+          "name": "HH_Member_1_Age",
+          "type": "Numeric",
+          "label": "HH Member 1 - Age",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_1_Age_Group",
+          "name": "HH_Member_1_Age_Group",
+          "type": "Text",
+          "label": "HH Member 1 - Age Group"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_1_Gender",
+          "name": "HH_Member_1_Gender",
+          "type": "Text",
+          "label": "HH Member 1 - Gender"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_1_Race_Ethnicity",
+          "name": "HH_Member_1_Race_Ethnicity",
+          "type": "Text",
+          "label": "HH Member 1 - Race / Ethnicity"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_1_Educational_Attainment",
+          "name": "HH_Member_1_Educational_Attainment",
+          "type": "Text",
+          "label": "HH Member 1 - Educational Attainment"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_2_Birthdate",
+          "name": "HH_Member_2_Birthdate",
+          "type": "Date",
+          "label": "HH Member 2 - Birthdate",
+          "format": "MM/dd/yy"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_2_Age",
+          "name": "HH_Member_2_Age",
+          "type": "Numeric",
+          "label": "HH Member 2 - Age",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_2_Age_Group",
+          "name": "HH_Member_2_Age_Group",
+          "type": "Text",
+          "label": "HH Member 2 - Age Group"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_2_Gender",
+          "name": "HH_Member_2_Gender",
+          "type": "Text",
+          "label": "HH Member 2 - Gender"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_2_Race_Ethnicity",
+          "name": "HH_Member_2_Race_Ethnicity",
+          "type": "Text",
+          "label": "HH Member 2 - Race / Ethnicity"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_2_Educational_Attainment",
+          "name": "HH_Member_2_Educational_Attainment",
+          "type": "Text",
+          "label": "HH Member 2 - Educational Attainment"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_3_Birthdate",
+          "name": "HH_Member_3_Birthdate",
+          "type": "Date",
+          "label": "HH Member 3 - Birthdate",
+          "format": "MM/dd/yy"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_3_Age",
+          "name": "HH_Member_3_Age",
+          "type": "Numeric",
+          "label": "HH Member 3 - Age",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_3_Age_Group",
+          "name": "HH_Member_3_Age_Group",
+          "type": "Text",
+          "label": "HH Member 3 - Age Group"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_3_Gender",
+          "name": "HH_Member_3_Gender",
+          "type": "Text",
+          "label": "HH Member 3 - Gender"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_3_Race_Ethnicity",
+          "name": "HH_Member_3_Race_Ethnicity",
+          "type": "Text",
+          "label": "HH Member 3 - Race / Ethnicity"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_3_Educational_Attainment",
+          "name": "HH_Member_3_Educational_Attainment",
+          "type": "Text",
+          "label": "HH Member 3 - Educational Attainment"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_4_Birthdate",
+          "name": "HH_Member_4_Birthdate",
+          "type": "Date",
+          "label": "HH Member 4 - Birthdate",
+          "format": "MM/dd/yy"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_4_Age",
+          "name": "HH_Member_4_Age",
+          "type": "Numeric",
+          "label": "HH Member 4 - Age",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_4_Age_Group",
+          "name": "HH_Member_4_Age_Group",
+          "type": "Text",
+          "label": "HH Member 4 - Age Group"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_4_Gender",
+          "name": "HH_Member_4_Gender",
+          "type": "Text",
+          "label": "HH Member 4 - Gender"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_4_Race_Ethnicity",
+          "name": "HH_Member_4_Race_Ethnicity",
+          "type": "Text",
+          "label": "HH Member 4 - Race / Ethnicity"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_4_Educational_Attainment",
+          "name": "HH_Member_4_Educational_Attainment",
+          "type": "Text",
+          "label": "HH Member 4 - Educational Attainment"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_5_Birthdate",
+          "name": "HH_Member_5_Birthdate",
+          "type": "Date",
+          "label": "HH Member 5 - Birthdate",
+          "format": "MM/dd/yy"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_5_Age",
+          "name": "HH_Member_5_Age",
+          "type": "Numeric",
+          "label": "HH Member 5 - Age",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_5_Age_Group",
+          "name": "HH_Member_5_Age_Group",
+          "type": "Text",
+          "label": "HH Member 5 - Age Group"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_5_Gender",
+          "name": "HH_Member_5_Gender",
+          "type": "Text",
+          "label": "HH Member 5 - Gender"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_5_Race_Ethnicity",
+          "name": "HH_Member_5_Race_Ethnicity",
+          "type": "Text",
+          "label": "HH Member 5 - Race / Ethnicity"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_5_Educational_Attainment",
+          "name": "HH_Member_5_Educational_Attainment",
+          "type": "Text",
+          "label": "HH Member 5 - Educational Attainment"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_6_Birthdate",
+          "name": "HH_Member_6_Birthdate",
+          "type": "Date",
+          "label": "HH Member 6 - Birthdate",
+          "format": "MM/dd/yy"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_6_Age",
+          "name": "HH_Member_6_Age",
+          "type": "Numeric",
+          "label": "HH Member 6 - Age",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0
+        },
+        {
+          "fullyQualifiedName": "HH_Member_6_Age_Group",
+          "name": "HH_Member_6_Age_Group",
+          "type": "Text",
+          "label": "HH Member 6 - Age Group"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_6_Gender",
+          "name": "HH_Member_6_Gender",
+          "type": "Text",
+          "label": "HH Member 6 - Gender"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_6_Race_Ethnicity",
+          "name": "HH_Member_6_Race_Ethnicity",
+          "type": "Text",
+          "label": "HH Member 6 - Race / Ethnicity"
+        },
+        {
+          "fullyQualifiedName": "HH_Member_6_Educational_Attainment",
+          "name": "HH_Member_6_Educational_Attainment",
+          "type": "Text",
+          "label": "HH Member 6 - Educational Attainment"
+        },
+        {
+          "fullyQualifiedName": "Closing_Date",
+          "name": "Closing_Date",
+          "type": "Date",
+          "label": "Closing Date",
+          "format": "MM/dd/yy"
+        },
+        {
+          "fullyQualifiedName": "Appraised_Price",
+          "name": "Appraised_Price",
+          "type": "Numeric",
+          "label": "Appraised Price",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Sales_Price",
+          "name": "Sales_Price",
+          "type": "Numeric",
+          "label": "Sales Price",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "New_Home_Down_Payment",
+          "name": "New_Home_Down_Payment",
+          "type": "Numeric",
+          "label": "New Home Down Payment",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0
+        },
+        {
+          "fullyQualifiedName": "Source_of_New_Home_Down_Payment",
+          "name": "Source_of_New_Home_Down_Payment",
+          "type": "Text",
+          "label": "Source of New Home Down Payment"
+        },
+        {
+          "fullyQualifiedName": "Habitat_1st_Loan",
+          "name": "Habitat_1st_Loan",
+          "type": "Numeric",
+          "label": "Habitat 1st Loan",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Annual_Income",
+          "name": "Annual_Income",
+          "type": "Numeric",
+          "label": "Annual Income",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Area_Median_Income",
+          "name": "Area_Median_Income",
+          "type": "Numeric",
+          "label": "% Area Median Income",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 1,
+          "format": "0.#",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Borrower_Occupation",
+          "name": "Borrower_Occupation",
+          "type": "Text",
+          "label": "Borrower Occupation"
+        },
+        {
+          "fullyQualifiedName": "Co_Borrower_Occupation",
+          "name": "Co_Borrower_Occupation",
+          "type": "Text",
+          "label": "Co-Borrower Occupation"
+        },
+        {
+          "fullyQualifiedName": "Principal_Payment",
+          "name": "Principal_Payment",
+          "type": "Numeric",
+          "label": "Principal Payment",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.##",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Monthly_Taxes",
+          "name": "Monthly_Taxes",
+          "type": "Numeric",
+          "label": "Monthly Taxes",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.##",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Monthly_Insurance",
+          "name": "Monthly_Insurance",
+          "type": "Numeric",
+          "label": "Monthly Insurance",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.##",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Regime_HOA_Fees",
+          "name": "Regime_HOA_Fees",
+          "type": "Numeric",
+          "label": "Regime/HOA Fees",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.##",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Total_Monthly_Payment",
+          "name": "Total_Monthly_Payment",
+          "type": "Numeric",
+          "label": "Total Monthly Payment",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.##",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Annual_Insurance",
+          "name": "Annual_Insurance",
+          "type": "Numeric",
+          "label": "Annual Insurance",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.##",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Annual_Taxes",
+          "name": "Annual_Taxes",
+          "type": "Numeric",
+          "label": "Annual Taxes",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.##",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Previous_Monthly_Rent",
+          "name": "Previous_Monthly_Rent",
+          "type": "Numeric",
+          "label": "Previous Monthly Rent",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.##",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "X2nd_Mortgage_Habitat",
+          "name": "X2nd_Mortgage_Habitat",
+          "type": "Numeric",
+          "label": "2nd Mortgage Habitat",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0
+        },
+        {
+          "fullyQualifiedName": "X3rd_Mortgage_Habitat",
+          "name": "X3rd_Mortgage_Habitat",
+          "type": "Numeric",
+          "label": "3rd Mortgage Habitat",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0
+        },
+        {
+          "fullyQualifiedName": "X4th_Mortgage_Habitat",
+          "name": "X4th_Mortgage_Habitat",
+          "type": "Numeric",
+          "label": "4th Mortgage Habitat",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0
+        },
+        {
+          "fullyQualifiedName": "Construction_Costs",
+          "name": "Construction_Costs",
+          "type": "Numeric",
+          "label": "Construction Costs",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Land_Acquisition",
+          "name": "Land_Acquisition",
+          "type": "Numeric",
+          "label": "Land Acquisition",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Property_Type",
+          "name": "Property_Type",
+          "type": "Text",
+          "label": "Property Type"
+        },
+        {
+          "fullyQualifiedName": "Unit_Acquistion_Costs",
+          "name": "Unit_Acquistion_Costs",
+          "type": "Numeric",
+          "label": "Unit Acquistion Costs",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0
+        },
+        {
+          "fullyQualifiedName": "Rehab_Costs",
+          "name": "Rehab_Costs",
+          "type": "Numeric",
+          "label": "Rehab Costs",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0
+        },
+        {
+          "fullyQualifiedName": "Repair_Costs",
+          "name": "Repair_Costs",
+          "type": "Numeric",
+          "label": "Repair Costs",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0
+        },
+        {
+          "fullyQualifiedName": "Repair_Down_Payment",
+          "name": "Repair_Down_Payment",
+          "type": "Numeric",
+          "label": "Repair Down Payment",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0
+        },
+        {
+          "fullyQualifiedName": "Repair_Loan_Amount",
+          "name": "Repair_Loan_Amount",
+          "type": "Numeric",
+          "label": "Repair Loan Amount",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0
+        },
+        {
+          "fullyQualifiedName": "Repair_Principal_Amount",
+          "name": "Repair_Principal_Amount",
+          "type": "Numeric",
+          "label": "Repair Principal Amount",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0
+        }
+      ]
+    }
+  ]
+}

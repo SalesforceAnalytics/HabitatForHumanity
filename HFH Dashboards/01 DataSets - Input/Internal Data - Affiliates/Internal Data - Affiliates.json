@@ -1,0 +1,35 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "linesTerminatedBy": "\r\n"
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "Internal_Data_Affiliates_csv",
+      "label": "Internal Data - Affiliates.csv",
+      "name": "Internal_Data_Affiliates_csv",
+      "fields": [
+        {
+          "fullyQualifiedName": "Affiliate_Name",
+          "name": "Affiliate_Name",
+          "type": "Text",
+          "label": "Affiliate Name"
+        },
+        {
+          "fullyQualifiedName": "County",
+          "name": "County",
+          "type": "Text",
+          "label": "County"
+        },
+        {
+          "fullyQualifiedName": "State",
+          "name": "State",
+          "type": "Text",
+          "label": "State"
+        }
+      ]
+    }
+  ]
+}
