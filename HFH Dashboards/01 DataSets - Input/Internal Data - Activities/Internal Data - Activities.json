@@ -46,43 +46,50 @@
           "fullyQualifiedName": "City",
           "name": "City",
           "type": "Text",
-          "label": "City"
+          "label": "City",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "County",
           "name": "County",
           "type": "Text",
-          "label": "County"
+          "label": "County",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Urban_Nonurban",
           "name": "Urban_Nonurban",
           "type": "Text",
-          "label": "Urban / Nonurban"
+          "label": "Urban / Nonurban",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Region",
           "name": "Region",
           "type": "Text",
-          "label": "Region"
+          "label": "Region",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "House_Number",
           "name": "House_Number",
           "type": "Text",
-          "label": "House Number"
+          "label": "House Number",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Street_Name",
           "name": "Street_Name",
           "type": "Text",
-          "label": "Street Name"
+          "label": "Street Name",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Unit_Number",
           "name": "Unit_Number",
           "type": "Text",
-          "label": "Unit Number"
+          "label": "Unit Number",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Size",
@@ -98,20 +105,22 @@
           "fullyQualifiedName": "Single_Head_of_Household",
           "name": "Single_Head_of_Household",
           "type": "Text",
-          "label": "Single Head of Household"
+          "label": "Single Head of Household",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Single_Head_of_Household1",
           "name": "Single_Head_of_Household1",
           "type": "Text",
-          "label": "Single Head of Household"
+          "label": "Single Head of Household",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Borrower_Birthdate",
           "name": "Borrower_Birthdate",
           "type": "Date",
           "label": "Borrower Birthdate",
-          "format": "MM/dd/yy"
+          "format": "MM/dd/yyyy"
         },
         {
           "fullyQualifiedName": "Borrower_Age",
@@ -127,50 +136,57 @@
           "fullyQualifiedName": "Borrower_Age_Range",
           "name": "Borrower_Age_Range",
           "type": "Text",
-          "label": "Borrower Age Range"
+          "label": "Borrower Age Range",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Borrower_Gender",
           "name": "Borrower_Gender",
           "type": "Text",
-          "label": "Borrower Gender"
+          "label": "Borrower Gender",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Borrower_Race",
           "name": "Borrower_Race",
           "type": "Text",
-          "label": "Borrower Race"
+          "label": "Borrower Race",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Borrower_Ethnicity",
           "name": "Borrower_Ethnicity",
           "type": "Text",
-          "label": "Borrower Ethnicity"
+          "label": "Borrower Ethnicity",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Borrower_Race_Ethnicity_Census_Aligned",
           "name": "Borrower_Race_Ethnicity_Census_Aligned",
           "type": "Text",
-          "label": "Borrower Race / Ethnicity (Census Aligned)"
+          "label": "Borrower Race / Ethnicity (Census Aligned)",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Borrower_Marital_Status",
           "name": "Borrower_Marital_Status",
           "type": "Text",
-          "label": "Borrower Marital Status"
+          "label": "Borrower Marital Status",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Borrower_Educational_Attainment",
           "name": "Borrower_Educational_Attainment",
           "type": "Text",
-          "label": "Borrower Educational Attainment"
+          "label": "Borrower Educational Attainment",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Co_Borrower_Birthdate",
           "name": "Co_Borrower_Birthdate",
           "type": "Date",
           "label": "Co-Borrower Birthdate",
-          "format": "MM/dd/yy"
+          "format": "MM/dd/yyyy"
         },
         {
           "fullyQualifiedName": "Co_Borrower_Age",
@@ -186,50 +202,57 @@
           "fullyQualifiedName": "Co_Borrower_Age_Range",
           "name": "Co_Borrower_Age_Range",
           "type": "Text",
-          "label": "Co-Borrower Age Range"
+          "label": "Co-Borrower Age Range",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Co_Borrower_Gender",
           "name": "Co_Borrower_Gender",
           "type": "Text",
-          "label": "Co-Borrower Gender"
+          "label": "Co-Borrower Gender",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Co_Borrower_Race",
           "name": "Co_Borrower_Race",
           "type": "Text",
-          "label": "Co-Borrower Race"
+          "label": "Co-Borrower Race",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Co_Borrower_Ethnicity",
           "name": "Co_Borrower_Ethnicity",
           "type": "Text",
-          "label": "Co-Borrower Ethnicity"
+          "label": "Co-Borrower Ethnicity",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Co_Borrower_Race_Ethnicity_Census_Aligned",
           "name": "Co_Borrower_Race_Ethnicity_Census_Aligned",
           "type": "Text",
-          "label": "Co-Borrower Race / Ethnicity (Census Aligned)"
+          "label": "Co-Borrower Race / Ethnicity (Census Aligned)",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Co_Borrower_Marital_Status",
           "name": "Co_Borrower_Marital_Status",
           "type": "Text",
-          "label": "Co-Borrower Marital Status"
+          "label": "Co-Borrower Marital Status",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Co_Borrower_Educational_Attainment",
           "name": "Co_Borrower_Educational_Attainment",
           "type": "Text",
-          "label": "Co-Borrower Educational Attainment"
+          "label": "Co-Borrower Educational Attainment",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_1_Birthdate",
           "name": "HH_Member_1_Birthdate",
           "type": "Date",
           "label": "HH Member 1 - Birthdate",
-          "format": "MM/dd/yy"
+          "format": "MM/dd/yyyy"
         },
         {
           "fullyQualifiedName": "HH_Member_1_Age",
@@ -245,32 +268,36 @@
           "fullyQualifiedName": "HH_Member_1_Age_Group",
           "name": "HH_Member_1_Age_Group",
           "type": "Text",
-          "label": "HH Member 1 - Age Group"
+          "label": "HH Member 1 - Age Group",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_1_Gender",
           "name": "HH_Member_1_Gender",
           "type": "Text",
-          "label": "HH Member 1 - Gender"
+          "label": "HH Member 1 - Gender",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_1_Race_Ethnicity",
           "name": "HH_Member_1_Race_Ethnicity",
           "type": "Text",
-          "label": "HH Member 1 - Race / Ethnicity"
+          "label": "HH Member 1 - Race / Ethnicity",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_1_Educational_Attainment",
           "name": "HH_Member_1_Educational_Attainment",
           "type": "Text",
-          "label": "HH Member 1 - Educational Attainment"
+          "label": "HH Member 1 - Educational Attainment",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_2_Birthdate",
           "name": "HH_Member_2_Birthdate",
           "type": "Date",
           "label": "HH Member 2 - Birthdate",
-          "format": "MM/dd/yy"
+          "format": "MM/dd/yyyy"
         },
         {
           "fullyQualifiedName": "HH_Member_2_Age",
@@ -286,32 +313,36 @@
           "fullyQualifiedName": "HH_Member_2_Age_Group",
           "name": "HH_Member_2_Age_Group",
           "type": "Text",
-          "label": "HH Member 2 - Age Group"
+          "label": "HH Member 2 - Age Group",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_2_Gender",
           "name": "HH_Member_2_Gender",
           "type": "Text",
-          "label": "HH Member 2 - Gender"
+          "label": "HH Member 2 - Gender",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_2_Race_Ethnicity",
           "name": "HH_Member_2_Race_Ethnicity",
           "type": "Text",
-          "label": "HH Member 2 - Race / Ethnicity"
+          "label": "HH Member 2 - Race / Ethnicity",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_2_Educational_Attainment",
           "name": "HH_Member_2_Educational_Attainment",
           "type": "Text",
-          "label": "HH Member 2 - Educational Attainment"
+          "label": "HH Member 2 - Educational Attainment",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_3_Birthdate",
           "name": "HH_Member_3_Birthdate",
           "type": "Date",
           "label": "HH Member 3 - Birthdate",
-          "format": "MM/dd/yy"
+          "format": "MM/dd/yyyy"
         },
         {
           "fullyQualifiedName": "HH_Member_3_Age",
@@ -327,32 +358,36 @@
           "fullyQualifiedName": "HH_Member_3_Age_Group",
           "name": "HH_Member_3_Age_Group",
           "type": "Text",
-          "label": "HH Member 3 - Age Group"
+          "label": "HH Member 3 - Age Group",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_3_Gender",
           "name": "HH_Member_3_Gender",
           "type": "Text",
-          "label": "HH Member 3 - Gender"
+          "label": "HH Member 3 - Gender",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_3_Race_Ethnicity",
           "name": "HH_Member_3_Race_Ethnicity",
           "type": "Text",
-          "label": "HH Member 3 - Race / Ethnicity"
+          "label": "HH Member 3 - Race / Ethnicity",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_3_Educational_Attainment",
           "name": "HH_Member_3_Educational_Attainment",
           "type": "Text",
-          "label": "HH Member 3 - Educational Attainment"
+          "label": "HH Member 3 - Educational Attainment",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_4_Birthdate",
           "name": "HH_Member_4_Birthdate",
           "type": "Date",
           "label": "HH Member 4 - Birthdate",
-          "format": "MM/dd/yy"
+          "format": "MM/dd/yyyy"
         },
         {
           "fullyQualifiedName": "HH_Member_4_Age",
@@ -368,32 +403,36 @@
           "fullyQualifiedName": "HH_Member_4_Age_Group",
           "name": "HH_Member_4_Age_Group",
           "type": "Text",
-          "label": "HH Member 4 - Age Group"
+          "label": "HH Member 4 - Age Group",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_4_Gender",
           "name": "HH_Member_4_Gender",
           "type": "Text",
-          "label": "HH Member 4 - Gender"
+          "label": "HH Member 4 - Gender",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_4_Race_Ethnicity",
           "name": "HH_Member_4_Race_Ethnicity",
           "type": "Text",
-          "label": "HH Member 4 - Race / Ethnicity"
+          "label": "HH Member 4 - Race / Ethnicity",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_4_Educational_Attainment",
           "name": "HH_Member_4_Educational_Attainment",
           "type": "Text",
-          "label": "HH Member 4 - Educational Attainment"
+          "label": "HH Member 4 - Educational Attainment",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_5_Birthdate",
           "name": "HH_Member_5_Birthdate",
           "type": "Date",
           "label": "HH Member 5 - Birthdate",
-          "format": "MM/dd/yy"
+          "format": "MM/dd/yyyy"
         },
         {
           "fullyQualifiedName": "HH_Member_5_Age",
@@ -409,32 +448,36 @@
           "fullyQualifiedName": "HH_Member_5_Age_Group",
           "name": "HH_Member_5_Age_Group",
           "type": "Text",
-          "label": "HH Member 5 - Age Group"
+          "label": "HH Member 5 - Age Group",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_5_Gender",
           "name": "HH_Member_5_Gender",
           "type": "Text",
-          "label": "HH Member 5 - Gender"
+          "label": "HH Member 5 - Gender",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_5_Race_Ethnicity",
           "name": "HH_Member_5_Race_Ethnicity",
           "type": "Text",
-          "label": "HH Member 5 - Race / Ethnicity"
+          "label": "HH Member 5 - Race / Ethnicity",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_5_Educational_Attainment",
           "name": "HH_Member_5_Educational_Attainment",
           "type": "Text",
-          "label": "HH Member 5 - Educational Attainment"
+          "label": "HH Member 5 - Educational Attainment",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_6_Birthdate",
           "name": "HH_Member_6_Birthdate",
           "type": "Date",
           "label": "HH Member 6 - Birthdate",
-          "format": "MM/dd/yy"
+          "format": "MM/dd/yyyy"
         },
         {
           "fullyQualifiedName": "HH_Member_6_Age",
@@ -449,32 +492,36 @@
           "fullyQualifiedName": "HH_Member_6_Age_Group",
           "name": "HH_Member_6_Age_Group",
           "type": "Text",
-          "label": "HH Member 6 - Age Group"
+          "label": "HH Member 6 - Age Group",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_6_Gender",
           "name": "HH_Member_6_Gender",
           "type": "Text",
-          "label": "HH Member 6 - Gender"
+          "label": "HH Member 6 - Gender",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_6_Race_Ethnicity",
           "name": "HH_Member_6_Race_Ethnicity",
           "type": "Text",
-          "label": "HH Member 6 - Race / Ethnicity"
+          "label": "HH Member 6 - Race / Ethnicity",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "HH_Member_6_Educational_Attainment",
           "name": "HH_Member_6_Educational_Attainment",
           "type": "Text",
-          "label": "HH Member 6 - Educational Attainment"
+          "label": "HH Member 6 - Educational Attainment",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Closing_Date",
           "name": "Closing_Date",
           "type": "Date",
           "label": "Closing Date",
-          "format": "MM/dd/yy"
+          "format": "MM/dd/yyyy"
         },
         {
           "fullyQualifiedName": "Appraised_Price",
@@ -509,7 +556,8 @@
           "fullyQualifiedName": "Source_of_New_Home_Down_Payment",
           "name": "Source_of_New_Home_Down_Payment",
           "type": "Text",
-          "label": "Source of New Home Down Payment"
+          "label": "Source of New Home Down Payment",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Habitat_1st_Loan",
@@ -546,13 +594,15 @@
           "fullyQualifiedName": "Borrower_Occupation",
           "name": "Borrower_Occupation",
           "type": "Text",
-          "label": "Borrower Occupation"
+          "label": "Borrower Occupation",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Co_Borrower_Occupation",
           "name": "Co_Borrower_Occupation",
           "type": "Text",
-          "label": "Co-Borrower Occupation"
+          "label": "Co-Borrower Occupation",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Principal_Payment",
@@ -693,7 +743,8 @@
           "fullyQualifiedName": "Property_Type",
           "name": "Property_Type",
           "type": "Text",
-          "label": "Property Type"
+          "label": "Property Type",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Unit_Acquistion_Costs",

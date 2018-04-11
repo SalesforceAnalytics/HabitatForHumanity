@@ -1,0 +1,32 @@
+{
+  "dataset": {},
+  "dates": [],
+  "derivedDimensions": [],
+  "derivedMeasures": [],
+  "dimensions": [],
+  "dates" : [
+    {
+      "alias" : "Borrower_Birthdate",
+      "label" : "Borrower Birthdate",
+      "firstDayOfWeek" : -1,
+      "fiscalMonthOffset":0,
+      "fields" : {
+        "format": "MM/dd/yy",
+        "day" : "Borrower_Birthdate_Day",
+        "epochDay" : "Borrower_Birthdate_day_epoch",
+        "epochSecond" : "Borrower_Birthdate_sec_epoch",
+        "fullField" : "Borrower_Birthdate",
+        "hour" : "Borrower_Birthdate_Hour",
+        "minute" : "Borrower_Birthdate_Minute",
+        "month" : "Borrower_Birthdate_Month",
+        "quarter" : "Borrower_Birthdate_Quarter",
+        "second" : "Borrower_Birthdate_Second",
+        "week" : "Borrower_Birthdate_Week",
+        "year" : "Borrower_Birthdate_Year"
+      }
+    }
+  ],
+  "measures": [],
+  "organizations": [],
+  "showDetailsDefaultFields": []
+}
