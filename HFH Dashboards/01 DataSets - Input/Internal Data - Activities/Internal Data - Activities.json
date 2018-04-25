@@ -109,10 +109,10 @@
           "defaultValue": "NULL"
         },
         {
-          "fullyQualifiedName": "Single_Head_of_Household1",
-          "name": "Single_Head_of_Household1",
+          "fullyQualifiedName": "Famiyl_Type",
+          "name": "Family_Type",
           "type": "Text",
-          "label": "Single Head of Household",
+          "label": "Family Type",
           "defaultValue": "NULL"
         },
         {
@@ -120,7 +120,8 @@
           "name": "Borrower_Birthdate",
           "type": "Date",
           "label": "Borrower Birthdate",
-          "format": "MM/dd/yyyy"
+          "format": "MM/dd/yyyy",
+          "defaultValue": "12/31/2999"
         },
         {
           "fullyQualifiedName": "Borrower_Age",
@@ -128,7 +129,7 @@
           "type": "Numeric",
           "label": "Borrower Age",
           "precision": 18,
-          "defaultValue": "0",
+          "defaultValue": "999",
           "scale": 0,
           "format": "0"
         },
@@ -186,7 +187,8 @@
           "name": "Co_Borrower_Birthdate",
           "type": "Date",
           "label": "Co-Borrower Birthdate",
-          "format": "MM/dd/yyyy"
+          "format": "MM/dd/yyyy",
+          "defaultValue": "12/31/2999"
         },
         {
           "fullyQualifiedName": "Co_Borrower_Age",
@@ -194,7 +196,7 @@
           "type": "Numeric",
           "label": "Co-Borrower Age",
           "precision": 18,
-          "defaultValue": "0",
+          "defaultValue": "999",
           "scale": 0,
           "format": "0"
         },
@@ -252,7 +254,8 @@
           "name": "HH_Member_1_Birthdate",
           "type": "Date",
           "label": "HH Member 1 - Birthdate",
-          "format": "MM/dd/yyyy"
+          "format": "MM/dd/yyyy",
+          "defaultValue": "12/31/2999"
         },
         {
           "fullyQualifiedName": "HH_Member_1_Age",
@@ -260,7 +263,7 @@
           "type": "Numeric",
           "label": "HH Member 1 - Age",
           "precision": 18,
-          "defaultValue": "0",
+          "defaultValue": "999",
           "scale": 0,
           "format": "0"
         },
@@ -297,7 +300,8 @@
           "name": "HH_Member_2_Birthdate",
           "type": "Date",
           "label": "HH Member 2 - Birthdate",
-          "format": "MM/dd/yyyy"
+          "format": "MM/dd/yyyy",
+          "defaultValue": "12/31/2999"
         },
         {
           "fullyQualifiedName": "HH_Member_2_Age",
@@ -305,7 +309,7 @@
           "type": "Numeric",
           "label": "HH Member 2 - Age",
           "precision": 18,
-          "defaultValue": "0",
+          "defaultValue": "999",
           "scale": 0,
           "format": "0"
         },
@@ -342,7 +346,8 @@
           "name": "HH_Member_3_Birthdate",
           "type": "Date",
           "label": "HH Member 3 - Birthdate",
-          "format": "MM/dd/yyyy"
+          "format": "MM/dd/yyyy",
+          "defaultValue": "12/31/2999"
         },
         {
           "fullyQualifiedName": "HH_Member_3_Age",
@@ -350,7 +355,7 @@
           "type": "Numeric",
           "label": "HH Member 3 - Age",
           "precision": 18,
-          "defaultValue": "0",
+          "defaultValue": "999",
           "scale": 0,
           "format": "0"
         },
@@ -387,7 +392,8 @@
           "name": "HH_Member_4_Birthdate",
           "type": "Date",
           "label": "HH Member 4 - Birthdate",
-          "format": "MM/dd/yyyy"
+          "format": "MM/dd/yyyy",
+          "defaultValue": "12/31/2999"
         },
         {
           "fullyQualifiedName": "HH_Member_4_Age",
@@ -395,7 +401,7 @@
           "type": "Numeric",
           "label": "HH Member 4 - Age",
           "precision": 18,
-          "defaultValue": "0",
+          "defaultValue": "999",
           "scale": 0,
           "format": "0"
         },
@@ -432,7 +438,8 @@
           "name": "HH_Member_5_Birthdate",
           "type": "Date",
           "label": "HH Member 5 - Birthdate",
-          "format": "MM/dd/yyyy"
+          "format": "MM/dd/yyyy",
+          "defaultValue": "12/31/2999"
         },
         {
           "fullyQualifiedName": "HH_Member_5_Age",
@@ -440,7 +447,7 @@
           "type": "Numeric",
           "label": "HH Member 5 - Age",
           "precision": 18,
-          "defaultValue": "0",
+          "defaultValue": "999",
           "scale": 0,
           "format": "0"
         },
@@ -477,7 +484,8 @@
           "name": "HH_Member_6_Birthdate",
           "type": "Date",
           "label": "HH Member 6 - Birthdate",
-          "format": "MM/dd/yyyy"
+          "format": "MM/dd/yyyy",
+          "defaultValue": "12/31/2999"
         },
         {
           "fullyQualifiedName": "HH_Member_6_Age",
@@ -485,7 +493,7 @@
           "type": "Numeric",
           "label": "HH Member 6 - Age",
           "precision": 18,
-          "defaultValue": "0",
+          "defaultValue": "999",
           "scale": 0
         },
         {

@@ -11,7 +11,7 @@
       "firstDayOfWeek" : -1,
       "fiscalMonthOffset":0,
       "fields" : {
-        "format": "MM/dd/yy",
+        "format": "MM/dd/yyyy",
         "day" : "Borrower_Birthdate_Day",
         "epochDay" : "Borrower_Birthdate_day_epoch",
         "epochSecond" : "Borrower_Birthdate_sec_epoch",
