@@ -54,10 +54,10 @@
           "label": "Group"
         },
         {
-          "fullyQualifiedName": "Percent_of_Group",
-          "name": "Percent_of_Group",
+          "fullyQualifiedName": "Homeownership_Rate",
+          "name": "Homeownership_Rate",
           "type": "Numeric",
-          "label": "% of Group",
+          "label": "Homeownership Rate",
           "precision": 18,
           "defaultValue": "0",
           "scale": 1,

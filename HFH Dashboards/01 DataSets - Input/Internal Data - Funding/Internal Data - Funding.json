@@ -1,0 +1,71 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "fieldsEnclosedBy": "\"",
+    "linesTerminatedBy": "\r\n"
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "Internal_Data_Funding_csv",
+      "label": "Internal Data - Funding.csv",
+      "name": "Internal_Data_Funding_csv",
+      "fields": [
+        {
+          "fullyQualifiedName": "State",
+          "name": "State",
+          "type": "Text",
+          "label": "State"
+        },
+        {
+          "fullyQualifiedName": "Affiliate",
+          "name": "Affiliate",
+          "type": "Text",
+          "label": "Affiliate"
+        },
+        {
+          "fullyQualifiedName": "Year",
+          "name": "Year",
+          "type": "Text",
+          "label": "Year"
+        },
+        {
+          "fullyQualifiedName": "Homes_Sold_That_Year",
+          "name": "Homes_Sold_That_Year",
+          "type": "Numeric",
+          "label": "Homes Sold That Year",
+          "precision": 5,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0",
+          "groupsSeparator": ","
+        },
+        {
+          "fullyQualifiedName": "Source_Type",
+          "name": "Source_Type",
+          "type": "Text",
+          "label": "Source Type"
+        },
+        {
+          "fullyQualifiedName": "Source_Detail",
+          "name": "Source_Detail",
+          "type": "Text",
+          "label": "Source Detail"
+        },
+        {
+          "fullyQualifiedName": "Amount",
+          "name": "Amount",
+          "type": "Numeric",
+          "label": "Amount",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "$#,###",
+          "groupsSeparator": ",",
+          "currencySymbol": "$"
+        }
+      ]
+    }
+  ]
+}

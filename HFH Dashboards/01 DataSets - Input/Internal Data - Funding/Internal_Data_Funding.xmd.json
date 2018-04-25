@@ -7,30 +7,6 @@
         {
             "customActions": [],
             "customActionsEnabled": true,
-            "field": "Urban_Nonurban",
-            "label": "Urban / Nonurban",
-            "linkTemplateEnabled": true,
-            "members": [],
-            "recordDisplayFields": [],
-            "salesforceActions": [],
-            "salesforceActionsEnabled": true,
-            "showInExplorer": true
-        },
-        {
-            "customActions": [],
-            "customActionsEnabled": true,
-            "field": "Region",
-            "label": "Region",
-            "linkTemplateEnabled": true,
-            "members": [],
-            "recordDisplayFields": [],
-            "salesforceActions": [],
-            "salesforceActionsEnabled": true,
-            "showInExplorer": true
-        },
-        {
-            "customActions": [],
-            "customActionsEnabled": true,
             "field": "State",
             "label": "State",
             "linkTemplateEnabled": true,
@@ -43,8 +19,8 @@
         {
             "customActions": [],
             "customActionsEnabled": true,
-            "field": "County",
-            "label": "County",
+            "field": "Affiliate",
+            "label": "Affiliate",
             "linkTemplateEnabled": true,
             "members": [],
             "recordDisplayFields": [],
@@ -55,8 +31,32 @@
         {
             "customActions": [],
             "customActionsEnabled": true,
-            "field": "Group",
-            "label": "Group",
+            "field": "Year",
+            "label": "Year",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Source_Type",
+            "label": "Source Type",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Source_Detail",
+            "label": "Source Detail",
             "linkTemplateEnabled": true,
             "members": [],
             "recordDisplayFields": [],
@@ -68,19 +68,19 @@
   ],
   "measures": [
         {
-            "field": "Population",
+            "field": "Homes_Sold_That_Year",
             "format": {
-                "customFormat": "[\"###,###,###\",1]"
+                "customFormat": "[\"#,###\",1]"
             },
-            "label": "Population",
+            "label": "Homes Sold That Year",
             "showInExplorer": true
         },
         {
-            "field": "Homeownership_Rate",
+            "field": "Amount",
             "format": {
-                "customFormat": "[\"#,##0.0%\",1]"
+                "customFormat": "[\"$###,###,##0\",1]"
             },
-            "label": "Homeownership Rate",
+            "label": "Amount",
             "showInExplorer": true
         }
   ],
