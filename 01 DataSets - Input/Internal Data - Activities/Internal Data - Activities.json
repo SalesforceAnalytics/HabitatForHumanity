@@ -16,31 +16,36 @@
           "fullyQualifiedName": "Fiscal_Year",
           "name": "Fiscal_Year",
           "type": "Text",
-          "label": "Fiscal Year"
+          "label": "Fiscal Year",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Activity_Type",
           "name": "Activity_Type",
           "type": "Text",
-          "label": "Activity Type"
+          "label": "Activity Type",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Activity_ID",
           "name": "Activity_ID",
           "type": "Text",
-          "label": "Activity ID"
+          "label": "Activity ID",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Part_of_NR",
           "name": "Part_of_NR",
           "type": "Text",
-          "label": "Part of NR"
+          "label": "Part of NR",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Affiliate",
           "name": "Affiliate",
           "type": "Text",
-          "label": "Affiliate"
+          "label": "Affiliate",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "City",
@@ -54,6 +59,13 @@
           "name": "County",
           "type": "Text",
           "label": "County",
+          "defaultValue": "NULL"
+        },
+        {
+          "fullyQualifiedName": "State",
+          "name": "State",
+          "type": "Text",
+          "label": "State",
           "defaultValue": "NULL"
         },
         {

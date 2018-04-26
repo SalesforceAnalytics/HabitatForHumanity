@@ -16,7 +16,8 @@
           "fullyQualifiedName": "State",
           "name": "State",
           "type": "Text",
-          "label": "State"
+          "label": "State",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "County",
@@ -29,7 +30,8 @@
           "fullyQualifiedName": "Year",
           "name": "Year",
           "type": "Text",
-          "label": "Year"
+          "label": "Year",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Price",

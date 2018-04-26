@@ -15,7 +15,8 @@
           "fullyQualifiedName": "State",
           "name": "State",
           "type": "Text",
-          "label": "State"
+          "label": "State",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "County",
@@ -28,7 +29,8 @@
           "fullyQualifiedName": "Cost_Burdened_Category_by_AMI_Level",
           "name": "Cost_Burdened_Category_by_AMI_Level",
           "type": "Text",
-          "label": "Cost Burdened Category by AMI Level"
+          "label": "Cost Burdened Category by AMI Level",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Percent_of_Households",

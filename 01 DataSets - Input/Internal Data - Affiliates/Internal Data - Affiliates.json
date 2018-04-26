@@ -15,19 +15,22 @@
           "fullyQualifiedName": "Affiliate_Name",
           "name": "Affiliate_Name",
           "type": "Text",
-          "label": "Affiliate Name"
+          "label": "Affiliate Name",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "County",
           "name": "County",
           "type": "Text",
-          "label": "County"
+          "label": "County",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "State",
           "name": "State",
           "type": "Text",
-          "label": "State"
+          "label": "State",
+          "defaultValue": "NULL"
         }
       ]
     }

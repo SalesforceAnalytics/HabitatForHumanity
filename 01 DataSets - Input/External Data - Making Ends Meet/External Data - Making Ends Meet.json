@@ -15,7 +15,8 @@
           "fullyQualifiedName": "State",
           "name": "State",
           "type": "Text",
-          "label": "State"
+          "label": "State",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "County",
@@ -28,7 +29,8 @@
           "fullyQualifiedName": "Household_Status",
           "name": "Household_Status",
           "type": "Text",
-          "label": "Household Status"
+          "label": "Household Status",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Minimum_Income",

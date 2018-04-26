@@ -16,19 +16,22 @@
           "fullyQualifiedName": "State",
           "name": "State",
           "type": "Text",
-          "label": "State"
+          "label": "State",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Affiliate",
           "name": "Affiliate",
           "type": "Text",
-          "label": "Affiliate"
+          "label": "Affiliate",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Year",
           "name": "Year",
           "type": "Text",
-          "label": "Year"
+          "label": "Year",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Homes_Sold_That_Year",
@@ -45,13 +48,15 @@
           "fullyQualifiedName": "Source_Type",
           "name": "Source_Type",
           "type": "Text",
-          "label": "Source Type"
+          "label": "Source Type",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Source_Detail",
           "name": "Source_Detail",
           "type": "Text",
-          "label": "Source Detail"
+          "label": "Source Detail",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Amount",

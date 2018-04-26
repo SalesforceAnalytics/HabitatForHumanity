@@ -16,19 +16,22 @@
           "fullyQualifiedName": "State",
           "name": "State",
           "type": "Text",
-          "label": "State"
+          "label": "State",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Urban_Nonurban",
           "name": "Urban_Nonurban",
           "type": "Text",
-          "label": "Urban / Nonurban"
+          "label": "Urban / Nonurban",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Region",
           "name": "Region",
           "type": "Text",
-          "label": "Region"
+          "label": "Region",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "County",
@@ -51,7 +54,8 @@
           "fullyQualifiedName": "Group",
           "name": "Group",
           "type": "Text",
-          "label": "Group"
+          "label": "Group",
+          "defaultValue": "NULL"
         },
         {
           "fullyQualifiedName": "Homeownership_Rate",

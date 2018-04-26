@@ -1,0 +1,29 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "linesTerminatedBy": "\r\n"
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "External_Data_County_Logos_csv",
+      "label": "External Data - County Logos.csv",
+      "name": "External_Data_County_Logos_csv",
+      "fields": [
+        {
+          "fullyQualifiedName": "County",
+          "name": "County",
+          "type": "Text",
+          "label": "County"
+        },
+        {
+          "fullyQualifiedName": "File",
+          "name": "File",
+          "type": "Text",
+          "label": "File"
+        }
+      ]
+    }
+  ]
+}
