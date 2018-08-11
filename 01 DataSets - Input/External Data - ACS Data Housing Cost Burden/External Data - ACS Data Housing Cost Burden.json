@@ -37,7 +37,7 @@
           "name": "Percent_of_Households",
           "type": "Numeric",
           "label": "% of Households",
-          "precision": 3,
+          "precision": 4,
           "defaultValue": "0",
           "scale": 0,
           "currencySymbol": "%"
